@@ -312,6 +312,77 @@
       </div>
     </div>
 
+    <button type="button" class="collapsible">1.3.4 Visningsretning</button>
+    <div class="content">
+      <h2>1.3.4 Visningsretning (Nivå AA)</h2>
+      <p>
+        <strong>KORT FORTALT:</strong><br />
+        <i
+          >Brukeren må få velge om innholdet skal vises i liggende eller stående
+          retning.</i
+        >
+        <br /><br />
+        <strong>Nivå AA (krav): </strong>Innholdet begrenser ikke visning og
+        bruk til en bestemt visningsretning, som stående eller liggende, med
+        mindre en bestemt visningsretning er nødvendig.
+        <br />
+
+        <br />
+        <strong>Løsningsforslag, eksempler og unntak:</strong> <br />
+        <a
+          href="https://www.uutilsynet.no/wcag-standarden/134-visningsretning-niva-aa/141"
+          >1.3.4 Visningsretning (Nivå AA) | Tilsynet for universell utforming
+          av ikt (uutilsynet.no)</a
+        ><br />
+        <br /><strong>Techniques:</strong><br />
+        • G214: Using a control to allow access to content in different
+        orientations which is otherwise restricted <br />
+      </p>
+      <div class="feil">
+        <p>
+          <strong>Elementer som ikke består kravet:</strong><br />
+          Liste med elementer
+        </p>
+      </div>
+    </div>
+
+    <button type="button" class="collapsible">
+      1.3.5 Identifiser formål med inndata
+    </button>
+    <div class="content">
+      <h2>1.3.5 Identifiser formål med inndata (Nivå AA)</h2>
+      <p>
+        <strong>KORT FORTALT:</strong><br />
+        <i>Skjemaelementer er kodet med inndataformål.</i>
+        <br /><br />
+        <strong>Nivå AA (krav): </strong>Skjemaelementer, som skjemafelt,
+        avkryssingsbokser, radioknapper og lignende, samler inn informasjon fra
+        brukeren. <br />
+        Formålet med suksesskriteriet er å sikre at formålet med skjemaelementer
+        kan bestemmes programmeringsmessig, altså i koden. På denne måten kan
+        brukeragenter, <br />
+        som for eksempel en nettleser eller en skjermleser, hente ut og
+        presentere formålet for brukeren gjennom for eksempel tale eller
+        alternative ikon.
+        <br />
+        <br />
+        <strong>Løsningsforslag, eksempler og unntak:</strong> <br />
+        <a
+          href="https://www.uutilsynet.no/wcag-standarden/135-identifiser-formal-med-inndata-niva-aa/142"
+          >1.3.5 Identifiser formål med inndata | Tilsynet for universell
+          utforming av ikt (uutilsynet.no)</a
+        ><br />
+        <br /><strong>Techniques:</strong><br />
+        • H98: Using HTML 5.2 autocomplete attributes <br />
+      </p>
+      <div class="feil">
+        <p>
+          <strong>Elementer som ikke består kravet:</strong><br />
+          Liste med elementer
+        </p>
+      </div>
+    </div>
+
     <button type="button" class="collapsible">1.4.1 Bruk av farge</button>
     <div class="content">
       <h2>1.4.1 Bruk av farge (Nivå A)</h2>
@@ -502,6 +573,182 @@
       </div>
     </div>
 
+    <button type="button" class="collapsible">
+      1.4.10 Dynamisk tilpasning
+    </button>
+    <div class="content">
+      <h2>1.4.10 Dynamisk tilpasning (Reflow. Nivå AA)</h2>
+      <p>
+        <strong>KORT FORTALT:</strong><br />
+        <i
+          >Innhold skal kunne endres til 400 prosent størrelse ved 1280 piksler
+          bredde, uten tap av informasjon eller funksjonalitet.</i
+        >
+        <br /><br />
+        <strong>Nivå AA (krav): </strong>Formålet med kravet er å sikre at
+        brukere kan forstørre innholdet og lese det i én enkelt kolonne. Når
+        innholdet er zoomet inn til 400 prosent-visning, brekkes innholdet om
+        til én kolonne. Da er det ikke nødvendig å rulle i mer enn en retning og
+        innholdet blir lettere å lese.
+        <br />
+        <br />
+        <strong>Løsningsforslag, eksempler og unntak:</strong> <br />
+        <a
+          href="https://www.uutilsynet.no/wcag-standarden/1410-dynamisk-tilpasning-reflow-niva-aa/144"
+          >1.4.10 Dynamisk tilpasning (Reflow. Nivå AA) | Tilsynet for
+          universell utforming av ikt (uutilsynet.no)</a
+        ><br />
+        <br /><strong>Techniques:</strong><br />
+        • C32: Using media queries and grid CSS to reflow columns <br />
+        • C31: Using CSS Flexbox to reflow content <br />
+        • C38: Using CSS width, max-width and flexbox to fit labels and inputs
+        <br />
+        Advisory: <br />
+        • C37: Using CSS max-width and height to fit images
+      </p>
+      <div class="feil">
+        <p>
+          <strong>Elementer som ikke består kravet:</strong><br />
+          Liste med elementer
+        </p>
+      </div>
+    </div>
+
+    <button type="button" class="collapsible">
+      1.4.11 Kontrast for ikke-tekstlig innhold
+    </button>
+    <div class="content">
+      <h2>1.4.11 Kontrast for ikke-tekstlig innhold (Nivå AA)</h2>
+      <p>
+        <strong>KORT FORTALT:</strong><br />
+        <i
+          >Ikke-tekstlig innhold skal ha et kontrastforhold på minst 3:1 mot
+          farge(r) som ligger ved siden av.</i
+        >
+        <br /><br />
+        <strong>Nivå AA (krav): </strong>Formålet med suksesskriteriet er å
+        sikre at aktive brukergrensesnittkomponenter og meningsbærende grafikk
+        er lett å se. <br />
+        Grunnlag og kontrastverdi er den samme som kravet til kontrast for stor
+        tekst i suksesskriterie 1.4.3 (Den visuelle presentasjonen har et
+        kontrastforhold på minst 3:1 mot farge(r) som ligger siden av.)
+        <br />
+        <br />
+        <strong>Løsningsforslag, eksempler og unntak:</strong> <br />
+        <a
+          href="https://www.uutilsynet.no/wcag-standarden/1411-kontrast-ikke-tekstlig-innhold-niva-aa/145"
+          >1.4.11 Kontrast for ikke-tekstlig innhold (Nivå AA) | Tilsynet for
+          universell utforming av ikt (uutilsynet.no)</a
+        ><br />
+        <br /><strong>Techniques:</strong><br />
+        Situation A: Color is used to identify user interface components or used
+        to identify user interface component states <br />
+        • G195: Using an author-supplied, highly visible focus indicator <br />
+        • G174: Providing a control with a sufficient contrast ratio that allows
+        users to switch to a presentation that uses sufficient contrast <br />
+        Situation B: Color is required to understand graphical content <br />
+        • G207: Ensuring that a contrast ratio of 3:1 is provided for icons
+        <br />
+        • G209: Provide sufficient contrast at the boundaries between adjoining
+        colors
+      </p>
+      <div class="feil">
+        <p>
+          <strong>Elementer som ikke består kravet:</strong><br />
+          Liste med elementer
+        </p>
+      </div>
+    </div>
+
+    <button type="button" class="collapsible">1.4.12 Tekstavstand</button>
+    <div class="content">
+      <h2>1.4.12 Tekstavstand (Nivå AA)</h2>
+      <p>
+        <strong>KORT FORTALT:</strong><br />
+        <i
+          >Tekstavstanden skal kunne overstyres for å gjøre teksten lettere å
+          lese.</i
+        >
+        <br /><br />
+        <strong>Nivå AA (krav): </strong>Formålet med suksesskriteriet er å
+        sikre at brukere kan overstyre tekstavstanden for å gjøre teksten
+        lettere å lese. <br />
+        Suksesskriteriet gjelder muligheten for å endre på:
+        <br />
+
+        -linjehøyde (avstand mellom linjer) <br />
+        -avstand etter avsnitt <br />
+        -avstanden mellom bokstaver i en linje eller blokk av tekst <br />
+        -avstanden mellom ord
+        <br />
+        <br />
+        <strong>Løsningsforslag, eksempler og unntak:</strong> <br />
+        <a
+          href="https://www.uutilsynet.no/wcag-standarden/1412-tekstavstand-niva-aa/146"
+          >1.4.12 Tekstavstand (Nivå AA) | Tilsynet for universell utforming av
+          ikt (uutilsynet.no)</a
+        ><br />
+        <br /><strong>Techniques:</strong><br />
+        • C36: Allowing for text spacing override <br />
+        • C35: Allowing for text spacing without wrapping <br />
+        Advisory: <br />
+        • C8: Using CSS letter-spacing to control spacing within a word <br />
+        • C21: Specifying line spacing in CSS<br />
+        • C28: Specifying the size of text containers using em units
+        <br />
+      </p>
+      <div class="feil">
+        <p>
+          <strong>Elementer som ikke består kravet:</strong><br />
+          Liste med elementer
+        </p>
+      </div>
+    </div>
+
+    <button type="button" class="collapsible">
+      1.4.13 Pekerfølsomt innhold eller innhold ved tastaturfokus
+    </button>
+    <div class="content">
+      <h2>
+        1.4.13 Pekerfølsomt innhold eller innhold ved tastaturfokus (Nivå AA)
+      </h2>
+      <p>
+        <strong>KORT FORTALT:</strong><br />
+        <i
+          >Brukeren skal ha mer kontroll over innholdet på nettsiden som får
+          fokus med musepeker eller tastatur.</i
+        >
+        <br /><br />
+        <strong>Nivå AA (krav): </strong>Ekstra innhold som kommer til syne og
+        forsvinner ved tastaturfokus eller mouseover (det vil si når pekeren
+        hviler over et punkt på skjermen), kan føre til problemer for brukeren.
+        <br />
+        Det skal være mulig å avvise, mulig å bruke med å holde musepekeren over
+        innholdet og være vedvarende (ekstra innhold forblir synlig helt til
+        brukeren flytter musepeker eller fokus)
+        <br />
+        <br />
+        <strong>Løsningsforslag, eksempler og unntak:</strong> <br />
+        <a
+          href="https://www.uutilsynet.no/wcag-standarden/1413-pekerfolsomt-innhold-eller-innhold-ved-tastaturfokus-niva-aa/147"
+          >1.4.13 Pekerfølsomt innhold eller innhold ved tastaturfokus (Nivå AA)
+          | Tilsynet for universell utforming av ikt (uutilsynet.no)</a
+        ><br />
+        <br /><strong>Techniques:</strong><br />
+        • SCR39: Making content on focus or hover hoverable, dismissible, and
+        persistent <br />
+        • @@ ARIA: Using role="tooltip" <br />
+        • @@ CSS: Using hover and focus pseudo classes <br />
+        <br />
+      </p>
+      <div class="feil">
+        <p>
+          <strong>Elementer som ikke består kravet:</strong><br />
+          Liste med elementer
+        </p>
+      </div>
+    </div>
+
     <button type="button" class="collapsible">2.1.1 Tastatur</button>
     <div class="content">
       <h2>2.1.1 Tastatur (Nivå A)</h2>
@@ -563,6 +810,46 @@
         ><br />
         <br /><strong>Techniques:</strong><br />
         • G21: Ensuring that users are not trapped in content <br />
+      </p>
+      <div class="feil">
+        <p>
+          <strong>Elementer som ikke består kravet:</strong><br />
+          Liste med elementer
+        </p>
+      </div>
+    </div>
+
+    <button type="button" class="collapsible">
+      2.1.4 Hurtigtaster som består av ett tegn
+    </button>
+    <div class="content">
+      <h2>2.1.4 Hurtigtaster som består av ett tegn (Nivå A)</h2>
+      <p>
+        <strong>KORT FORTALT:</strong><br />
+        <i
+          >Brukeren skal enkelt kunne slå av hurtigtaster som består av ett
+          tegn.</i
+        >
+        <br /><br />
+        <strong>Nivå A (krav): </strong>Hurtigtaster som består av bare ett tegn
+        fungerer bra for mange tastaturbrukere, men er et stort problem for
+        personer som bruker stemmestyring og personer som ofte taster feil.
+        <br />
+        Dersom en hurtigtast er implementert i innholdet ved å bruke kun en
+        bokstav, tegnsetting, siffer eller symboltegn, må man kunne slå av,
+        omadressere eller sette til kun aktiv ved fokus.
+        <br />
+        <br />
+        <strong>Løsningsforslag, eksempler og unntak:</strong> <br />
+        <a
+          href="https://www.uutilsynet.no/wcag-standarden/214-hurtigtaster-som-bestar-av-ett-tegn-niva/782"
+          >2.1.4 Hurtigtaster som består av ett tegn (Nivå A) | Tilsynet for
+          universell utforming av ikt (uutilsynet.no)</a
+        ><br />
+        <br /><strong>Techniques:</strong><br />
+        • G217: Providing a mechanism to allow users to remap or turn off
+        character key shortcuts <br />
+        <br />
       </p>
       <div class="feil">
         <p>
@@ -815,6 +1102,81 @@
         component when it receives focus <br />
         • G165: Using the default focus indicator for the platform so that high
         visibility default focus indicators will carry over <br />
+        <br />
+      </p>
+      <div class="feil">
+        <p>
+          <strong>Elementer som ikke består kravet:</strong><br />
+          Liste med elementer
+        </p>
+      </div>
+    </div>     
+
+    <button type="button" class="collapsible">2.5.1 Pekerbevegelser</button>
+    <div class="content">
+      <h2>2.5.1 Pekerbevegelser (Nivå A)</h2>
+      <p>
+        <strong>KORT FORTALT:</strong><br />
+        <i>Innhold på nettsiden skal kunne brukes med enkel pekerinput.</i>
+        <br /><br />
+        <strong>Nivå A (krav): </strong>Formålet med suksesskriteriet er å sikre
+        at brukere kan bruke innholdet på nettsiden med enkel pekerinput, fra
+        for eksempel mus eller berøringsskjerm. <br />
+        Dette er viktig for brukere som ikke kan trykke flere plasser på
+        skjermen samtidig, eller som ikke kan bevege pekeren i bestemte mønster.
+        <br />
+        <br />
+        <strong>Løsningsforslag, eksempler og unntak:</strong> <br />
+        <a
+          href="https://www.uutilsynet.no/wcag-standarden/251-pekerbevegelser-niva/148"
+          >2.5.1 Pekerbevegelser (Nivå A) | Tilsynet for universell utforming av
+          ikt (uutilsynet.no)</a
+        ><br />
+        <br /><strong>Techniques:</strong><br />
+        • G215: Providing controls to achieve the same result as path based or
+        multipoint gestures <br />
+        • G216: Providing single point activation for a control slider
+        <br />
+      </p>
+      <div class="feil">
+        <p>
+          <strong>Elementer som ikke består kravet:</strong><br />
+          Liste med elementer
+        </p>
+      </div>
+    </div>
+
+    <button type="button" class="collapsible">2.5.3 Ledetekst i navn</button>
+    <div class="content">
+      <h2>2.5.3 Ledetekst i navn (Nivå A)</h2>
+      <p>
+        <strong>KORT FORTALT:</strong><br />
+        <i
+          >Brukere som bruker visuelle ledetekster skal også kunne bruke kodede
+          ledetekster.</i
+        >
+        <br /><br />
+        <strong>Nivå A (krav): </strong>For brukergrensesnittkomponenter med
+        ledetekster som inneholder tekst eller bilder av tekst, inneholder
+        navnet teksten som presenteres visuelt. <br />
+        Formålet med suksesskriteriet er å sikre at personer som bruker de
+        visuelle ledetekstene også kan bruke de programmeringsmessig bestemte
+        (dvs. kodede) ledetekstene. <br />
+        Et eksempel på dette er personer som bruker taleinput.
+        <br />
+        <br />
+        <strong>Løsningsforslag, eksempler og unntak:</strong> <br />
+        <a
+          href="https://www.uutilsynet.no/wcag-standarden/253-ledetekst-i-navn-niva/150"
+          >2.5.3 Ledetekst i navn (Nivå A) | Tilsynet for universell utforming
+          av ikt (uutilsynet.no)</a
+        ><br />
+        <br /><strong>Techniques:</strong><br />
+        • G208: Including the text of the visible label as part of the
+        accessible name <br />
+        • G211: Matching the accessible name to the visible label <br />
+        Advisory: <br />
+        • G162: Positioning labels to maximize predictability of relationships
         <br />
       </p>
       <div class="feil">
@@ -1257,368 +1619,6 @@
         label cannot be used <br />
         • ARIA16: Using aria-labelledby to provide a name for user interface
         controls <br />
-      </p>
-      <div class="feil">
-        <p>
-          <strong>Elementer som ikke består kravet:</strong><br />
-          Liste med elementer
-        </p>
-      </div>
-    </div>
-
-    <button type="button" class="collapsible">1.3.4 Visningsretning</button>
-    <div class="content">
-      <h2>1.3.4 Visningsretning (Nivå AA)</h2>
-      <p>
-        <strong>KORT FORTALT:</strong><br />
-        <i
-          >Brukeren må få velge om innholdet skal vises i liggende eller stående
-          retning.</i
-        >
-        <br /><br />
-        <strong>Nivå AA (krav): </strong>Innholdet begrenser ikke visning og
-        bruk til en bestemt visningsretning, som stående eller liggende, med
-        mindre en bestemt visningsretning er nødvendig.
-        <br />
-
-        <br />
-        <strong>Løsningsforslag, eksempler og unntak:</strong> <br />
-        <a
-          href="https://www.uutilsynet.no/wcag-standarden/134-visningsretning-niva-aa/141"
-          >1.3.4 Visningsretning (Nivå AA) | Tilsynet for universell utforming
-          av ikt (uutilsynet.no)</a
-        ><br />
-        <br /><strong>Techniques:</strong><br />
-        • G214: Using a control to allow access to content in different
-        orientations which is otherwise restricted <br />
-      </p>
-      <div class="feil">
-        <p>
-          <strong>Elementer som ikke består kravet:</strong><br />
-          Liste med elementer
-        </p>
-      </div>
-    </div>
-
-    <button type="button" class="collapsible">
-      1.3.5 Identifiser formål med inndata
-    </button>
-    <div class="content">
-      <h2>1.3.5 Identifiser formål med inndata (Nivå AA)</h2>
-      <p>
-        <strong>KORT FORTALT:</strong><br />
-        <i>Skjemaelementer er kodet med inndataformål.</i>
-        <br /><br />
-        <strong>Nivå AA (krav): </strong>Skjemaelementer, som skjemafelt,
-        avkryssingsbokser, radioknapper og lignende, samler inn informasjon fra
-        brukeren. <br />
-        Formålet med suksesskriteriet er å sikre at formålet med skjemaelementer
-        kan bestemmes programmeringsmessig, altså i koden. På denne måten kan
-        brukeragenter, <br />
-        som for eksempel en nettleser eller en skjermleser, hente ut og
-        presentere formålet for brukeren gjennom for eksempel tale eller
-        alternative ikon.
-        <br />
-        <br />
-        <strong>Løsningsforslag, eksempler og unntak:</strong> <br />
-        <a
-          href="https://www.uutilsynet.no/wcag-standarden/135-identifiser-formal-med-inndata-niva-aa/142"
-          >1.3.5 Identifiser formål med inndata | Tilsynet for universell
-          utforming av ikt (uutilsynet.no)</a
-        ><br />
-        <br /><strong>Techniques:</strong><br />
-        • H98: Using HTML 5.2 autocomplete attributes <br />
-      </p>
-      <div class="feil">
-        <p>
-          <strong>Elementer som ikke består kravet:</strong><br />
-          Liste med elementer
-        </p>
-      </div>
-    </div>
-
-    <button type="button" class="collapsible">
-      1.4.10 Dynamisk tilpasning
-    </button>
-    <div class="content">
-      <h2>1.4.10 Dynamisk tilpasning (Reflow. Nivå AA)</h2>
-      <p>
-        <strong>KORT FORTALT:</strong><br />
-        <i
-          >Innhold skal kunne endres til 400 prosent størrelse ved 1280 piksler
-          bredde, uten tap av informasjon eller funksjonalitet.</i
-        >
-        <br /><br />
-        <strong>Nivå AA (krav): </strong>Formålet med kravet er å sikre at
-        brukere kan forstørre innholdet og lese det i én enkelt kolonne. Når
-        innholdet er zoomet inn til 400 prosent-visning, brekkes innholdet om
-        til én kolonne. Da er det ikke nødvendig å rulle i mer enn en retning og
-        innholdet blir lettere å lese.
-        <br />
-        <br />
-        <strong>Løsningsforslag, eksempler og unntak:</strong> <br />
-        <a
-          href="https://www.uutilsynet.no/wcag-standarden/1410-dynamisk-tilpasning-reflow-niva-aa/144"
-          >1.4.10 Dynamisk tilpasning (Reflow. Nivå AA) | Tilsynet for
-          universell utforming av ikt (uutilsynet.no)</a
-        ><br />
-        <br /><strong>Techniques:</strong><br />
-        • C32: Using media queries and grid CSS to reflow columns <br />
-        • C31: Using CSS Flexbox to reflow content <br />
-        • C38: Using CSS width, max-width and flexbox to fit labels and inputs
-        <br />
-        Advisory: <br />
-        • C37: Using CSS max-width and height to fit images
-      </p>
-      <div class="feil">
-        <p>
-          <strong>Elementer som ikke består kravet:</strong><br />
-          Liste med elementer
-        </p>
-      </div>
-    </div>
-
-    <button type="button" class="collapsible">
-      1.4.11 Kontrast for ikke-tekstlig innhold
-    </button>
-    <div class="content">
-      <h2>1.4.11 Kontrast for ikke-tekstlig innhold (Nivå AA)</h2>
-      <p>
-        <strong>KORT FORTALT:</strong><br />
-        <i
-          >Ikke-tekstlig innhold skal ha et kontrastforhold på minst 3:1 mot
-          farge(r) som ligger ved siden av.</i
-        >
-        <br /><br />
-        <strong>Nivå AA (krav): </strong>Formålet med suksesskriteriet er å
-        sikre at aktive brukergrensesnittkomponenter og meningsbærende grafikk
-        er lett å se. <br />
-        Grunnlag og kontrastverdi er den samme som kravet til kontrast for stor
-        tekst i suksesskriterie 1.4.3 (Den visuelle presentasjonen har et
-        kontrastforhold på minst 3:1 mot farge(r) som ligger siden av.)
-        <br />
-        <br />
-        <strong>Løsningsforslag, eksempler og unntak:</strong> <br />
-        <a
-          href="https://www.uutilsynet.no/wcag-standarden/1411-kontrast-ikke-tekstlig-innhold-niva-aa/145"
-          >1.4.11 Kontrast for ikke-tekstlig innhold (Nivå AA) | Tilsynet for
-          universell utforming av ikt (uutilsynet.no)</a
-        ><br />
-        <br /><strong>Techniques:</strong><br />
-        Situation A: Color is used to identify user interface components or used
-        to identify user interface component states <br />
-        • G195: Using an author-supplied, highly visible focus indicator <br />
-        • G174: Providing a control with a sufficient contrast ratio that allows
-        users to switch to a presentation that uses sufficient contrast <br />
-        Situation B: Color is required to understand graphical content <br />
-        • G207: Ensuring that a contrast ratio of 3:1 is provided for icons
-        <br />
-        • G209: Provide sufficient contrast at the boundaries between adjoining
-        colors
-      </p>
-      <div class="feil">
-        <p>
-          <strong>Elementer som ikke består kravet:</strong><br />
-          Liste med elementer
-        </p>
-      </div>
-    </div>
-
-    <button type="button" class="collapsible">1.4.12 Tekstavstand</button>
-    <div class="content">
-      <h2>1.4.12 Tekstavstand (Nivå AA)</h2>
-      <p>
-        <strong>KORT FORTALT:</strong><br />
-        <i
-          >Tekstavstanden skal kunne overstyres for å gjøre teksten lettere å
-          lese.</i
-        >
-        <br /><br />
-        <strong>Nivå AA (krav): </strong>Formålet med suksesskriteriet er å
-        sikre at brukere kan overstyre tekstavstanden for å gjøre teksten
-        lettere å lese. <br />
-        Suksesskriteriet gjelder muligheten for å endre på:
-        <br />
-
-        -linjehøyde (avstand mellom linjer) <br />
-        -avstand etter avsnitt <br />
-        -avstanden mellom bokstaver i en linje eller blokk av tekst <br />
-        -avstanden mellom ord
-        <br />
-        <br />
-        <strong>Løsningsforslag, eksempler og unntak:</strong> <br />
-        <a
-          href="https://www.uutilsynet.no/wcag-standarden/1412-tekstavstand-niva-aa/146"
-          >1.4.12 Tekstavstand (Nivå AA) | Tilsynet for universell utforming av
-          ikt (uutilsynet.no)</a
-        ><br />
-        <br /><strong>Techniques:</strong><br />
-        • C36: Allowing for text spacing override <br />
-        • C35: Allowing for text spacing without wrapping <br />
-        Advisory: <br />
-        • C8: Using CSS letter-spacing to control spacing within a word <br />
-        • C21: Specifying line spacing in CSS<br />
-        • C28: Specifying the size of text containers using em units
-        <br />
-      </p>
-      <div class="feil">
-        <p>
-          <strong>Elementer som ikke består kravet:</strong><br />
-          Liste med elementer
-        </p>
-      </div>
-    </div>
-
-    <button type="button" class="collapsible">
-      1.4.13 Pekerfølsomt innhold eller innhold ved tastaturfokus
-    </button>
-    <div class="content">
-      <h2>
-        1.4.13 Pekerfølsomt innhold eller innhold ved tastaturfokus (Nivå AA)
-      </h2>
-      <p>
-        <strong>KORT FORTALT:</strong><br />
-        <i
-          >Brukeren skal ha mer kontroll over innholdet på nettsiden som får
-          fokus med musepeker eller tastatur.</i
-        >
-        <br /><br />
-        <strong>Nivå AA (krav): </strong>Ekstra innhold som kommer til syne og
-        forsvinner ved tastaturfokus eller mouseover (det vil si når pekeren
-        hviler over et punkt på skjermen), kan føre til problemer for brukeren.
-        <br />
-        Det skal være mulig å avvise, mulig å bruke med å holde musepekeren over
-        innholdet og være vedvarende (ekstra innhold forblir synlig helt til
-        brukeren flytter musepeker eller fokus)
-        <br />
-        <br />
-        <strong>Løsningsforslag, eksempler og unntak:</strong> <br />
-        <a
-          href="https://www.uutilsynet.no/wcag-standarden/1413-pekerfolsomt-innhold-eller-innhold-ved-tastaturfokus-niva-aa/147"
-          >1.4.13 Pekerfølsomt innhold eller innhold ved tastaturfokus (Nivå AA)
-          | Tilsynet for universell utforming av ikt (uutilsynet.no)</a
-        ><br />
-        <br /><strong>Techniques:</strong><br />
-        • SCR39: Making content on focus or hover hoverable, dismissible, and
-        persistent <br />
-        • @@ ARIA: Using role="tooltip" <br />
-        • @@ CSS: Using hover and focus pseudo classes <br />
-        <br />
-      </p>
-      <div class="feil">
-        <p>
-          <strong>Elementer som ikke består kravet:</strong><br />
-          Liste med elementer
-        </p>
-      </div>
-    </div>
-
-    <button type="button" class="collapsible">
-      2.1.4 Hurtigtaster som består av ett tegn
-    </button>
-    <div class="content">
-      <h2>2.1.4 Hurtigtaster som består av ett tegn (Nivå A)</h2>
-      <p>
-        <strong>KORT FORTALT:</strong><br />
-        <i
-          >Brukeren skal enkelt kunne slå av hurtigtaster som består av ett
-          tegn.</i
-        >
-        <br /><br />
-        <strong>Nivå A (krav): </strong>Hurtigtaster som består av bare ett tegn
-        fungerer bra for mange tastaturbrukere, men er et stort problem for
-        personer som bruker stemmestyring og personer som ofte taster feil.
-        <br />
-        Dersom en hurtigtast er implementert i innholdet ved å bruke kun en
-        bokstav, tegnsetting, siffer eller symboltegn, må man kunne slå av,
-        omadressere eller sette til kun aktiv ved fokus.
-        <br />
-        <br />
-        <strong>Løsningsforslag, eksempler og unntak:</strong> <br />
-        <a
-          href="https://www.uutilsynet.no/wcag-standarden/214-hurtigtaster-som-bestar-av-ett-tegn-niva/782"
-          >2.1.4 Hurtigtaster som består av ett tegn (Nivå A) | Tilsynet for
-          universell utforming av ikt (uutilsynet.no)</a
-        ><br />
-        <br /><strong>Techniques:</strong><br />
-        • G217: Providing a mechanism to allow users to remap or turn off
-        character key shortcuts <br />
-        <br />
-      </p>
-      <div class="feil">
-        <p>
-          <strong>Elementer som ikke består kravet:</strong><br />
-          Liste med elementer
-        </p>
-      </div>
-    </div>
-
-    <button type="button" class="collapsible">2.5.1 Pekerbevegelser</button>
-    <div class="content">
-      <h2>2.5.1 Pekerbevegelser (Nivå A)</h2>
-      <p>
-        <strong>KORT FORTALT:</strong><br />
-        <i>Innhold på nettsiden skal kunne brukes med enkel pekerinput.</i>
-        <br /><br />
-        <strong>Nivå A (krav): </strong>Formålet med suksesskriteriet er å sikre
-        at brukere kan bruke innholdet på nettsiden med enkel pekerinput, fra
-        for eksempel mus eller berøringsskjerm. <br />
-        Dette er viktig for brukere som ikke kan trykke flere plasser på
-        skjermen samtidig, eller som ikke kan bevege pekeren i bestemte mønster.
-        <br />
-        <br />
-        <strong>Løsningsforslag, eksempler og unntak:</strong> <br />
-        <a
-          href="https://www.uutilsynet.no/wcag-standarden/251-pekerbevegelser-niva/148"
-          >2.5.1 Pekerbevegelser (Nivå A) | Tilsynet for universell utforming av
-          ikt (uutilsynet.no)</a
-        ><br />
-        <br /><strong>Techniques:</strong><br />
-        • G215: Providing controls to achieve the same result as path based or
-        multipoint gestures <br />
-        • G216: Providing single point activation for a control slider
-        <br />
-      </p>
-      <div class="feil">
-        <p>
-          <strong>Elementer som ikke består kravet:</strong><br />
-          Liste med elementer
-        </p>
-      </div>
-    </div>
-
-    <button type="button" class="collapsible">2.5.3 Ledetekst i navn</button>
-    <div class="content">
-      <h2>2.5.3 Ledetekst i navn (Nivå A)</h2>
-      <p>
-        <strong>KORT FORTALT:</strong><br />
-        <i
-          >Brukere som bruker visuelle ledetekster skal også kunne bruke kodede
-          ledetekster.</i
-        >
-        <br /><br />
-        <strong>Nivå A (krav): </strong>For brukergrensesnittkomponenter med
-        ledetekster som inneholder tekst eller bilder av tekst, inneholder
-        navnet teksten som presenteres visuelt. <br />
-        Formålet med suksesskriteriet er å sikre at personer som bruker de
-        visuelle ledetekstene også kan bruke de programmeringsmessig bestemte
-        (dvs. kodede) ledetekstene. <br />
-        Et eksempel på dette er personer som bruker taleinput.
-        <br />
-        <br />
-        <strong>Løsningsforslag, eksempler og unntak:</strong> <br />
-        <a
-          href="https://www.uutilsynet.no/wcag-standarden/253-ledetekst-i-navn-niva/150"
-          >2.5.3 Ledetekst i navn (Nivå A) | Tilsynet for universell utforming
-          av ikt (uutilsynet.no)</a
-        ><br />
-        <br /><strong>Techniques:</strong><br />
-        • G208: Including the text of the visible label as part of the
-        accessible name <br />
-        • G211: Matching the accessible name to the visible label <br />
-        Advisory: <br />
-        • G162: Positioning labels to maximize predictability of relationships
-        <br />
       </p>
       <div class="feil">
         <p>
