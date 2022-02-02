@@ -1,1807 +1,1871 @@
 <!DOCTYPE html>
 
 <html lang="no">
-  <head>
-    <link rel="stylesheet" href="style.css" />
-    <title>Rapport</title>
-  </head>
 
-  <body>
-    <h1>Rapport: WAD og WCAG 2.1</h1>
-    <h3>Hedmark IKT nettside</h3>
-    <h4>
+<head>
+  <link rel="stylesheet" href="style.css" />
+  <title>Rapport</title>
+</head>
+
+<body>
+  <h1>Rapport: WAD og WCAG 2.1</h1>
+  <h3>Hedmark IKT nettside</h3>
+  <h4>
+    <a href="https://www.uutilsynet.no/webdirektivet-wad/eus-webdirektiv-wad/265">Basert på EUs webdirektiv (WAD)</a>
+  </h4>
+
+  <button type="button" class="collapsible">
+    1.1.1 Ikke-tekstlig innhold
+  </button>
+  <div class="content">
+    <h2>1.1.1 Ikke-tekstlig innhold (Nivå A)</h2>
+    <p>
+      <strong>KORT FORTALT:</strong><br />
+      <i>Gi brukeren et tekstalternativ for innhold som ikke er tekst.</i>
+      <br /><br />
+      <strong>Nivå A (krav):</strong> Alt ikke-tekstlig innhold som
+      presenteres for brukeren, har et tekstalternativ som har samme formål
+      <br /><br />
+      <strong>Løsningsforslag, eksempler og unntak:</strong> <br />
+      <a href="https://www.uutilsynet.no/wcag-standarden/111-ikke-tekstlig-innhold-niva/87">1.1.1 Ikke-tekstlig innhold
+        (Nivå A) | Tilsynet for universell
+        utforming av ikt (uutilsynet.no)</a><br /><br />
+
+      <hr>
+
+      <br /><strong>Techniques:</strong><br />
+      • G94: Providing short text alternative for non-text content that serves
+      the same purpose and presents the same information as the non-text
+      content <br />
+      • ARIA6: Using aria-label to provide labels for objects <br />
+      • ARIA10: Using aria-labelledby to provide a text alternative for
+      non-text content <br />
+      • H37: Using alt attributes on img elements <br />
+    </p>
+    <div class="feil">
+      <p>
+        <strong>Elementer som ikke består kravet:</strong><br />
+      </p>
+      <table>
+        <tr>
+          <th>Mangel</th>
+          <th>Lenke til side</th>
+        </tr>
+        <tr>
+          <td>Bilder i brukerveiledninger (kode for alt er skrevet inn, men alt er ikke fylt ut) Dette gjelder alle
+            brukerveiledninger, eksempel i lenke</td>
+          <td><a href="https://www.hedmark-ikt.no/faq/ny-e-postprofil-med-moderne-autentisering-pa-ipader/">E-post
+              profil med moderne autentisering på iPader</a></td>
+        </tr>
+        <tr>
+          <td>Bilde under prosjekter > Oppgradering av Acos</td>
+          <td><a href="https://www.hedmark-ikt.no/nyhetsbrev/oppgradering-av-acos/">Acos aktuelt</a></td>
+        </tr>
+        <tr>
+          <td>Generelle illustrasjonsbilder trenger ikke beskrivelse da de kun er dekorative, men burde være merket som
+            dekorativt bilde. Et alternativ for dette er alt=null eller role=presentation</td>
+          <td><a href="https://www.hedmark-ikt.no/kontaktinformasjon/">Eksempel dekorativt bilde</a></td>
+        </tr>
+        <tr>
+          <td>I samme artikkel/nyhetsbrev som under "elementer som består kravet" er det lenger ned på siden ikke en
+            alternativ beskrivelse til skjermbilde og kun referert som "slik ser varselet ut. Må være konsekvent på
+            tilgjengelighetstiltak"</td>
+          <td><a href="https://www.hedmark-ikt.no/gamle-pc-er-blir-deaktivert/">Gamle PC-er blir deaktivert</a></td>
+        </tr>
+      </table>
+      <br />
+      <strong>Elementer som består kravet:</strong><br />
+      <table>
+        <tr>
+          <th>Riktig</th>
+          <th>Lenke til side</th>
+        </tr>
+        <tr>
+          <td>Logo i toppmeny har både alternativ tekst for selve logoen og har teksten som h1</td>
+          <td><a href="https://www.hedmark-ikt.no/">Hjem-side</a></td>
+        </tr>
+        <tr>
+          <td>Nyhetsbrev har egen bildebeskrivelse under skjermbilder, veldig bra</td>
+          <td><a href="https://www.hedmark-ikt.no/gamle-pc-er-blir-deaktivert/">Gamle PC-er blir deaktivert</a></td>
+        </tr>
+      </table>
+      <button type="button" class="bilderknapp">
+        BILDER
+      </button>
+      <div class="bilder">
+        <img src="riktigalttekst.png" title="Beskrivelse av bilde">
+      </div>
+
+    </div>
+  </div>
+
+  <button type="button" class="collapsible">
+    1.2.1 Bare lyd og bare video
+  </button>
+  <div class="content">
+    <h2>1.2.1 Bare lyd og bare video (Nivå A)</h2>
+    <p>
+      <strong>KORT FORTALT:</strong><br />
+      <i>
+        Gi brukeren et alternativ når innholdet presenteres kun som video
+        eller lyd.</i>
+
+      <br /><br />
+      <strong>Nivå A (krav):</strong> For forhåndsinnspilt innhold som bare er
+      lyd eller video gjelder følgende, bortsett fra når lyden eller videoen
+      utgjør et mediealternativ til tekst og er tydelig merket som det.
+      <br />
+      • Forhåndsinnspilt lyd (bare lyd): Det gis tilgang til et alternativ til
+      tidsbaserte medier som presenterer informasjon som tilsvarer det
+      forhåndsinnspilte lydinnholdet. <br />
+      • Forhåndsinnspilt video (bare video): Det gis tilgang til enten et
+      alternativ til tidsbaserte medier eller et lydspor som presenterer
+      informasjon som tilsvarer det forhåndsinnspilte videoinnholdet.
+      <br /><br />
+      <strong>Løsningsforslag, eksempler og unntak:</strong> <br />
+      <a href="https://www.uutilsynet.no/wcag-standarden/121-bare-lyd-og-bare-video-forhandsinnspilt-niva/88">1.2.1 Bare
+        lyd og bare video (forhåndsinnspilt, Nivå A) | Tilsynet
+        for universell utforming av ikt (uutilsynet.no)</a><br /><br />
+
+      <hr>
+
+      <br /><strong>Techniques:</strong><br />
+      • G158: Providing an alternative for time-based media for audio-only
+      content <br />
+      • G159: Providing an alternative for time-based media for video-only
+      content <br />
+      • G166: Providing audio that describes the important video content and
+      describing it as such <br />
+      • H96: Using the track element to provide audio descriptions <br />
+    </p>
+    <div class="feil">
+      <p>
+        <strong>Elementer som ikke består kravet:</strong><br />
+        Usikker på om dette kravet egentlig er relevant, kan ikke finne kun audio eller kun video på nettsiden
+      </p>
+    </div>
+  </div>
+
+  <button type="button" class="collapsible">1.2.2 Teksting</button>
+  <div class="content">
+    <h2>1.2.2 Teksting (forhåndsinnspilt, Nivå A)</h2>
+    <p>
+      <strong>KORT FORTALT:</strong><br />
+      <i>Tilby teksting for video med lyd.</i>
+      <br /><br />
+      <strong>Nivå A (krav):</strong>
+      <i>Det gis tilgang til teksting for alt forhåndsinnspilt lydinnhold i
+        synkroniserte medier, bortsett fra når mediene fungerer som
+        mediealternativer til tekst og er tydelig merket som det.</i>
+      <br />
+      Uavhengig av om videoopptaket er tekstet eller har et tekstalternativ,
+      skal teksten: <br />
+
+      • formidle innholdet i lyd og bilde <br />
+      • inneholde tale og dialog med markering av hvem som snakker. Hvem som
+      snakker må komme frem hvis det ikke er mulig å forstå ut fra bildene
+      alene, <br />som for eksempel når den som snakker ikke er synlige i
+      videoen. En eventuell fortellestemme må også markeres i teksten <br />
+      • inneholde lydinnhold som er viktig for å forstå videoen. All viktig
+      lyd som ikke er tale må beskrives. Dette kan for eksempel være
+      lydeffekter, musikk, latter og lignende <br />
+      • være visuelt synlig, men ikke forstyrre viktig innhold i videoen<br />
+      • ha tilstrekkelig kontrast mot bakgrunnen<br />
+      • være kodet som tekst
+      <br /><br />
+      <strong>Løsningsforslag, eksempler og unntak:</strong> <br />
+      <a href="https://www.uutilsynet.no/wcag-standarden/video-og-lydopptak/232">1.2.2 Teksting (forhåndsinnspilt, Nivå
+        A) | Tilsynet for universell
+        utforming av ikt (uutilsynet.no)</a><br /><br />
+
+      <hr>
+
+      <br /><strong>Techniques:</strong><br />
+      • G93: Providing open (always visible) captions <br />
+      • G87: Providing closed captions <br />
+    </p>
+    <div class="feil">
+      <p>
+        <strong>Elementer som ikke består kravet:</strong><br />
+      <table>
+        <tr>
+          <th>Mangel</th>
+          <th>Lenke til side</th>
+        </tr>
+        <tr>
+          <td>Videoer under sikkerhet er ikke tekstet. Noen av videoene linker til YouTube, men YouTube sin teksting
+            blir heller ikke benyttet</td>
+          <td><a href="https://www.hedmark-ikt.no/sikkerhet/">Sikkerhet</a></td>
+        </tr>
+        <tr>
+          <td>Andre eksempler under /sikkerhet</td>
+          <td><a href="https://www.hedmark-ikt.no/sikkerhet/verdifull-data/">Verdifull data</a></td>
+        </tr>
+        <tr>
+          <td>Ingen teksting på video dig. lunsj</td>
+          <td><a
+              href="https://www.hedmark-ikt.no/dig-lunsj-20-01-2022-den-storste-sikkerhetstrusselen-pa-flere-ar/">Dig.
+              lunsj</a></td>
+        </tr>
+        <tr>
+          <td>Ingen teksting på video webinarer</td>
+          <td><a href="https://www.hedmark-ikt.no/webinar/">Webinar</a></td>
+        </tr>
+      </table>
+      </p>
+    </div>
+  </div>
+
+  <button type="button" class="collapsible">
+    1.2.3 og 1.2.5 Synstolkning/Mediealternativ
+  </button>
+  <div class="content">
+    <h2>
+      1.2.3 Synstolking eller mediealternativ (nivå A) / 1.2.5 Synstolking
+      (nivå AA)
+    </h2>
+    <p>
+      <strong>KORT FORTALT:</strong><br />
+      <i>
+        Tilby en beskrivende tekst eller et lydspor med beskrivelse for
+        videoer som ikke er direktesendt. / Tilby synstolking til alle videoer
+        som ikke er direktesendinger.</i>
+      <br /><br />
+      <strong>Nivå A/AA (krav):</strong> Det gis tilgang til et alternativ til
+      tidsbaserte medier eller synstolking av forhåndsinnspilt videoinnhold i
+      synkroniserte medier, <br />bortsett fra når mediene fungerer som
+      mediealternativer til tekst og er tydelig merket som det. / Det gis
+      tilgang til synstolking for alt forhåndsinnspilt videoinnhold i
+      synkroniserte medier. <br /><br />
+      <strong>Løsningsforslag, eksempler og unntak:</strong> <br />
       <a
-        href="https://www.uutilsynet.no/webdirektivet-wad/eus-webdirektiv-wad/265"
-        >Basert på EUs webdirektiv (WAD)</a
-      >
-    </h4>
+        href="https://www.uutilsynet.no/wcag-standarden/123-synstolking-eller-mediealternativ-forhandsinnspilt-niva/841">1.2.3
+        Synstolking eller mediealternativ (forhåndsinnspilt, Nivå A) |
+        Tilsynet for universell utforming av ikt (uutilsynet.no)</a><br />
+      <a href="https://www.uutilsynet.no/wcag-standarden/125-synstolking-forhandsinnpilt-niva-aa/842">1.2.5 Synstolking
+        (forhåndsinnpilt, nivå AA) | Tilsynet for
+        universell utforming av ikt (uutilsynet.no)</a><br /><br />
 
-    <button type="button" class="collapsible">
-      1.1.1 Ikke-tekstlig innhold
-    </button>
-    <div class="content">
-      <h2>1.1.1 Ikke-tekstlig innhold (Nivå A)</h2>
+      <hr>
+
+      <br /><strong>Techniques:</strong><br />
+      • G69: Providing an alternative for time based media <br />
+      • Linking to the alternative for time-based media using one of the
+      following techniques: H53: Using the body of the object element <br />
+      • G78: Providing a second, user-selectable, audio track that includes
+      audio descriptions <br /><br />
+      <i>A training film shows employees how to use a new piece of equipment. It involves a person talking
+        throughout while they demonstrate the operation. <br />
+        The screenplay used to create the training film is used as a starting point. It is then edited and corrected to
+        match the dialogue etc. <br />
+        The film and the resulting alternative for time-based media are then made available on the company Web site.
+        Employees can then use either or both to learn how to use the machine</i>
+    </p>
+    <div class="feil">
       <p>
-        <strong>KORT FORTALT:</strong><br />
-        <i>Gi brukeren et tekstalternativ for innhold som ikke er tekst.</i>
-        <br /><br />
-        <strong>Nivå A (krav):</strong> Alt ikke-tekstlig innhold som
-        presenteres for brukeren, har et tekstalternativ som har samme formål
-        <br /><br />
-        <strong>Løsningsforslag, eksempler og unntak:</strong> <br />
-        <a
-          href="https://www.uutilsynet.no/wcag-standarden/111-ikke-tekstlig-innhold-niva/87"
-          >1.1.1 Ikke-tekstlig innhold (Nivå A) | Tilsynet for universell
-          utforming av ikt (uutilsynet.no)</a
-        ><br /><br />
-
-        <hr>
-
-        <br /><strong>Techniques:</strong><br />
-        • G94: Providing short text alternative for non-text content that serves
-        the same purpose and presents the same information as the non-text
-        content <br />
-        • ARIA6: Using aria-label to provide labels for objects <br />
-        • ARIA10: Using aria-labelledby to provide a text alternative for
-        non-text content <br />
-        • H37: Using alt attributes on img elements <br />
+        <strong>Elementer som ikke består kravet:</strong><br />
+        Gjelder samme som tidligere punkter, dette er relevant for alle videoer på nettsiden - spesielt
+        brukerveiledninger.
       </p>
-      <div class="feil">
-        <p>
-          <strong>Elementer som ikke består kravet:</strong><br />
-          <table>
-            <tr>
-              <th>Mangel</th>
-              <th>Lenke til side</th>
-            </tr>
-            <tr>
-              <td>Bilder i brukerveiledninger (kode for alt er skrevet inn, men alt er ikke fylt ut) Dette gjelder alle brukerveiledninger, eksempel i lenke</td>
-              <td><a href="https://www.hedmark-ikt.no/faq/ny-e-postprofil-med-moderne-autentisering-pa-ipader/">E-post profil med moderne autentisering på iPader</a></td>
-            </tr>
-            <tr>
-              <td>Bilde under prosjekter > Oppgradering av Acos</td>
-              <td><a href="https://www.hedmark-ikt.no/nyhetsbrev/oppgradering-av-acos/">Acos aktuelt</a></td>
-            </tr>
-            <tr>
-              <td>Generelle illustrasjonsbilder trenger ikke beskrivelse da de kun er dekorative, men burde være merket som dekorativt bilde. Et alternativ for dette er alt=null eller role=presentation</td>
-              <td><a href="https://www.hedmark-ikt.no/kontaktinformasjon/">Eksempel dekorativt bilde</a></td>
-            </tr>
-          </table>
-          <br/>
-          <strong>Elementer som består kravet:</strong><br />
-          <table>
-            <tr>
-              <th>Riktig</th>
-              <th>Lenke til side</th>
-            </tr>
-            <tr>
-              <td>Logo i toppmeny har både alternativ tekst for selve logoen og har teksten som h1</td>
-              <td><a href="https://www.hedmark-ikt.no/">Hjem-side</a></td>
-            </tr>
-          </table>
-        </p>
+    </div>
+  </div>
+
+  <button type="button" class="collapsible">
+    1.3.1 Informasjon og relasjoner
+  </button>
+  <div class="content">
+    <h2>1.3.1 Informasjon og relasjoner (Nivå A)</h2>
+    <p>
+      <strong>KORT FORTALT:</strong><br />
+      <i>Ting skal være kodet som det ser ut som.</i>
+      <br /><br />
+      <strong>Nivå A (krav):</strong> Informasjon, struktur og relasjoner som
+      formidles via presentasjonen, kan bestemmes programmeringsmessig eller
+      gjøres tilgjengelig(e) som tekst. <br /><br />
+      <strong>Løsningsforslag, eksempler og unntak:</strong> <br />
+      <a href="https://www.uutilsynet.no/wcag-standarden/131-informasjon-og-relasjoner-niva/90">1.3.1 Informasjon og
+        relasjoner (Nivå A)) | Tilsynet for universell
+        utforming av ikt (uutilsynet.no)</a><br />
+      <br />
+      <hr>
+      <br /><strong>Techniques:</strong><br />
+      • ARIA11: Using ARIA landmarks to identify regions of a page <br />
+      • ARIA12: Using role=heading to identify headings <br />
+      • ARIA13: Using aria-labelledby to name regions and landmarks <br />
+      • ARIA16: Using aria-labelledby to provide a name for user interface
+      controls <br />
+      • ARIA17: Using grouping roles to identify related form controls <br />
+      • ARIA20: Using the region role to identify a region of the page <br />
+      • G115: Using semantic elements to mark up structure AND H49: Using
+      semantic markup to mark emphasized or special text <br />
+      • G117: Using text to convey information that is conveyed by variations
+      in presentation of text <br />
+      • G140: Separating information and structure from presentation to enable
+      different presentations <br />
+      • ARIA24: Semantically identifying a font icon with role="img" <br />
+      • Making information and relationships conveyed through presentation
+      programmatically determinable
+      • Headings, tables, cells and lists are correctly coded and identified
+    </p>
+    <p>
+      <a href="https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#info-and-relationships">Techniques and failures for
+        1.3.1</a>
+    </p>
+    <div class="feil">
+      <p>
+        <strong>Elementer som ikke består kravet:</strong><br />
+      <table>
+        <tr>
+          <th>Mangel</th>
+          <th>Lenke til side</th>
+        </tr>
+        <tr>
+          <td>Generelt brukes ikke ARIA labels på nettsiden, dette kan være et alternativ til oppgradering av koden</td>
+          <td><a href="https://www.hedmark-ikt.no">Forside</a></td>
+        </tr>
+        <tr>
+          <td>Headings er markert som H1 etc, men det er ikke videre hierarki i headings. ARIA level for headings kan
+            være bra her</td>
+          <td><a href="https://www.hedmark-ikt.no">Forside</a></td>
+        </tr>
+        <tr>
+          <td>Header og menyer er ikke markert opp som ARIA regions og labels</td>
+          <td><a href="https://www.hedmark-ikt.no">Forside</a></td>
+        </tr>
+        <tr>
+          <td>Meny på prosjekt-side er ikke markert opp med ARIA levels</td>
+          <td><a href="https://www.hedmark-ikt.no/prosjekter/">Prosjekter</a></td>
+        </tr>
+        <tr>
+          <td>Heading hierarchy: Ensure heading level matches the headings visual importance/level. “Valg av
+            prosjektpartner” som er på bunnen av siden burde ikke være så høyt oppe i hierarki. </td>
+          <td><a href="https://www.hedmark-ikt.no/prosjekter/m365/">Prosjekter > M356</a></td>
+        </tr>
+        <tr>
+          <td>Samme gjelder på hvert avsnitt(om prosjektet, aktuelt etc), de kan ikke alle være H1 uten noe videre
+            hierarki</td>
+          <td><a href="https://www.hedmark-ikt.no/prosjekter/m365/">Prosjekter > M356</a></td>
+        </tr>
+        <tr>
+          <td>Listemeny på proskektsider har ikke tabindex value</td>
+          <td><a href="https://www.hedmark-ikt.no/prosjekter/m365/">Prosjekter > M356</a></td>
+        </tr>
+        <tr>
+          <td>Listeelement "forsidemeny-container": Hver knapp har ikke beskrivende ID (menu-item276 istedet for
+            'driftsmeldinger')</td>
+          <td><a href="https://www.hedmark-ikt.no">Forside</a></td>
+        </tr>
+        <tr>
+          <td>Listeelement "menu-toppmeny-container": Hver knapp har ikke beskrivende ID (menu-item-15 istedet for hjem)
+          </td>
+          <td><a href="https://www.hedmark-ikt.no">Forside</a></td>
+        </tr>
+      </table>
+      <br />
+      <strong>Elementer som består kravet:</strong><br />
+      <table>
+        <tr>
+          <th>Riktig</th>
+          <th>Lenke til side</th>
+        </tr>
+        <tr>
+          <td>Koden er for det meste skrevet i logisk rekkefølge, toppmeny/venstre til høyre/body/footer. Tab navigasjon
+            er til tider ulogisk.</td>
+          <td><a href="https://www.hedmark-ikt.no/">Hjem-side</a></td>
+        </tr>
+        <tr>
+          <td>Listeelement "forsidemeny-container" er kodet som liste og har id forsidemeny</td>
+          <td><a href="https://www.hedmark-ikt.no/">Forside</a></td>
+        </tr>
+      </table>
+      </p>
+    </div>
+  </div>
+
+  <button type="button" class="collapsible">
+    1.3.2 Meningsfylt rekkefølge
+  </button>
+  <div class="content">
+    <h2>1.3.2 Meningsfylt rekkefølge (Nivå A)</h2>
+    <p>
+      <strong>KORT FORTALT:</strong><br />
+      <i>Presenter innhold i en meningsfull rekkefølge.</i>
+      <br /><br />
+      <strong>Nivå A (krav):</strong> Når rekkefølgen som innholdet
+      presenteres i, påvirker meningsinnholdet, kan en korrekt leserekkefølge
+      bestemmes programmeringsmessig. <br /> Ulike rekkefølger kan tilfredsstille kravet, leserekkefølge på innholdet
+      burde være samme (eller i leserekkefølge som på annen måte presenterer samme meningsinnholdet) i visning med CSS
+      slått av.
+      <br />
+      <br />
+      <strong>Løsningsforslag, eksempler og unntak:</strong> <br />
+      <a href="https://www.uutilsynet.no/regelverk/navigasjonsmetoder/217">1.3.2 Meningsfylt rekkefølge (Nivå A) |
+        Tilsynet for universell utforming av ikt (uutilsynet.no)</a>
+      <br />
+      <br />
+      <hr>
+
+      <br /><strong>Techniques:</strong><br />
+      • G57: Ordering the content in a meaningful sequence <br />
+      • Marking sequences in the content as meaningful AND G57: Ordering the
+      content in a meaningful sequence <br />
+      • C27: Making the DOM order match the visual order <br />
+
+    </p>
+    <div class="feil">
+      <p>
+        <strong>Elementer som ikke består kravet:</strong><br />
+      </p>
+      <br />
+      <table>
+        <tr>
+          <th>Mangel</th>
+          <th>Lenke til side</th>
+        </tr>
+        <tr>
+          <td>Det er mye unødvendig og overlappende kode, med CSS avslått dukker toppmenyen opp igjen under footer
+            (dette er mobilmenyen), og
+            dato for publisert artikkel vises to ganger</td>
+          <td><a href="https://www.hedmark-ikt.no">Forside</a></td>
+        </tr>
+        <tr>
+          <td>Logobilde er veldig stort, unødvendig når det kun skal være liten logo - tydelig når man slår av CSS</td>
+          <td><a href="https://www.hedmark-ikt.no">Forside</a></td>
+        </tr>
+        <tr>
+          <td>Logisk tab-navigasjon, dårlig visuell tilbakemelding</td>
+          <td><a href="https://www.hedmark-ikt.no">Forside</a></td>
+        </tr>
+        <tr>
+          <td>Organisasjonskart på ansatte-side er ikke i logisk rekkefølge, her starter tab nederst og hopper frem og
+            tilbake uten mening</td>
+          <td><a href="https://www.hedmark-ikt.no/ansatte/">Ansatte og organisering</a></td>
+        </tr>
+      </table>
+      <br />
+      <strong>Elementer som består kravet:</strong><br />
+      <table>
+        <tr>
+          <th>Riktig</th>
+          <th>Lenke til side</th>
+        </tr>
+        <tr>
+          <td>Logisk rekkefølge på innhold på forside og prosjektside (antageligvis de andre sidene også - I'll get to
+            it)</td>
+          <td><a href="https://www.hedmark-ikt.no/prosjekter">Prosjekter</a></td>
+        </tr>
+      </table>
+      <button type="button" class="bilderknapp">
+        BILDER
+      </button>
+      <div class="bilder">
+        <img src="utencss1.png" title="For stor logo">
+        <img src="utencss2.png" title="Logisk rekkefølge">
+        <img src="utencss3.png" title="Gjentagende meny">
+        <img src="utencss4.png" title="Dobbel dato">
+        <img src="utencss5.png" title="Logisk rekkefølge, store bilder">
+        <img src="utencss6.png" title="Selvhjelp side">
       </div>
     </div>
+  </div>
 
-    <button type="button" class="collapsible">
-      1.2.1 Bare lyd og bare video
-    </button>
-    <div class="content">
-      <h2>1.2.1 Bare lyd og bare video (Nivå A)</h2>
+  <button type="button" class="collapsible">
+    1.3.3 Sensoriske egenskaper
+  </button>
+  <div class="content">
+    <h2>1.3.3 Sensoriske egenskaper (Nivå A)</h2>
+    <p>
+      <strong>KORT FORTALT:</strong><br />
+      <i>
+        Instruksjoner må ikke utelukkende være avhengige av form, størrelse,
+        visuell plassering, orientering, eller lyd for å kunne bli
+        forstått.</i>
+      <br /><br />
+      <strong>Nivå A (krav):</strong> Instruksjoner som gjelder for forståelse
+      og betjening av innhold, er ikke utelukkende avhengige av komponentenes
+      sensoriske egenskaper, <br />
+      for eksempel form, størrelse, visuell plassering, orientering eller lyd.
+      <br />
+      <br />
+      <strong>Løsningsforslag, eksempler og unntak:</strong> <br />
+      <a href="https://www.uutilsynet.no/wcag-standarden/skjema/38">1.3.3 Sensoriske egenskaper (Nivå A) | Tilsynet for
+        universell
+        utforming av ikt (uutilsynet.no)</a><br />
+      <br />
+      <hr>
+      <br /><strong>Techniques:</strong><br />
+      • G96: Providing textual identification of items that otherwise rely
+      only on sensory information to be understood <br />
+    </p>
+    <div class="feil">
       <p>
-        <strong>KORT FORTALT:</strong><br />
-        <i>
-          Gi brukeren et alternativ når innholdet presenteres kun som video
-          eller lyd.</i
-        >
-
-        <br /><br />
-        <strong>Nivå A (krav):</strong> For forhåndsinnspilt innhold som bare er
-        lyd eller video gjelder følgende, bortsett fra når lyden eller videoen
-        utgjør et mediealternativ til tekst og er tydelig merket som det.
-        <br />
-        • Forhåndsinnspilt lyd (bare lyd): Det gis tilgang til et alternativ til
-        tidsbaserte medier som presenterer informasjon som tilsvarer det
-        forhåndsinnspilte lydinnholdet. <br />
-        • Forhåndsinnspilt video (bare video): Det gis tilgang til enten et
-        alternativ til tidsbaserte medier eller et lydspor som presenterer
-        informasjon som tilsvarer det forhåndsinnspilte videoinnholdet.
-        <br /><br />
-        <strong>Løsningsforslag, eksempler og unntak:</strong> <br />
-        <a
-          href="https://www.uutilsynet.no/wcag-standarden/121-bare-lyd-og-bare-video-forhandsinnspilt-niva/88"
-          >1.2.1 Bare lyd og bare video (forhåndsinnspilt, Nivå A) | Tilsynet
-          for universell utforming av ikt (uutilsynet.no)</a
-        ><br /><br/>
-
-        <hr> 
-
-        <br /><strong>Techniques:</strong><br />
-        • G158: Providing an alternative for time-based media for audio-only
-        content <br />
-        • G159: Providing an alternative for time-based media for video-only
-        content <br />
-        • G166: Providing audio that describes the important video content and
-        describing it as such <br />
-        • H96: Using the track element to provide audio descriptions <br />
+        <strong>Elementer som ikke består kravet:</strong><br />
       </p>
-      <div class="feil">
-        <p>
-          <strong>Elementer som ikke består kravet:</strong><br />
-          Usikker på om dette kravet egentlig er relevant, kan ikke finne kun audio eller kun video på nettsiden
-        </p>
-      </div>
+      <table>
+        <tr>
+          <th>Mangel</th>
+          <th>Lenke til side</th>
+        </tr>
+        <tr>
+          <td>Brukerveiledninger kan antageligvis bli bedret både mtp alt tekst og bildebeskrivelser (1.1.1) og
+            nettsiden må gjennomgås for beskrivelser som "til venstre"/"under"/"den grønne knappen" osv..</td>
+          <td><a href="https://www.hedmark-ikt.no/selvhjelp">Brukerveiledning</a></td>
+        </tr>
+        <tr>
+          <td>Må sjekke skjema med skjermleser</td>
+          <td><a href="https://www.hedmark-ikt.no/konsulenttilgang">Konsulenttilgang</a><br /><a
+              href="https://www.hedmark-ikt.no/dig-lunsj/pamelding-til-dig-lunsj/">Påmelding dig. lunsj</a></td>
+        </tr>
+      </table>
+      <br />
+      <strong>Elementer som består kravet:</strong><br />
+      <table>
+        <tr>
+          <th>Riktig</th>
+          <th>Lenke til side</th>
+        </tr>
+        <tr>
+          <td>Finner ingen informasjon på nettsiden eller i skjema som kun er kommunisert med farge.</td>
+          <td><a href="https://www.hedmark-ikt.no/">Forside</a></td>
+        </tr>
+      </table>
     </div>
+  </div>
 
-    <button type="button" class="collapsible">1.2.2 Teksting</button>
-    <div class="content">
-      <h2>1.2.2 Teksting (forhåndsinnspilt, Nivå A)</h2>
+  <button type="button" class="collapsible">1.3.4 Visningsretning</button>
+  <div class="content">
+    <h2>1.3.4 Visningsretning (Nivå AA)</h2>
+    <p>
+      <strong>KORT FORTALT:</strong><br />
+      <i>Brukeren må få velge om innholdet skal vises i liggende eller stående
+        retning.</i>
+      <br /><br />
+      <strong>Nivå AA (krav): </strong>Innholdet begrenser ikke visning og
+      bruk til en bestemt visningsretning, som stående eller liggende, med
+      mindre en bestemt visningsretning er nødvendig.
+      <br />
+
+      <br />
+      <strong>Løsningsforslag, eksempler og unntak:</strong> <br />
+      <a href="https://www.uutilsynet.no/wcag-standarden/134-visningsretning-niva-aa/141">1.3.4 Visningsretning (Nivå
+        AA) | Tilsynet for universell utforming
+        av ikt (uutilsynet.no)</a><br />
+      <br />
+      <hr>
+      <br /><strong>Techniques:</strong><br />
+      • G214: Using a control to allow access to content in different
+      orientations which is otherwise restricted <br />
+    </p>
+    <div class="feil">
       <p>
-        <strong>KORT FORTALT:</strong><br />
-        <i>Tilby teksting for video med lyd.</i>
-        <br /><br />
-        <strong>Nivå A (krav):</strong>
-        <i
-          >Det gis tilgang til teksting for alt forhåndsinnspilt lydinnhold i
-          synkroniserte medier, bortsett fra når mediene fungerer som
-          mediealternativer til tekst og er tydelig merket som det.</i
-        >
-        <br />
-        Uavhengig av om videoopptaket er tekstet eller har et tekstalternativ,
-        skal teksten: <br />
-
-        • formidle innholdet i lyd og bilde <br />
-        • inneholde tale og dialog med markering av hvem som snakker. Hvem som
-        snakker må komme frem hvis det ikke er mulig å forstå ut fra bildene
-        alene, <br />som for eksempel når den som snakker ikke er synlige i
-        videoen. En eventuell fortellestemme må også markeres i teksten <br />
-        • inneholde lydinnhold som er viktig for å forstå videoen. All viktig
-        lyd som ikke er tale må beskrives. Dette kan for eksempel være
-        lydeffekter, musikk, latter og lignende <br />
-        • være visuelt synlig, men ikke forstyrre viktig innhold i videoen<br />
-        • ha tilstrekkelig kontrast mot bakgrunnen<br />
-        • være kodet som tekst
-        <br /><br />
-        <strong>Løsningsforslag, eksempler og unntak:</strong> <br />
-        <a
-          href="https://www.uutilsynet.no/wcag-standarden/video-og-lydopptak/232"
-          >1.2.2 Teksting (forhåndsinnspilt, Nivå A) | Tilsynet for universell
-          utforming av ikt (uutilsynet.no)</a
-        ><br /><br />
-
-        <hr>
-
-        <br /><strong>Techniques:</strong><br />
-        • G93: Providing open (always visible) captions <br />
-        • G87: Providing closed captions <br />
+        <strong>Elementer som ikke består kravet:</strong><br />
       </p>
-      <div class="feil">
-        <p>
-          <strong>Elementer som ikke består kravet:</strong><br />
-          <table>
-            <tr>
-              <th>Mangel</th>
-              <th>Lenke til side</th>
-            </tr>
-            <tr>
-              <td>Videoer under sikkerhet er ikke tekstet. Noen av videoene linker til YouTube, men YouTube sin teksting blir heller ikke benyttet</td>
-              <td><a href="https://www.hedmark-ikt.no/sikkerhet/">Sikkerhet</a></td>
-            </tr>
-            <tr>
-              <td>Andre eksempler under /sikkerhet</td>
-              <td><a href="https://www.hedmark-ikt.no/sikkerhet/verdifull-data/">Verdifull data</a></td>
-            </tr>
-            <tr>
-              <td>Ingen teksting på video dig. lunsj</td>
-              <td><a href="https://www.hedmark-ikt.no/dig-lunsj-20-01-2022-den-storste-sikkerhetstrusselen-pa-flere-ar/">Dig. lunsj</a></td>
-            </tr>
-            <tr>
-              <td>Ingen teksting på video webinarer</td>
-              <td><a href="https://www.hedmark-ikt.no/webinar/">Webinar</a></td>
-            </tr>
-          </table>
-        </p>
-      </div>
+      <table>
+        <tr>
+          <th>Mangel</th>
+          <th>Lenke til side</th>
+        </tr>
+      </table>
+      <br />
+      <strong>Elementer som består kravet:</strong><br />
+      <table>
+        <tr>
+          <th>Riktig</th>
+          <th>Lenke til side</th>
+        </tr>
+        <tr>
+          <td>Toppmeny er responsiv, blir hamburgermeny i mindre visning</td>
+          <td><a href="https://www.hedmark-ikt.no/">Forside</a></td>
+        </tr>
+        <tr>
+          <td>Side kan vises både stående og liggende</td>
+          <td><a href="https://www.hedmark-ikt.no/">Forside</a></td>
+        </tr>
+        <tr>
+          <td>Egen mobilmeny er kodet inn</td>
+          <td><a href="https://www.hedmark-ikt.no/">Forside</a></td>
+        </tr>
+      </table>
     </div>
+  </div>
 
-    <button type="button" class="collapsible">
-      1.2.3 og 1.2.5 Synstolkning/Mediealternativ
-    </button>
-    <div class="content">
-      <h2>
-        1.2.3 Synstolking eller mediealternativ (nivå A) / 1.2.5 Synstolking
-        (nivå AA)
-      </h2>
+  <button type="button" class="collapsible">
+    1.3.5 Identifiser formål med inndata
+  </button>
+  <div class="content">
+    <h2>1.3.5 Identifiser formål med inndata (Nivå AA)</h2>
+    <p>
+      <strong>KORT FORTALT:</strong><br />
+      <i>Skjemaelementer er kodet med inndataformål.</i>
+      <br /><br />
+      <strong>Nivå AA (krav): </strong>Skjemaelementer, som skjemafelt,
+      avkryssingsbokser, radioknapper og lignende, samler inn informasjon fra
+      brukeren. <br />
+      Formålet med suksesskriteriet er å sikre at formålet med skjemaelementer
+      kan bestemmes programmeringsmessig, altså i koden. På denne måten kan
+      brukeragenter, <br />
+      som for eksempel en nettleser eller en skjermleser, hente ut og
+      presentere formålet for brukeren gjennom for eksempel tale eller
+      alternative ikon.
+      <br />
+      <br />
+      <strong>Løsningsforslag, eksempler og unntak:</strong> <br />
+      <a href="https://www.uutilsynet.no/wcag-standarden/135-identifiser-formal-med-inndata-niva-aa/142">1.3.5
+        Identifiser formål med inndata | Tilsynet for universell
+        utforming av ikt (uutilsynet.no)</a><br />
+      <br /><strong>Techniques:</strong><br />
+      • H98: Using HTML 5.2 autocomplete attributes <br />
+    </p>
+    <div class="feil">
       <p>
-        <strong>KORT FORTALT:</strong><br />
-        <i>
-          Tilby en beskrivende tekst eller et lydspor med beskrivelse for
-          videoer som ikke er direktesendt. / Tilby synstolking til alle videoer
-          som ikke er direktesendinger.</i
-        >
-        <br /><br />
-        <strong>Nivå A/AA (krav):</strong> Det gis tilgang til et alternativ til
-        tidsbaserte medier eller synstolking av forhåndsinnspilt videoinnhold i
-        synkroniserte medier, <br />bortsett fra når mediene fungerer som
-        mediealternativer til tekst og er tydelig merket som det. / Det gis
-        tilgang til synstolking for alt forhåndsinnspilt videoinnhold i
-        synkroniserte medier. <br /><br />
-        <strong>Løsningsforslag, eksempler og unntak:</strong> <br />
-        <a
-          href="https://www.uutilsynet.no/wcag-standarden/123-synstolking-eller-mediealternativ-forhandsinnspilt-niva/841"
-          >1.2.3 Synstolking eller mediealternativ (forhåndsinnspilt, Nivå A) |
-          Tilsynet for universell utforming av ikt (uutilsynet.no)</a
-        ><br />
-        <a
-          href="https://www.uutilsynet.no/wcag-standarden/125-synstolking-forhandsinnpilt-niva-aa/842"
-          >1.2.5 Synstolking (forhåndsinnpilt, nivå AA) | Tilsynet for
-          universell utforming av ikt (uutilsynet.no)</a
-        ><br /><br/>
-
-        <hr>
-
-        <br /><strong>Techniques:</strong><br />
-        • G69: Providing an alternative for time based media <br />
-        • Linking to the alternative for time-based media using one of the
-        following techniques: H53: Using the body of the object element <br />
-        • G78: Providing a second, user-selectable, audio track that includes
-        audio descriptions <br/>
-        <strong>A training film shows employees how to use a new piece of equipment. It involves a person talking throughout while they demonstrate the operation. <br/>
-          The screenplay used to create the training film is used as a starting point. It is then edited and corrected to match the dialogue etc. <br/>
-          The film and the resulting alternative for time-based media are then made available on the company Web site. Employees can then use either or both to learn how to use the machine</strong>
+        <strong>Elementer som ikke består kravet:</strong><br />
+        Liste med elementer
       </p>
-      <div class="feil">
-        <p>
-          <strong>Elementer som ikke består kravet:</strong><br />
-          Gjelder samme som tidligere punkter, dette er relevant for alle videoer på nettsiden - spesielt brukerveiledninger.
-        </p>
-      </div>
     </div>
+  </div>
 
-    <button type="button" class="collapsible">
-      1.3.1 Informasjon og relasjoner
-    </button>
-    <div class="content">
-      <h2>1.3.1 Informasjon og relasjoner (Nivå A)</h2>
+  <button type="button" class="collapsible">1.4.1 Bruk av farge</button>
+  <div class="content">
+    <h2>1.4.1 Bruk av farge (Nivå A)</h2>
+    <p>
+      <strong>KORT FORTALT:</strong><br />
+      <i>Ikke bruk presentasjon som bygger utelukkende på farge.</i>
+      <br /><br />
+      <strong>Nivå A (krav):</strong> Farge blir ikke benyttet som det eneste
+      visuelle virkemiddelet for å formidle informasjon, angi en handling, be
+      om respons eller skille ut et visuelt element. <br />Merknad: Dette
+      suksesskriteriet handler spesifikt om fargepersepsjon. Andre former for
+      persepsjon omtales under retningslinje 1.3, blant annet
+      programmeringsmessig tilgang til koder for farger og annen visuell
+      presentasjon.
+      <br />
+      <br />
+      <strong>Løsningsforslag, eksempler og unntak:</strong> <br />
+      <a href="https://www.uutilsynet.no/regelverk/bruk-av-farger/206">1.4.1 Bruk av farge (Nivå A) | Tilsynet for
+        universell utforming av
+        ikt (uutilsynet.no)</a><br />
+      <br /><strong>Techniques:</strong><br />
+      • G14: Ensuring that information conveyed by color differences is also
+      available in text <br />
+      • G205: Including a text cue for colored form control labels <br />
+      • G182: Ensuring that additional visual cues are available when text
+      color differences are used to convey information <br />
+      • G183: Using a contrast ratio of 3:1 with surrounding text and
+      providing additional visual cues on focus for links or controls where
+      color alone is used to identify them <br />
+      • G111: Using color and pattern <br />
+    </p>
+    <div class="feil">
       <p>
-        <strong>KORT FORTALT:</strong><br />
-        <i>Ting skal være kodet som det ser ut som.</i>
-        <br /><br />
-        <strong>Nivå A (krav):</strong> Informasjon, struktur og relasjoner som
-        formidles via presentasjonen, kan bestemmes programmeringsmessig eller
-        gjøres tilgjengelig(e) som tekst. <br /><br />
-        <strong>Løsningsforslag, eksempler og unntak:</strong> <br />
-        <a
-          href="https://www.uutilsynet.no/wcag-standarden/131-informasjon-og-relasjoner-niva/90"
-          >1.3.1 Informasjon og relasjoner (Nivå A)) | Tilsynet for universell
-          utforming av ikt (uutilsynet.no)</a
-        ><br />
-        <br /><strong>Techniques:</strong><br />
-        • ARIA11: Using ARIA landmarks to identify regions of a page <br />
-        • ARIA12: Using role=heading to identify headings <br />
-        • ARIA13: Using aria-labelledby to name regions and landmarks <br />
-        • ARIA16: Using aria-labelledby to provide a name for user interface
-        controls <br />
-        • ARIA17: Using grouping roles to identify related form controls <br />
-        • ARIA20: Using the region role to identify a region of the page <br />
-        • G115: Using semantic elements to mark up structure AND H49: Using
-        semantic markup to mark emphasized or special text <br />
-        • G117: Using text to convey information that is conveyed by variations
-        in presentation of text <br />
-        • G140: Separating information and structure from presentation to enable
-        different presentations <br />
-        • ARIA24: Semantically identifying a font icon with role="img" <br />
-        • Making information and relationships conveyed through presentation
-        programmatically determinable using one of the following techniques:
+        <strong>Elementer som ikke består kravet:</strong><br />
+        Liste med elementer
       </p>
-      <p>
-        <a
-          href="https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#info-and-relationships"
-          >Techniques and failures for 1.3.1</a
-        >
-      </p>
-      <div class="feil">
-        <p>
-          <strong>Elementer som ikke består kravet:</strong><br />
-          <table>
-            <tr>
-              <th>Mangel</th>
-              <th>Lenke til side</th>
-            </tr>
-            <tr>
-              <td>Generelt brukes ikke ARIA labels på nettsiden, dette kan være et alternativ til oppgradering av koden</td>
-              <td><a href="https://www.hedmark-ikt.no">Forside</a></td>
-            </tr>
-            <tr>
-              <td>Headings er markert som H1 etc, men det er ikke videre hierarki i headings. ARIA level for headings kan være bra her</td>
-              <td><a href="https://www.hedmark-ikt.no">Forside</a></td>
-            </tr>
-            <tr>
-              <td>Header og menyer er ikke markert opp som ARIA regions og labels</td>
-              <td><a href="https://www.hedmark-ikt.no">Forside</a></td>
-            </tr>
-            <tr>
-              <td>Meny på prosjekt-side er ikke markert opp med ARIA levels</td>
-              <td><a href="https://www.hedmark-ikt.no/prosjekter/">Prosjekter</a></td>
-            </tr>
-            <tr>
-              <td>Heading hierarchy: Ensure heading level matches the headings visual importance/level. “Valg av prosjektpartner” som er på bunnen av siden burde ikke være så høyt oppe i hierarki. </td>
-              <td><a href="https://www.hedmark-ikt.no/prosjekter/m365/">Prosjekter > M356</a></td>
-            </tr>
-            <tr>
-              <td>Samme gjelder på hvert avsnitt(om prosjektet, aktuelt etc), de kan ikke alle være H1 uten noe videre hierarki</td>
-              <td><a href="https://www.hedmark-ikt.no/prosjekter/m365/">Prosjekter > M356</a></td>
-            </tr>
-          </table>
-          <strong>Elementer som består kravet:</strong><br />
-          <table>
-            <tr>
-              <th>Riktig</th>
-              <th>Lenke til side</th>
-            </tr>
-            <tr>
-              <td>Koden er for det meste skrevet i logisk rekkefølge, som er positivt. Men tab navigasjon er vanskelig og ulogisk.</td>
-              <td><a href="https://www.hedmark-ikt.no/">Hjem-side</a></td>
-            </tr>
-          </table>
-        </p>
-      </div>
     </div>
+  </div>
 
-    <button type="button" class="collapsible">
-      1.3.2 Meningsfylt rekkefølge
-    </button>
-    <div class="content">
-      <h2>1.3.2 Meningsfylt rekkefølge (Nivå A)</h2>
+  <button type="button" class="collapsible">1.4.3 Kontrast</button>
+  <div class="content">
+    <h2>1.4.3 Kontrast (minimum, Nivå AA)</h2>
+    <p>
+      <strong>KORT FORTALT:</strong><br />
+      <i>Kontrastforholdet mellom teksten og bakgrunnen er minst 4,5:1.</i>
+      <br /><br />
+      <strong>Nivå AA (krav):</strong> Den visuelle presentasjonen av tekst og
+      bilder av tekst har et kontrastforhold på minst 4.5:1, unntatt i
+      følgende tilfeller: <br />
+
+      • Stor tekst: Stor skriftstørrelse og bilder av stor skriftstørrelse har
+      et kontrastforhold på minst 3:1. <br />
+      • Uvesentlig: Tekst eller bilder av tekst som utgjør en del av en
+      inaktiv brukergrensesnittkomponent, som er ren dekorasjon, som ikke er
+      synlig(e) for noen, <br />eller som utgjør en del av et bilde som
+      inneholder annet vesentlig visuelt innhold, er ikke underlagt
+      kontrastkrav. <br />
+      • Logoer: Tekst som utgjør en del av en logo eller et varemerkenavn, er
+      ikke underlagt kontrastkrav.
+      <br />
+      <br />
+      <strong>Løsningsforslag, eksempler og unntak:</strong> <br />
+      <a href="https://www.uutilsynet.no/wcag-standarden/143-kontrast-minimum-niva-aa/95">1.4.3 Kontrast (Nivå AA) |
+        Tilsynet for universell utforming av ikt
+        (uutilsynet.no)</a><br />
+      <br /><strong>Techniques:</strong><br />
+      Situation A: text is less than 18 point if not bold and less than 14
+      point if bold <br />
+      • G18: Ensuring that a contrast ratio of at least 4.5:1 exists between
+      text (and images of text) and background behind the text <br />
+      • G148: Not specifying background color, not specifying text color, and
+      not using technology features that change those defaults <br />
+      • G174: Providing a control with a sufficient contrast ratio that allows
+      users to switch to a presentation that uses sufficient contrast <br />
+      <br />
+      Situation B: text is at least 18 point if not bold and at least 14 point
+      if bold <br />
+      • G145: Ensuring that a contrast ratio of at least 3:1 exists between
+      text (and images of text) and background behind the text <br />
+    </p>
+    <div class="feil">
       <p>
-        <strong>KORT FORTALT:</strong><br />
-        <i>Presenter innhold i en meningsfull rekkefølge.</i>
-        <br /><br />
-        <strong>Nivå A (krav):</strong> Når rekkefølgen som innholdet
-        presenteres i, påvirker meningsinnholdet, kan en korrekt leserekkefølge
-        bestemmes programmeringsmessig.
-        <br />
-        <br />
-        <strong>Løsningsforslag, eksempler og unntak:</strong> <br />
-        <a href="https://www.uutilsynet.no/regelverk/navigasjonsmetoder/217"
-          >1.3.2 Meningsfylt rekkefølge (Nivå A) | Tilsynet for universell
-          utforming av ikt (uutilsynet.no)</a
-        ><br />
-        <br /><strong>Techniques:</strong><br />
-        • G57: Ordering the content in a meaningful sequence <br />
-        • Marking sequences in the content as meaningful AND G57: Ordering the
-        content in a meaningful sequence <br />
-        • C27: Making the DOM order match the visual order <br />
+        <strong>Elementer som ikke består kravet:</strong><br />
+        Liste med elementer
       </p>
-      <div class="feil">
-        <p>
-          <strong>Elementer som ikke består kravet:</strong><br />
-          Liste med elementer
-        </p>
-      </div>
     </div>
+  </div>
 
-    <button type="button" class="collapsible">
-      1.3.3 Sensoriske egenskaper
-    </button>
-    <div class="content">
-      <h2>1.3.3 Sensoriske egenskaper (Nivå A)</h2>
+  <button type="button" class="collapsible">
+    1.4.4 Endring av tekststørrelse
+  </button>
+  <div class="content">
+    <h2>1.4.4 Endring av tekststørrelse (Nivå AA)</h2>
+    <p>
+      <strong>KORT FORTALT:</strong><br />
+      <i>Tekst kan bli endret til 200% størrelse uten tap av innhold eller
+        funksjon.</i>
+      <br /><br />
+      <strong>Nivå AA (krav):</strong> Med unntak av teksting og bilder av
+      tekst kan tekst forstørres opp til 200 % uten bruk av kompenserende
+      teknologi og uten at innhold eller funksjonalitet går tapt.
+      <br />
+      <br />
+      <strong>Løsningsforslag, eksempler og unntak:</strong> <br />
+      <a href="https://www.uutilsynet.no/wcag-standarden/utforming-og-presentasjon/227">1.4.4 Endring av tekststørrelse
+        (Nivå AA) | Tilsynet for universell
+        utforming av ikt (uutilsynet.no)</a><br />
+      <br /><strong>Techniques:</strong><br />
+      • G142: Using a technology that has commonly-available user agents that
+      support zoom <br />
+      • Ensuring that text containers resize when the text resizes AND using
+      measurements that are relative to other measurements in the content by
+      using one or more of the following techniques: <br />
+      • C28: Specifying the size of text containers using em units <br />
+      • Techniques for relative measurements: <br />
+      ‣ C12: Using percent for font sizes<br />
+      ‣ C13: Using named font sizes<br />
+      ‣ C14: Using em units for font sizes<br />
+      • Techniques for text container resizing<br />
+      ‣ SCR34: Calculating size and position in a way that scales with text
+      size<br />
+      ‣ G146: Using liquid layout <br />
+      • G178: Providing controls on the Web page that allow users to
+      incrementally change the size of all text on the page up to 200 percent
+      <br />
+      • G179: Ensuring that there is no loss of content or functionality when
+      the text resizes and text containers do not change their width
+    </p>
+    <div class="feil">
       <p>
-        <strong>KORT FORTALT:</strong><br />
-        <i>
-          Instruksjoner må ikke utelukkende være avhengige av form, størrelse,
-          visuell plassering, orientering, eller lyd for å kunne bli
-          forstått.</i
-        >
-        <br /><br />
-        <strong>Nivå A (krav):</strong> Instruksjoner som gjelder for forståelse
-        og betjening av innhold, er ikke utelukkende avhengige av komponentenes
-        sensoriske egenskaper, <br />
-        for eksempel form, størrelse, visuell plassering, orientering eller lyd.
-        <br />
-        <br />
-        <strong>Løsningsforslag, eksempler og unntak:</strong> <br />
-        <a href="https://www.uutilsynet.no/wcag-standarden/skjema/38"
-          >1.3.3 Sensoriske egenskaper (Nivå A) | Tilsynet for universell
-          utforming av ikt (uutilsynet.no)</a
-        ><br />
-        <br /><strong>Techniques:</strong><br />
-        • G96: Providing textual identification of items that otherwise rely
-        only on sensory information to be understood <br />
+        <strong>Elementer som ikke består kravet:</strong><br />
+        Liste med elementer
       </p>
-      <div class="feil">
-        <p>
-          <strong>Elementer som ikke består kravet:</strong><br />
-          Liste med elementer
-        </p>
-      </div>
     </div>
+  </div>
 
-    <button type="button" class="collapsible">1.3.4 Visningsretning</button>
-    <div class="content">
-      <h2>1.3.4 Visningsretning (Nivå AA)</h2>
+  <button type="button" class="collapsible">1.4.5 Bilder av tekst</button>
+  <div class="content">
+    <h2>1.4.5 Bilder av tekst (Nivå AA)</h2>
+    <p>
+      <strong>KORT FORTALT:</strong><br />
+      <i>Bruk tekst i stedet for bilder av tekst.</i>
+      <br /><br />
+      <strong>Nivå AA (krav):</strong> Hvis teknologien som brukes kan
+      håndtere den visuelle presentasjonen, brukes det tekst i stedet for
+      bilder av tekst til å formidle informasjon, unntatt i følgende
+      tilfeller: <br />
+
+      •Kan tilpasses: Bildet av tekst kan visuelt tilpasses til brukerens
+      krav.<br />
+      •Nødvendig: En bestemt presentasjon av tekst er nødvendig for
+      informasjonen som formidles.<br />
+      Merknad: Logoer (tekst som utgjør en del av en logo eller et
+      varemerkenavn) anses som nødvendige.
+      <br />
+      <br />
+      <strong>Løsningsforslag, eksempler og unntak:</strong> <br />
+      <a href="https://www.uutilsynet.no/wcag-standarden/145-bilder-av-tekst-niva-aa/97">1.4.5 Bilder av tekst (Nivå AA)
+        | Tilsynet for universell utforming
+        av ikt (uutilsynet.no)</a><br />
+      <br /><strong>Techniques:</strong><br />
+      • C22: Using CSS to control visual presentation of text <br />
+      • C30: Using CSS to replace text with images of text and providing user
+      interface controls to switch <br />
+      • G140: Separating information and structure from presentation to enable
+      different presentations <br />
+      Advisory: <br />
+      • C12: Using percent for font sizes <br />
+      • C13: Using named font sizes <br />
+      • C14: Using em units for font sizes <br />
+      • C8: Using CSS letter-spacing to control spacing within a word <br />
+      • C6: Positioning content based on structural markup
+    </p>
+    <div class="feil">
       <p>
-        <strong>KORT FORTALT:</strong><br />
-        <i
-          >Brukeren må få velge om innholdet skal vises i liggende eller stående
-          retning.</i
-        >
-        <br /><br />
-        <strong>Nivå AA (krav): </strong>Innholdet begrenser ikke visning og
-        bruk til en bestemt visningsretning, som stående eller liggende, med
-        mindre en bestemt visningsretning er nødvendig.
-        <br />
-
-        <br />
-        <strong>Løsningsforslag, eksempler og unntak:</strong> <br />
-        <a
-          href="https://www.uutilsynet.no/wcag-standarden/134-visningsretning-niva-aa/141"
-          >1.3.4 Visningsretning (Nivå AA) | Tilsynet for universell utforming
-          av ikt (uutilsynet.no)</a
-        ><br />
-        <br /><strong>Techniques:</strong><br />
-        • G214: Using a control to allow access to content in different
-        orientations which is otherwise restricted <br />
+        <strong>Elementer som ikke består kravet:</strong><br />
+        Liste med elementer
       </p>
-      <div class="feil">
-        <p>
-          <strong>Elementer som ikke består kravet:</strong><br />
-          Liste med elementer
-        </p>
-      </div>
     </div>
+  </div>
 
-    <button type="button" class="collapsible">
-      1.3.5 Identifiser formål med inndata
-    </button>
-    <div class="content">
-      <h2>1.3.5 Identifiser formål med inndata (Nivå AA)</h2>
+  <button type="button" class="collapsible">
+    1.4.10 Dynamisk tilpasning
+  </button>
+  <div class="content">
+    <h2>1.4.10 Dynamisk tilpasning (Reflow. Nivå AA)</h2>
+    <p>
+      <strong>KORT FORTALT:</strong><br />
+      <i>Innhold skal kunne endres til 400 prosent størrelse ved 1280 piksler
+        bredde, uten tap av informasjon eller funksjonalitet.</i>
+      <br /><br />
+      <strong>Nivå AA (krav): </strong>Formålet med kravet er å sikre at
+      brukere kan forstørre innholdet og lese det i én enkelt kolonne. Når
+      innholdet er zoomet inn til 400 prosent-visning, brekkes innholdet om
+      til én kolonne. Da er det ikke nødvendig å rulle i mer enn en retning og
+      innholdet blir lettere å lese.
+      <br />
+      <br />
+      <strong>Løsningsforslag, eksempler og unntak:</strong> <br />
+      <a href="https://www.uutilsynet.no/wcag-standarden/1410-dynamisk-tilpasning-reflow-niva-aa/144">1.4.10 Dynamisk
+        tilpasning (Reflow. Nivå AA) | Tilsynet for
+        universell utforming av ikt (uutilsynet.no)</a><br />
+      <br /><strong>Techniques:</strong><br />
+      • C32: Using media queries and grid CSS to reflow columns <br />
+      • C31: Using CSS Flexbox to reflow content <br />
+      • C38: Using CSS width, max-width and flexbox to fit labels and inputs
+      <br />
+      Advisory: <br />
+      • C37: Using CSS max-width and height to fit images
+    </p>
+    <div class="feil">
       <p>
-        <strong>KORT FORTALT:</strong><br />
-        <i>Skjemaelementer er kodet med inndataformål.</i>
-        <br /><br />
-        <strong>Nivå AA (krav): </strong>Skjemaelementer, som skjemafelt,
-        avkryssingsbokser, radioknapper og lignende, samler inn informasjon fra
-        brukeren. <br />
-        Formålet med suksesskriteriet er å sikre at formålet med skjemaelementer
-        kan bestemmes programmeringsmessig, altså i koden. På denne måten kan
-        brukeragenter, <br />
-        som for eksempel en nettleser eller en skjermleser, hente ut og
-        presentere formålet for brukeren gjennom for eksempel tale eller
-        alternative ikon.
-        <br />
-        <br />
-        <strong>Løsningsforslag, eksempler og unntak:</strong> <br />
-        <a
-          href="https://www.uutilsynet.no/wcag-standarden/135-identifiser-formal-med-inndata-niva-aa/142"
-          >1.3.5 Identifiser formål med inndata | Tilsynet for universell
-          utforming av ikt (uutilsynet.no)</a
-        ><br />
-        <br /><strong>Techniques:</strong><br />
-        • H98: Using HTML 5.2 autocomplete attributes <br />
+        <strong>Elementer som ikke består kravet:</strong><br />
+        Liste med elementer
       </p>
-      <div class="feil">
-        <p>
-          <strong>Elementer som ikke består kravet:</strong><br />
-          Liste med elementer
-        </p>
-      </div>
     </div>
+  </div>
 
-    <button type="button" class="collapsible">1.4.1 Bruk av farge</button>
-    <div class="content">
-      <h2>1.4.1 Bruk av farge (Nivå A)</h2>
+  <button type="button" class="collapsible">
+    1.4.11 Kontrast for ikke-tekstlig innhold
+  </button>
+  <div class="content">
+    <h2>1.4.11 Kontrast for ikke-tekstlig innhold (Nivå AA)</h2>
+    <p>
+      <strong>KORT FORTALT:</strong><br />
+      <i>Ikke-tekstlig innhold skal ha et kontrastforhold på minst 3:1 mot
+        farge(r) som ligger ved siden av.</i>
+      <br /><br />
+      <strong>Nivå AA (krav): </strong>Formålet med suksesskriteriet er å
+      sikre at aktive brukergrensesnittkomponenter og meningsbærende grafikk
+      er lett å se. <br />
+      Grunnlag og kontrastverdi er den samme som kravet til kontrast for stor
+      tekst i suksesskriterie 1.4.3 (Den visuelle presentasjonen har et
+      kontrastforhold på minst 3:1 mot farge(r) som ligger siden av.)
+      <br />
+      <br />
+      <strong>Løsningsforslag, eksempler og unntak:</strong> <br />
+      <a href="https://www.uutilsynet.no/wcag-standarden/1411-kontrast-ikke-tekstlig-innhold-niva-aa/145">1.4.11
+        Kontrast for ikke-tekstlig innhold (Nivå AA) | Tilsynet for
+        universell utforming av ikt (uutilsynet.no)</a><br />
+      <br /><strong>Techniques:</strong><br />
+      Situation A: Color is used to identify user interface components or used
+      to identify user interface component states <br />
+      • G195: Using an author-supplied, highly visible focus indicator <br />
+      • G174: Providing a control with a sufficient contrast ratio that allows
+      users to switch to a presentation that uses sufficient contrast <br />
+      Situation B: Color is required to understand graphical content <br />
+      • G207: Ensuring that a contrast ratio of 3:1 is provided for icons
+      <br />
+      • G209: Provide sufficient contrast at the boundaries between adjoining
+      colors
+    </p>
+    <div class="feil">
       <p>
-        <strong>KORT FORTALT:</strong><br />
-        <i>Ikke bruk presentasjon som bygger utelukkende på farge.</i>
-        <br /><br />
-        <strong>Nivå A (krav):</strong> Farge blir ikke benyttet som det eneste
-        visuelle virkemiddelet for å formidle informasjon, angi en handling, be
-        om respons eller skille ut et visuelt element. <br />Merknad: Dette
-        suksesskriteriet handler spesifikt om fargepersepsjon. Andre former for
-        persepsjon omtales under retningslinje 1.3, blant annet
-        programmeringsmessig tilgang til koder for farger og annen visuell
-        presentasjon.
-        <br />
-        <br />
-        <strong>Løsningsforslag, eksempler og unntak:</strong> <br />
-        <a href="https://www.uutilsynet.no/regelverk/bruk-av-farger/206"
-          >1.4.1 Bruk av farge (Nivå A) | Tilsynet for universell utforming av
-          ikt (uutilsynet.no)</a
-        ><br />
-        <br /><strong>Techniques:</strong><br />
-        • G14: Ensuring that information conveyed by color differences is also
-        available in text <br />
-        • G205: Including a text cue for colored form control labels <br />
-        • G182: Ensuring that additional visual cues are available when text
-        color differences are used to convey information <br />
-        • G183: Using a contrast ratio of 3:1 with surrounding text and
-        providing additional visual cues on focus for links or controls where
-        color alone is used to identify them <br />
-        • G111: Using color and pattern <br />
+        <strong>Elementer som ikke består kravet:</strong><br />
+        Liste med elementer
       </p>
-      <div class="feil">
-        <p>
-          <strong>Elementer som ikke består kravet:</strong><br />
-          Liste med elementer
-        </p>
-      </div>
     </div>
+  </div>
 
-    <button type="button" class="collapsible">1.4.3 Kontrast</button>
-    <div class="content">
-      <h2>1.4.3 Kontrast (minimum, Nivå AA)</h2>
+  <button type="button" class="collapsible">1.4.12 Tekstavstand</button>
+  <div class="content">
+    <h2>1.4.12 Tekstavstand (Nivå AA)</h2>
+    <p>
+      <strong>KORT FORTALT:</strong><br />
+      <i>Tekstavstanden skal kunne overstyres for å gjøre teksten lettere å
+        lese.</i>
+      <br /><br />
+      <strong>Nivå AA (krav): </strong>Formålet med suksesskriteriet er å
+      sikre at brukere kan overstyre tekstavstanden for å gjøre teksten
+      lettere å lese. <br />
+      Suksesskriteriet gjelder muligheten for å endre på:
+      <br />
+
+      -linjehøyde (avstand mellom linjer) <br />
+      -avstand etter avsnitt <br />
+      -avstanden mellom bokstaver i en linje eller blokk av tekst <br />
+      -avstanden mellom ord
+      <br />
+      <br />
+      <strong>Løsningsforslag, eksempler og unntak:</strong> <br />
+      <a href="https://www.uutilsynet.no/wcag-standarden/1412-tekstavstand-niva-aa/146">1.4.12 Tekstavstand (Nivå AA) |
+        Tilsynet for universell utforming av
+        ikt (uutilsynet.no)</a><br />
+      <br /><strong>Techniques:</strong><br />
+      • C36: Allowing for text spacing override <br />
+      • C35: Allowing for text spacing without wrapping <br />
+      Advisory: <br />
+      • C8: Using CSS letter-spacing to control spacing within a word <br />
+      • C21: Specifying line spacing in CSS<br />
+      • C28: Specifying the size of text containers using em units
+      <br />
+    </p>
+    <div class="feil">
       <p>
-        <strong>KORT FORTALT:</strong><br />
-        <i>Kontrastforholdet mellom teksten og bakgrunnen er minst 4,5:1.</i>
-        <br /><br />
-        <strong>Nivå AA (krav):</strong> Den visuelle presentasjonen av tekst og
-        bilder av tekst har et kontrastforhold på minst 4.5:1, unntatt i
-        følgende tilfeller: <br />
-
-        • Stor tekst: Stor skriftstørrelse og bilder av stor skriftstørrelse har
-        et kontrastforhold på minst 3:1. <br />
-        • Uvesentlig: Tekst eller bilder av tekst som utgjør en del av en
-        inaktiv brukergrensesnittkomponent, som er ren dekorasjon, som ikke er
-        synlig(e) for noen, <br />eller som utgjør en del av et bilde som
-        inneholder annet vesentlig visuelt innhold, er ikke underlagt
-        kontrastkrav. <br />
-        • Logoer: Tekst som utgjør en del av en logo eller et varemerkenavn, er
-        ikke underlagt kontrastkrav.
-        <br />
-        <br />
-        <strong>Løsningsforslag, eksempler og unntak:</strong> <br />
-        <a
-          href="https://www.uutilsynet.no/wcag-standarden/143-kontrast-minimum-niva-aa/95"
-          >1.4.3 Kontrast (Nivå AA) | Tilsynet for universell utforming av ikt
-          (uutilsynet.no)</a
-        ><br />
-        <br /><strong>Techniques:</strong><br />
-        Situation A: text is less than 18 point if not bold and less than 14
-        point if bold <br />
-        • G18: Ensuring that a contrast ratio of at least 4.5:1 exists between
-        text (and images of text) and background behind the text <br />
-        • G148: Not specifying background color, not specifying text color, and
-        not using technology features that change those defaults <br />
-        • G174: Providing a control with a sufficient contrast ratio that allows
-        users to switch to a presentation that uses sufficient contrast <br />
-        <br />
-        Situation B: text is at least 18 point if not bold and at least 14 point
-        if bold <br />
-        • G145: Ensuring that a contrast ratio of at least 3:1 exists between
-        text (and images of text) and background behind the text <br />
+        <strong>Elementer som ikke består kravet:</strong><br />
+        Liste med elementer
       </p>
-      <div class="feil">
-        <p>
-          <strong>Elementer som ikke består kravet:</strong><br />
-          Liste med elementer
-        </p>
-      </div>
     </div>
+  </div>
 
-    <button type="button" class="collapsible">
-      1.4.4 Endring av tekststørrelse
-    </button>
-    <div class="content">
-      <h2>1.4.4 Endring av tekststørrelse (Nivå AA)</h2>
+  <button type="button" class="collapsible">
+    1.4.13 Pekerfølsomt innhold eller innhold ved tastaturfokus
+  </button>
+  <div class="content">
+    <h2>
+      1.4.13 Pekerfølsomt innhold eller innhold ved tastaturfokus (Nivå AA)
+    </h2>
+    <p>
+      <strong>KORT FORTALT:</strong><br />
+      <i>Brukeren skal ha mer kontroll over innholdet på nettsiden som får
+        fokus med musepeker eller tastatur.</i>
+      <br /><br />
+      <strong>Nivå AA (krav): </strong>Ekstra innhold som kommer til syne og
+      forsvinner ved tastaturfokus eller mouseover (det vil si når pekeren
+      hviler over et punkt på skjermen), kan føre til problemer for brukeren.
+      <br />
+      Det skal være mulig å avvise, mulig å bruke med å holde musepekeren over
+      innholdet og være vedvarende (ekstra innhold forblir synlig helt til
+      brukeren flytter musepeker eller fokus)
+      <br />
+      <br />
+      <strong>Løsningsforslag, eksempler og unntak:</strong> <br />
+      <a
+        href="https://www.uutilsynet.no/wcag-standarden/1413-pekerfolsomt-innhold-eller-innhold-ved-tastaturfokus-niva-aa/147">1.4.13
+        Pekerfølsomt innhold eller innhold ved tastaturfokus (Nivå AA)
+        | Tilsynet for universell utforming av ikt (uutilsynet.no)</a><br />
+      <br /><strong>Techniques:</strong><br />
+      • SCR39: Making content on focus or hover hoverable, dismissible, and
+      persistent <br />
+      • @@ ARIA: Using role="tooltip" <br />
+      • @@ CSS: Using hover and focus pseudo classes <br />
+      <br />
+    </p>
+    <div class="feil">
       <p>
-        <strong>KORT FORTALT:</strong><br />
-        <i
-          >Tekst kan bli endret til 200% størrelse uten tap av innhold eller
-          funksjon.</i
-        >
-        <br /><br />
-        <strong>Nivå AA (krav):</strong> Med unntak av teksting og bilder av
-        tekst kan tekst forstørres opp til 200 % uten bruk av kompenserende
-        teknologi og uten at innhold eller funksjonalitet går tapt.
-        <br />
-        <br />
-        <strong>Løsningsforslag, eksempler og unntak:</strong> <br />
-        <a
-          href="https://www.uutilsynet.no/wcag-standarden/utforming-og-presentasjon/227"
-          >1.4.4 Endring av tekststørrelse (Nivå AA) | Tilsynet for universell
-          utforming av ikt (uutilsynet.no)</a
-        ><br />
-        <br /><strong>Techniques:</strong><br />
-        • G142: Using a technology that has commonly-available user agents that
-        support zoom <br />
-        • Ensuring that text containers resize when the text resizes AND using
-        measurements that are relative to other measurements in the content by
-        using one or more of the following techniques: <br />
-        • C28: Specifying the size of text containers using em units <br />
-        • Techniques for relative measurements: <br />
-        ‣ C12: Using percent for font sizes<br />
-        ‣ C13: Using named font sizes<br />
-        ‣ C14: Using em units for font sizes<br />
-        • Techniques for text container resizing<br />
-        ‣ SCR34: Calculating size and position in a way that scales with text
-        size<br />
-        ‣ G146: Using liquid layout <br />
-        • G178: Providing controls on the Web page that allow users to
-        incrementally change the size of all text on the page up to 200 percent
-        <br />
-        • G179: Ensuring that there is no loss of content or functionality when
-        the text resizes and text containers do not change their width
+        <strong>Elementer som ikke består kravet:</strong><br />
+        Liste med elementer
       </p>
-      <div class="feil">
-        <p>
-          <strong>Elementer som ikke består kravet:</strong><br />
-          Liste med elementer
-        </p>
-      </div>
     </div>
+  </div>
 
-    <button type="button" class="collapsible">1.4.5 Bilder av tekst</button>
-    <div class="content">
-      <h2>1.4.5 Bilder av tekst (Nivå AA)</h2>
+  <button type="button" class="collapsible">2.1.1 Tastatur</button>
+  <div class="content">
+    <h2>2.1.1 Tastatur (Nivå A)</h2>
+    <p>
+      <strong>KORT FORTALT:</strong><br />
+      <i>All funksjonalitet skal kunne brukes kun ved hjelp av tastatur.</i>
+      <br /><br />
+      <strong>Nivå A (krav):</strong> All funksjonalitet i innholdet kan
+      betjenes via et tastaturgrensesnitt uten at det er behov for
+      tidsberegning av de enkelte tastetrykkene, <br />
+      unntatt hvis den underliggende funksjonen krever inndata som er
+      avhengige av rekkefølgen på brukerens bevegelser, og ikke bare av
+      sluttpunktene. <br />
+
+      <br />
+      <br />
+      <strong>Løsningsforslag, eksempler og unntak:</strong> <br />
+      <a href="https://www.uutilsynet.no/wcag-standarden/tastaturnavigasjon/37">2.1.1 Tastatur (Nivå A) | Tilsynet for
+        universell utforming av ikt
+        (uutilsynet.no)</a><br />
+      <br /><strong>Techniques:</strong><br />
+      • G202: Ensuring keyboard control for all functionality <br />
+      • Ensuring keyboard control: H91: Using HTML form controls and links
+      <br />
+      • G90: Providing keyboard-triggered event handlers <br />
+    </p>
+    <div class="feil">
       <p>
-        <strong>KORT FORTALT:</strong><br />
-        <i>Bruk tekst i stedet for bilder av tekst.</i>
-        <br /><br />
-        <strong>Nivå AA (krav):</strong> Hvis teknologien som brukes kan
-        håndtere den visuelle presentasjonen, brukes det tekst i stedet for
-        bilder av tekst til å formidle informasjon, unntatt i følgende
-        tilfeller: <br />
-
-        •Kan tilpasses: Bildet av tekst kan visuelt tilpasses til brukerens
-        krav.<br />
-        •Nødvendig: En bestemt presentasjon av tekst er nødvendig for
-        informasjonen som formidles.<br />
-        Merknad: Logoer (tekst som utgjør en del av en logo eller et
-        varemerkenavn) anses som nødvendige.
-        <br />
-        <br />
-        <strong>Løsningsforslag, eksempler og unntak:</strong> <br />
-        <a
-          href="https://www.uutilsynet.no/wcag-standarden/145-bilder-av-tekst-niva-aa/97"
-          >1.4.5 Bilder av tekst (Nivå AA) | Tilsynet for universell utforming
-          av ikt (uutilsynet.no)</a
-        ><br />
-        <br /><strong>Techniques:</strong><br />
-        • C22: Using CSS to control visual presentation of text <br />
-        • C30: Using CSS to replace text with images of text and providing user
-        interface controls to switch <br />
-        • G140: Separating information and structure from presentation to enable
-        different presentations <br />
-        Advisory: <br />
-        • C12: Using percent for font sizes <br />
-        • C13: Using named font sizes <br />
-        • C14: Using em units for font sizes <br />
-        • C8: Using CSS letter-spacing to control spacing within a word <br />
-        • C6: Positioning content based on structural markup
+        <strong>Elementer som ikke består kravet:</strong><br />
+        Liste med elementer
       </p>
-      <div class="feil">
-        <p>
-          <strong>Elementer som ikke består kravet:</strong><br />
-          Liste med elementer
-        </p>
-      </div>
     </div>
+  </div>
 
-    <button type="button" class="collapsible">
-      1.4.10 Dynamisk tilpasning
-    </button>
-    <div class="content">
-      <h2>1.4.10 Dynamisk tilpasning (Reflow. Nivå AA)</h2>
+  <button type="button" class="collapsible">2.1.2 Ingen tastaturfelle</button>
+  <div class="content">
+    <h2>2.1.2 Ingen tastaturfelle (Nivå A)</h2>
+    <p>
+      <strong>KORT FORTALT:</strong><br />
+      <i>Unngå tastaturfeller.</i>
+      <br /><br />
+      <strong>Nivå A (krav):</strong> Hvis tastaturfokus kan flyttes til en av
+      komponentene på siden ved hjelp av et tastaturgrensesnitt, kan fokus
+      flyttes fra den aktuelle komponenten bare ved hjelp av
+      tastaturgrensesnittet. <br />
+      Hvis det er behov for noe annet enn standard pil- eller tabulatortaster
+      eller andre standardmetoder for navigering, får brukeren informasjon om
+      hvilken metode som må benyttes for å flytte fokus. <br />
+
+      <br />
+      <br />
+      <strong>Løsningsforslag, eksempler og unntak:</strong> <br />
+      <a href="https://www.uutilsynet.no/wcag-standarden/tastaturnavigasjon/37">2.1.2 Ingen tastaturfelle (Nivå A) |
+        Tilsynet for universell
+        utforming av ikt (uutilsynet.no)</a><br />
+      <br /><strong>Techniques:</strong><br />
+      • G21: Ensuring that users are not trapped in content <br />
+    </p>
+    <div class="feil">
       <p>
-        <strong>KORT FORTALT:</strong><br />
-        <i
-          >Innhold skal kunne endres til 400 prosent størrelse ved 1280 piksler
-          bredde, uten tap av informasjon eller funksjonalitet.</i
-        >
-        <br /><br />
-        <strong>Nivå AA (krav): </strong>Formålet med kravet er å sikre at
-        brukere kan forstørre innholdet og lese det i én enkelt kolonne. Når
-        innholdet er zoomet inn til 400 prosent-visning, brekkes innholdet om
-        til én kolonne. Da er det ikke nødvendig å rulle i mer enn en retning og
-        innholdet blir lettere å lese.
-        <br />
-        <br />
-        <strong>Løsningsforslag, eksempler og unntak:</strong> <br />
-        <a
-          href="https://www.uutilsynet.no/wcag-standarden/1410-dynamisk-tilpasning-reflow-niva-aa/144"
-          >1.4.10 Dynamisk tilpasning (Reflow. Nivå AA) | Tilsynet for
-          universell utforming av ikt (uutilsynet.no)</a
-        ><br />
-        <br /><strong>Techniques:</strong><br />
-        • C32: Using media queries and grid CSS to reflow columns <br />
-        • C31: Using CSS Flexbox to reflow content <br />
-        • C38: Using CSS width, max-width and flexbox to fit labels and inputs
-        <br />
-        Advisory: <br />
-        • C37: Using CSS max-width and height to fit images
+        <strong>Elementer som ikke består kravet:</strong><br />
+        Liste med elementer
       </p>
-      <div class="feil">
-        <p>
-          <strong>Elementer som ikke består kravet:</strong><br />
-          Liste med elementer
-        </p>
-      </div>
     </div>
+  </div>
 
-    <button type="button" class="collapsible">
-      1.4.11 Kontrast for ikke-tekstlig innhold
-    </button>
-    <div class="content">
-      <h2>1.4.11 Kontrast for ikke-tekstlig innhold (Nivå AA)</h2>
+  <button type="button" class="collapsible">
+    2.1.4 Hurtigtaster som består av ett tegn
+  </button>
+  <div class="content">
+    <h2>2.1.4 Hurtigtaster som består av ett tegn (Nivå A)</h2>
+    <p>
+      <strong>KORT FORTALT:</strong><br />
+      <i>Brukeren skal enkelt kunne slå av hurtigtaster som består av ett
+        tegn.</i>
+      <br /><br />
+      <strong>Nivå A (krav): </strong>Hurtigtaster som består av bare ett tegn
+      fungerer bra for mange tastaturbrukere, men er et stort problem for
+      personer som bruker stemmestyring og personer som ofte taster feil.
+      <br />
+      Dersom en hurtigtast er implementert i innholdet ved å bruke kun en
+      bokstav, tegnsetting, siffer eller symboltegn, må man kunne slå av,
+      omadressere eller sette til kun aktiv ved fokus.
+      <br />
+      <br />
+      <strong>Løsningsforslag, eksempler og unntak:</strong> <br />
+      <a href="https://www.uutilsynet.no/wcag-standarden/214-hurtigtaster-som-bestar-av-ett-tegn-niva/782">2.1.4
+        Hurtigtaster som består av ett tegn (Nivå A) | Tilsynet for
+        universell utforming av ikt (uutilsynet.no)</a><br />
+      <br /><strong>Techniques:</strong><br />
+      • G217: Providing a mechanism to allow users to remap or turn off
+      character key shortcuts <br />
+      <br />
+    </p>
+    <div class="feil">
       <p>
-        <strong>KORT FORTALT:</strong><br />
-        <i
-          >Ikke-tekstlig innhold skal ha et kontrastforhold på minst 3:1 mot
-          farge(r) som ligger ved siden av.</i
-        >
-        <br /><br />
-        <strong>Nivå AA (krav): </strong>Formålet med suksesskriteriet er å
-        sikre at aktive brukergrensesnittkomponenter og meningsbærende grafikk
-        er lett å se. <br />
-        Grunnlag og kontrastverdi er den samme som kravet til kontrast for stor
-        tekst i suksesskriterie 1.4.3 (Den visuelle presentasjonen har et
-        kontrastforhold på minst 3:1 mot farge(r) som ligger siden av.)
-        <br />
-        <br />
-        <strong>Løsningsforslag, eksempler og unntak:</strong> <br />
-        <a
-          href="https://www.uutilsynet.no/wcag-standarden/1411-kontrast-ikke-tekstlig-innhold-niva-aa/145"
-          >1.4.11 Kontrast for ikke-tekstlig innhold (Nivå AA) | Tilsynet for
-          universell utforming av ikt (uutilsynet.no)</a
-        ><br />
-        <br /><strong>Techniques:</strong><br />
-        Situation A: Color is used to identify user interface components or used
-        to identify user interface component states <br />
-        • G195: Using an author-supplied, highly visible focus indicator <br />
-        • G174: Providing a control with a sufficient contrast ratio that allows
-        users to switch to a presentation that uses sufficient contrast <br />
-        Situation B: Color is required to understand graphical content <br />
-        • G207: Ensuring that a contrast ratio of 3:1 is provided for icons
-        <br />
-        • G209: Provide sufficient contrast at the boundaries between adjoining
-        colors
+        <strong>Elementer som ikke består kravet:</strong><br />
+        Liste med elementer
       </p>
-      <div class="feil">
-        <p>
-          <strong>Elementer som ikke består kravet:</strong><br />
-          Liste med elementer
-        </p>
-      </div>
     </div>
+  </div>
 
-    <button type="button" class="collapsible">1.4.12 Tekstavstand</button>
-    <div class="content">
-      <h2>1.4.12 Tekstavstand (Nivå AA)</h2>
+  <button type="button" class="collapsible">2.4.1 Hoppe over blokker</button>
+  <div class="content">
+    <h2>2.4.1 Hoppe over blokker (Nivå A)</h2>
+    <p>
+      <strong>KORT FORTALT:</strong><br />
+      <i>Gi brukeren mulighet til å hoppe direkte til hovedinnholdet.</i>
+      <br /><br />
+      <strong>Nivå A (krav):</strong> Det finnes en mekanisme for å omgå
+      blokker med innhold som gjentas på flere websider. <br />
+
+      <br />
+      <strong>Løsningsforslag, eksempler og unntak:</strong> <br />
+      <a href="https://www.uutilsynet.no/wcag-standarden/tastaturnavigasjon/37">2.4.1 Hoppe over blokker (Nivå A) |
+        Tilsynet for universell utforming
+        av ikt (uutilsynet.no)</a><br />
+      <br /><strong>Techniques:</strong><br />
+      Creating links to skip blocks of repeated material using one of the
+      following techniques: <br />
+      • G1: Adding a link at the top of each page that goes directly to the
+      main content area <br />
+      • G123: Adding a link at the beginning of a block of repeated content to
+      go to the end of the block <br />
+      • G124: Adding links at the top of the page to each area of the content
+      <br />
+      Grouping blocks of repeated material in a way that can be skipped, using
+      one of the following techniques:<br />
+      • ARIA11: Using ARIA landmarks to identify regions of a page <br />
+      • H69: Providing heading elements at the beginning of each section of
+      content
+    </p>
+    <div class="feil">
       <p>
-        <strong>KORT FORTALT:</strong><br />
-        <i
-          >Tekstavstanden skal kunne overstyres for å gjøre teksten lettere å
-          lese.</i
-        >
-        <br /><br />
-        <strong>Nivå AA (krav): </strong>Formålet med suksesskriteriet er å
-        sikre at brukere kan overstyre tekstavstanden for å gjøre teksten
-        lettere å lese. <br />
-        Suksesskriteriet gjelder muligheten for å endre på:
-        <br />
-
-        -linjehøyde (avstand mellom linjer) <br />
-        -avstand etter avsnitt <br />
-        -avstanden mellom bokstaver i en linje eller blokk av tekst <br />
-        -avstanden mellom ord
-        <br />
-        <br />
-        <strong>Løsningsforslag, eksempler og unntak:</strong> <br />
-        <a
-          href="https://www.uutilsynet.no/wcag-standarden/1412-tekstavstand-niva-aa/146"
-          >1.4.12 Tekstavstand (Nivå AA) | Tilsynet for universell utforming av
-          ikt (uutilsynet.no)</a
-        ><br />
-        <br /><strong>Techniques:</strong><br />
-        • C36: Allowing for text spacing override <br />
-        • C35: Allowing for text spacing without wrapping <br />
-        Advisory: <br />
-        • C8: Using CSS letter-spacing to control spacing within a word <br />
-        • C21: Specifying line spacing in CSS<br />
-        • C28: Specifying the size of text containers using em units
-        <br />
+        <strong>Elementer som ikke består kravet:</strong><br />
+        Liste med elementer
       </p>
-      <div class="feil">
-        <p>
-          <strong>Elementer som ikke består kravet:</strong><br />
-          Liste med elementer
-        </p>
-      </div>
     </div>
+  </div>
 
-    <button type="button" class="collapsible">
-      1.4.13 Pekerfølsomt innhold eller innhold ved tastaturfokus
-    </button>
-    <div class="content">
-      <h2>
-        1.4.13 Pekerfølsomt innhold eller innhold ved tastaturfokus (Nivå AA)
-      </h2>
+  <button type="button" class="collapsible">2.4.2 Sidetitler</button>
+  <div class="content">
+    <h2>2.4.2 Sidetitler (Nivå A)</h2>
+    <p>
+      <strong>KORT FORTALT:</strong><br />
+      <i>Bruk nyttige og tydelige sidetitler.</i>
+      <br /><br />
+      <strong>Nivå A (krav):</strong> Websider har titler som beskriver den
+      aktuelle sidens emne eller formål. <br />
+
+      <br />
+      <strong>Løsningsforslag, eksempler og unntak:</strong> <br />
+      <a href="https://www.uutilsynet.no/wcag-standarden/sidetittel-navigasjon/221">2.4.2 Sidetitler (Nivå A) | Tilsynet
+        for universell utforming av ikt
+        (uutilsynet.no)</a><br />
+      <br /><strong>Techniques:</strong><br />
+      • G88: Providing descriptive titles for Web pages <br />
+      • H25: Providing a title using the title element <br />
+      Advisory: <br />
+      • G127: Identifying a Web page's relationship to a larger collection of
+      Web pages
+    </p>
+    <div class="feil">
       <p>
-        <strong>KORT FORTALT:</strong><br />
-        <i
-          >Brukeren skal ha mer kontroll over innholdet på nettsiden som får
-          fokus med musepeker eller tastatur.</i
-        >
-        <br /><br />
-        <strong>Nivå AA (krav): </strong>Ekstra innhold som kommer til syne og
-        forsvinner ved tastaturfokus eller mouseover (det vil si når pekeren
-        hviler over et punkt på skjermen), kan føre til problemer for brukeren.
-        <br />
-        Det skal være mulig å avvise, mulig å bruke med å holde musepekeren over
-        innholdet og være vedvarende (ekstra innhold forblir synlig helt til
-        brukeren flytter musepeker eller fokus)
-        <br />
-        <br />
-        <strong>Løsningsforslag, eksempler og unntak:</strong> <br />
-        <a
-          href="https://www.uutilsynet.no/wcag-standarden/1413-pekerfolsomt-innhold-eller-innhold-ved-tastaturfokus-niva-aa/147"
-          >1.4.13 Pekerfølsomt innhold eller innhold ved tastaturfokus (Nivå AA)
-          | Tilsynet for universell utforming av ikt (uutilsynet.no)</a
-        ><br />
-        <br /><strong>Techniques:</strong><br />
-        • SCR39: Making content on focus or hover hoverable, dismissible, and
-        persistent <br />
-        • @@ ARIA: Using role="tooltip" <br />
-        • @@ CSS: Using hover and focus pseudo classes <br />
-        <br />
+        <strong>Elementer som ikke består kravet:</strong><br />
+        Liste med elementer
       </p>
-      <div class="feil">
-        <p>
-          <strong>Elementer som ikke består kravet:</strong><br />
-          Liste med elementer
-        </p>
-      </div>
     </div>
+  </div>
 
-    <button type="button" class="collapsible">2.1.1 Tastatur</button>
-    <div class="content">
-      <h2>2.1.1 Tastatur (Nivå A)</h2>
+  <button type="button" class="collapsible">2.4.3 Fokusrekkefølge</button>
+  <div class="content">
+    <h2>2.4.3 Fokusrekkefølge (Nivå A)</h2>
+    <p>
+      <strong>KORT FORTALT:</strong><br />
+      <i>Presenter innholdet i en logisk rekkefølge.</i>
+      <br /><br />
+      <strong>Nivå A (krav):</strong> Hvis en webside kan navigeres
+      sekvensielt og navigeringssekvensen påvirker betydning eller betjening,
+      får fokuserbare komponenter fokus i en rekkefølge som ivaretar
+      betydningen og betjeningen. <br />
+
+      <br />
+      <strong>Løsningsforslag, eksempler og unntak:</strong> <br />
+      <a href="https://www.uutilsynet.no/wcag-standarden/tastaturnavigasjon/37">2.4.3 Fokusrekkefølge (Nivå A) |
+        Tilsynet for universell utforming av
+        ikt (uutilsynet.no)</a><br />
+      <br /><strong>Techniques:</strong><br />
+      • G59: Placing the interactive elements in an order that follows
+      sequences and relationships within the content <br />
+      • H4: Creating a logical tab order through links, form controls, and
+      objects <br />
+      • C27: Making the DOM order match the visual order <br />
+    </p>
+    <div class="feil">
       <p>
-        <strong>KORT FORTALT:</strong><br />
-        <i>All funksjonalitet skal kunne brukes kun ved hjelp av tastatur.</i>
-        <br /><br />
-        <strong>Nivå A (krav):</strong> All funksjonalitet i innholdet kan
-        betjenes via et tastaturgrensesnitt uten at det er behov for
-        tidsberegning av de enkelte tastetrykkene, <br />
-        unntatt hvis den underliggende funksjonen krever inndata som er
-        avhengige av rekkefølgen på brukerens bevegelser, og ikke bare av
-        sluttpunktene. <br />
-
-        <br />
-        <br />
-        <strong>Løsningsforslag, eksempler og unntak:</strong> <br />
-        <a
-          href="https://www.uutilsynet.no/wcag-standarden/tastaturnavigasjon/37"
-          >2.1.1 Tastatur (Nivå A) | Tilsynet for universell utforming av ikt
-          (uutilsynet.no)</a
-        ><br />
-        <br /><strong>Techniques:</strong><br />
-        • G202: Ensuring keyboard control for all functionality <br />
-        • Ensuring keyboard control: H91: Using HTML form controls and links
-        <br />
-        • G90: Providing keyboard-triggered event handlers <br />
+        <strong>Elementer som ikke består kravet:</strong><br />
+        Liste med elementer
       </p>
-      <div class="feil">
-        <p>
-          <strong>Elementer som ikke består kravet:</strong><br />
-          Liste med elementer
-        </p>
-      </div>
     </div>
+  </div>
 
-    <button type="button" class="collapsible">2.1.2 Ingen tastaturfelle</button>
-    <div class="content">
-      <h2>2.1.2 Ingen tastaturfelle (Nivå A)</h2>
+  <button type="button" class="collapsible">2.4.4 Formål med lenke</button>
+  <div class="content">
+    <h2>2.4.4 Formål med lenke (i kontekst, Nivå A)</h2>
+    <p>
+      <strong>KORT FORTALT:</strong><br />
+      <i>Alle lenkers mål og funksjon fremgår tydelig av lenketeksten.</i>
+      <br /><br />
+      <strong>Nivå A (krav):</strong> Formålet med hver lenke kan fastslås ut
+      fra bare selve lenken eller ut fra lenketeksten kombinert med
+      programmeringsmessig bestemt lenkekontekst. Unntaket er hvis formålet
+      med lenken ville vært flertydig for alle brukere. <br />
+
+      <br />
+      <strong>Løsningsforslag, eksempler og unntak:</strong> <br />
+      <a href="https://www.uutilsynet.no/wcag-standarden/244-formal-med-lenke-i-kontekst-niva/106">2.4.4 Formål med
+        lenke (i kontekst, Nivå A) | Tilsynet for universell
+        utforming av ikt (uutilsynet.no)</a><br />
+      <br /><strong>Techniques:</strong><br />
+      • G91: Providing link text that describes the purpose of a link <br />
+      • H30: Providing link text that describes the purpose of a link for
+      anchor elements <br />
+      • H24: Providing text alternatives for the area elements of image maps
+      <br />
+      • Allowing user to choose short or long link text: G189: Providing a
+      control near the beginning of the Web page that changes the link text
+      <br />
+      • G53: Identifying the purpose of a link using link text combined with
+      the text of the enclosing sentence <br />
+      • H33: Supplementing link text with the title attribute <br />
+      • ARIA7: Using aria-labelledby for link purpose <br />
+    </p>
+    <div class="feil">
       <p>
-        <strong>KORT FORTALT:</strong><br />
-        <i>Unngå tastaturfeller.</i>
-        <br /><br />
-        <strong>Nivå A (krav):</strong> Hvis tastaturfokus kan flyttes til en av
-        komponentene på siden ved hjelp av et tastaturgrensesnitt, kan fokus
-        flyttes fra den aktuelle komponenten bare ved hjelp av
-        tastaturgrensesnittet. <br />
-        Hvis det er behov for noe annet enn standard pil- eller tabulatortaster
-        eller andre standardmetoder for navigering, får brukeren informasjon om
-        hvilken metode som må benyttes for å flytte fokus. <br />
-
-        <br />
-        <br />
-        <strong>Løsningsforslag, eksempler og unntak:</strong> <br />
-        <a
-          href="https://www.uutilsynet.no/wcag-standarden/tastaturnavigasjon/37"
-          >2.1.2 Ingen tastaturfelle (Nivå A) | Tilsynet for universell
-          utforming av ikt (uutilsynet.no)</a
-        ><br />
-        <br /><strong>Techniques:</strong><br />
-        • G21: Ensuring that users are not trapped in content <br />
+        <strong>Elementer som ikke består kravet:</strong><br />
+        Liste med elementer
       </p>
-      <div class="feil">
-        <p>
-          <strong>Elementer som ikke består kravet:</strong><br />
-          Liste med elementer
-        </p>
-      </div>
     </div>
+  </div>
 
-    <button type="button" class="collapsible">
-      2.1.4 Hurtigtaster som består av ett tegn
-    </button>
-    <div class="content">
-      <h2>2.1.4 Hurtigtaster som består av ett tegn (Nivå A)</h2>
+  <button type="button" class="collapsible">2.4.5 Flere måter</button>
+  <div class="content">
+    <h2>2.4.5 Flere måter (Nivå AA)</h2>
+    <p>
+      <strong>KORT FORTALT:</strong><br />
+      <i>Tilby brukeren flere måter å navigere på.</i>
+      <br /><br />
+      <strong>Nivå AA (krav):</strong> Det finnes mer enn én måte å finne frem
+      til en webside på innenfor et sett av websider. Unntaket er hvis
+      websiden utgjør resultatet av, eller et trinn i, en prosess. <br />
+      Brukeren skal ha minst to metoder for å finne innholdet på nettstedet
+      (eks: menynavigering, søk, alfabetisk liste, nettstedskart) <br />
+
+      <br />
+      <strong>Løsningsforslag, eksempler og unntak:</strong> <br />
+      <a href="https://www.uutilsynet.no/regelverk/navigasjonsmetoder/217">2.4.5 Flere måter (Nivå AA) | Tilsynet for
+        universell utforming av
+        ikt (uutilsynet.no)</a><br />
+      <br /><strong>Techniques:</strong><br />
+      Using two or more of the following techniques: <br />
+      • G125: Providing links to navigate to related Web pages <br />
+      • G64: Providing a Table of Contents <br />
+      • G63: Providing a site map <br />
+      • G161: Providing a search function to help users find content <br />
+      • G185: Linking to all of the pages on the site from the home page
+      <br />
+      Advisory:<br />
+      • H59: Using the link element and navigation tools
+    </p>
+    <div class="feil">
       <p>
-        <strong>KORT FORTALT:</strong><br />
-        <i
-          >Brukeren skal enkelt kunne slå av hurtigtaster som består av ett
-          tegn.</i
-        >
-        <br /><br />
-        <strong>Nivå A (krav): </strong>Hurtigtaster som består av bare ett tegn
-        fungerer bra for mange tastaturbrukere, men er et stort problem for
-        personer som bruker stemmestyring og personer som ofte taster feil.
-        <br />
-        Dersom en hurtigtast er implementert i innholdet ved å bruke kun en
-        bokstav, tegnsetting, siffer eller symboltegn, må man kunne slå av,
-        omadressere eller sette til kun aktiv ved fokus.
-        <br />
-        <br />
-        <strong>Løsningsforslag, eksempler og unntak:</strong> <br />
-        <a
-          href="https://www.uutilsynet.no/wcag-standarden/214-hurtigtaster-som-bestar-av-ett-tegn-niva/782"
-          >2.1.4 Hurtigtaster som består av ett tegn (Nivå A) | Tilsynet for
-          universell utforming av ikt (uutilsynet.no)</a
-        ><br />
-        <br /><strong>Techniques:</strong><br />
-        • G217: Providing a mechanism to allow users to remap or turn off
-        character key shortcuts <br />
-        <br />
+        <strong>Elementer som ikke består kravet:</strong><br />
+        Liste med elementer
       </p>
-      <div class="feil">
-        <p>
-          <strong>Elementer som ikke består kravet:</strong><br />
-          Liste med elementer
-        </p>
-      </div>
     </div>
+  </div>
 
-    <button type="button" class="collapsible">2.4.1 Hoppe over blokker</button>
-    <div class="content">
-      <h2>2.4.1 Hoppe over blokker (Nivå A)</h2>
+  <button type="button" class="collapsible">
+    2.4.6 Overskrifter og ledetekster
+  </button>
+  <div class="content">
+    <h2>2.4.6 Overskrifter og ledetekster (Nivå AA)</h2>
+    <p>
+      <strong>KORT FORTALT:</strong><br />
+      <i>Sørg for at ledetekster og overskrifter er beskrivende.</i>
+      <br /><br />
+      <strong>Nivå AA (krav):</strong> Overskrifter og ledetekster beskriver
+      emne eller formål. <br />
+
+      <br />
+      <strong>Løsningsforslag, eksempler og unntak:</strong> <br />
+      <a href="https://www.uutilsynet.no/wcag-standarden/246-overskrifter-og-ledetekster-niva-aa/108">2.4.6 Overskrifter
+        og ledetekster (Nivå AA) | Tilsynet for universell
+        utforming av ikt (uutilsynet.no)</a><br />
+      <br /><strong>Techniques:</strong><br />
+      • G130: Providing descriptive headings <br />
+      • G131: Providing descriptive labels <br />
+      <br />
+    </p>
+    <div class="feil">
       <p>
-        <strong>KORT FORTALT:</strong><br />
-        <i>Gi brukeren mulighet til å hoppe direkte til hovedinnholdet.</i>
-        <br /><br />
-        <strong>Nivå A (krav):</strong> Det finnes en mekanisme for å omgå
-        blokker med innhold som gjentas på flere websider. <br />
-
-        <br />
-        <strong>Løsningsforslag, eksempler og unntak:</strong> <br />
-        <a
-          href="https://www.uutilsynet.no/wcag-standarden/tastaturnavigasjon/37"
-          >2.4.1 Hoppe over blokker (Nivå A) | Tilsynet for universell utforming
-          av ikt (uutilsynet.no)</a
-        ><br />
-        <br /><strong>Techniques:</strong><br />
-        Creating links to skip blocks of repeated material using one of the
-        following techniques: <br />
-        • G1: Adding a link at the top of each page that goes directly to the
-        main content area <br />
-        • G123: Adding a link at the beginning of a block of repeated content to
-        go to the end of the block <br />
-        • G124: Adding links at the top of the page to each area of the content
-        <br />
-        Grouping blocks of repeated material in a way that can be skipped, using
-        one of the following techniques:<br />
-        • ARIA11: Using ARIA landmarks to identify regions of a page <br />
-        • H69: Providing heading elements at the beginning of each section of
-        content
+        <strong>Elementer som ikke består kravet:</strong><br />
+        Liste med elementer
       </p>
-      <div class="feil">
-        <p>
-          <strong>Elementer som ikke består kravet:</strong><br />
-          Liste med elementer
-        </p>
-      </div>
     </div>
+  </div>
 
-    <button type="button" class="collapsible">2.4.2 Sidetitler</button>
-    <div class="content">
-      <h2>2.4.2 Sidetitler (Nivå A)</h2>
+  <button type="button" class="collapsible">2.4.7 Synlig fokus</button>
+  <div class="content">
+    <h2>2.4.7 Synlig fokus (Nivå AA)</h2>
+    <p>
+      <strong>KORT FORTALT:</strong><br />
+      <i>Sørg for at alt innhold får synlig fokus når du navigerer med
+        tastatur.</i>
+      <br /><br />
+      <strong>Nivå AA (krav):</strong> Tastaturbetjente brukergrensesnitt har
+      en betjeningsmodus der fokusindikatoren for tastaturet er synlig.
+      <br />
+
+      <br />
+      <strong>Løsningsforslag, eksempler og unntak:</strong> <br />
+      <a href="https://www.uutilsynet.no/wcag-standarden/tastaturnavigasjon/37">2.4.7 Synlig fokus (Nivå AA) | Tilsynet
+        for universell utforming av
+        ikt (uutilsynet.no)</a><br />
+      <br /><strong>Techniques:</strong><br />
+      • G149: Using user interface components that are highlighted by the user
+      agent when they receive focus <br />
+      • C15: Using CSS to change the presentation of a user interface
+      component when it receives focus <br />
+      • G165: Using the default focus indicator for the platform so that high
+      visibility default focus indicators will carry over <br />
+      <br />
+    </p>
+    <div class="feil">
       <p>
-        <strong>KORT FORTALT:</strong><br />
-        <i>Bruk nyttige og tydelige sidetitler.</i>
-        <br /><br />
-        <strong>Nivå A (krav):</strong> Websider har titler som beskriver den
-        aktuelle sidens emne eller formål. <br />
-
-        <br />
-        <strong>Løsningsforslag, eksempler og unntak:</strong> <br />
-        <a
-          href="https://www.uutilsynet.no/wcag-standarden/sidetittel-navigasjon/221"
-          >2.4.2 Sidetitler (Nivå A) | Tilsynet for universell utforming av ikt
-          (uutilsynet.no)</a
-        ><br />
-        <br /><strong>Techniques:</strong><br />
-        • G88: Providing descriptive titles for Web pages <br />
-        • H25: Providing a title using the title element <br />
-        Advisory: <br />
-        • G127: Identifying a Web page's relationship to a larger collection of
-        Web pages
+        <strong>Elementer som ikke består kravet:</strong><br />
+        Liste med elementer
       </p>
-      <div class="feil">
-        <p>
-          <strong>Elementer som ikke består kravet:</strong><br />
-          Liste med elementer
-        </p>
-      </div>
     </div>
+  </div>
 
-    <button type="button" class="collapsible">2.4.3 Fokusrekkefølge</button>
-    <div class="content">
-      <h2>2.4.3 Fokusrekkefølge (Nivå A)</h2>
+  <button type="button" class="collapsible">2.5.1 Pekerbevegelser</button>
+  <div class="content">
+    <h2>2.5.1 Pekerbevegelser (Nivå A)</h2>
+    <p>
+      <strong>KORT FORTALT:</strong><br />
+      <i>Innhold på nettsiden skal kunne brukes med enkel pekerinput.</i>
+      <br /><br />
+      <strong>Nivå A (krav): </strong>Formålet med suksesskriteriet er å sikre
+      at brukere kan bruke innholdet på nettsiden med enkel pekerinput, fra
+      for eksempel mus eller berøringsskjerm. <br />
+      Dette er viktig for brukere som ikke kan trykke flere plasser på
+      skjermen samtidig, eller som ikke kan bevege pekeren i bestemte mønster.
+      <br />
+      <br />
+      <strong>Løsningsforslag, eksempler og unntak:</strong> <br />
+      <a href="https://www.uutilsynet.no/wcag-standarden/251-pekerbevegelser-niva/148">2.5.1 Pekerbevegelser (Nivå A) |
+        Tilsynet for universell utforming av
+        ikt (uutilsynet.no)</a><br />
+      <br /><strong>Techniques:</strong><br />
+      • G215: Providing controls to achieve the same result as path based or
+      multipoint gestures <br />
+      • G216: Providing single point activation for a control slider
+      <br />
+    </p>
+    <div class="feil">
       <p>
-        <strong>KORT FORTALT:</strong><br />
-        <i>Presenter innholdet i en logisk rekkefølge.</i>
-        <br /><br />
-        <strong>Nivå A (krav):</strong> Hvis en webside kan navigeres
-        sekvensielt og navigeringssekvensen påvirker betydning eller betjening,
-        får fokuserbare komponenter fokus i en rekkefølge som ivaretar
-        betydningen og betjeningen. <br />
-
-        <br />
-        <strong>Løsningsforslag, eksempler og unntak:</strong> <br />
-        <a
-          href="https://www.uutilsynet.no/wcag-standarden/tastaturnavigasjon/37"
-          >2.4.3 Fokusrekkefølge (Nivå A) | Tilsynet for universell utforming av
-          ikt (uutilsynet.no)</a
-        ><br />
-        <br /><strong>Techniques:</strong><br />
-        • G59: Placing the interactive elements in an order that follows
-        sequences and relationships within the content <br />
-        • H4: Creating a logical tab order through links, form controls, and
-        objects <br />
-        • C27: Making the DOM order match the visual order <br />
+        <strong>Elementer som ikke består kravet:</strong><br />
+        Liste med elementer
       </p>
-      <div class="feil">
-        <p>
-          <strong>Elementer som ikke består kravet:</strong><br />
-          Liste med elementer
-        </p>
-      </div>
     </div>
+  </div>
 
-    <button type="button" class="collapsible">2.4.4 Formål med lenke</button>
-    <div class="content">
-      <h2>2.4.4 Formål med lenke (i kontekst, Nivå A)</h2>
+  <button type="button" class="collapsible">2.5.3 Ledetekst i navn</button>
+  <div class="content">
+    <h2>2.5.3 Ledetekst i navn (Nivå A)</h2>
+    <p>
+      <strong>KORT FORTALT:</strong><br />
+      <i>Brukere som bruker visuelle ledetekster skal også kunne bruke kodede
+        ledetekster.</i>
+      <br /><br />
+      <strong>Nivå A (krav): </strong>For brukergrensesnittkomponenter med
+      ledetekster som inneholder tekst eller bilder av tekst, inneholder
+      navnet teksten som presenteres visuelt. <br />
+      Formålet med suksesskriteriet er å sikre at personer som bruker de
+      visuelle ledetekstene også kan bruke de programmeringsmessig bestemte
+      (dvs. kodede) ledetekstene. <br />
+      Et eksempel på dette er personer som bruker taleinput.
+      <br />
+      <br />
+      <strong>Løsningsforslag, eksempler og unntak:</strong> <br />
+      <a href="https://www.uutilsynet.no/wcag-standarden/253-ledetekst-i-navn-niva/150">2.5.3 Ledetekst i navn (Nivå A)
+        | Tilsynet for universell utforming
+        av ikt (uutilsynet.no)</a><br />
+      <br /><strong>Techniques:</strong><br />
+      • G208: Including the text of the visible label as part of the
+      accessible name <br />
+      • G211: Matching the accessible name to the visible label <br />
+      Advisory: <br />
+      • G162: Positioning labels to maximize predictability of relationships
+      <br />
+    </p>
+    <div class="feil">
       <p>
-        <strong>KORT FORTALT:</strong><br />
-        <i>Alle lenkers mål og funksjon fremgår tydelig av lenketeksten.</i>
-        <br /><br />
-        <strong>Nivå A (krav):</strong> Formålet med hver lenke kan fastslås ut
-        fra bare selve lenken eller ut fra lenketeksten kombinert med
-        programmeringsmessig bestemt lenkekontekst. Unntaket er hvis formålet
-        med lenken ville vært flertydig for alle brukere. <br />
-
-        <br />
-        <strong>Løsningsforslag, eksempler og unntak:</strong> <br />
-        <a
-          href="https://www.uutilsynet.no/wcag-standarden/244-formal-med-lenke-i-kontekst-niva/106"
-          >2.4.4 Formål med lenke (i kontekst, Nivå A) | Tilsynet for universell
-          utforming av ikt (uutilsynet.no)</a
-        ><br />
-        <br /><strong>Techniques:</strong><br />
-        • G91: Providing link text that describes the purpose of a link <br />
-        • H30: Providing link text that describes the purpose of a link for
-        anchor elements <br />
-        • H24: Providing text alternatives for the area elements of image maps
-        <br />
-        • Allowing user to choose short or long link text: G189: Providing a
-        control near the beginning of the Web page that changes the link text
-        <br />
-        • G53: Identifying the purpose of a link using link text combined with
-        the text of the enclosing sentence <br />
-        • H33: Supplementing link text with the title attribute <br />
-        • ARIA7: Using aria-labelledby for link purpose <br />
+        <strong>Elementer som ikke består kravet:</strong><br />
+        Liste med elementer
       </p>
-      <div class="feil">
-        <p>
-          <strong>Elementer som ikke består kravet:</strong><br />
-          Liste med elementer
-        </p>
-      </div>
     </div>
+  </div>
 
-    <button type="button" class="collapsible">2.4.5 Flere måter</button>
-    <div class="content">
-      <h2>2.4.5 Flere måter (Nivå AA)</h2>
+  <button type="button" class="collapsible">3.1.1 Språk på siden</button>
+  <div class="content">
+    <h2>3.1.1 Språk på siden (Nivå A)</h2>
+    <p>
+      <strong>KORT FORTALT:</strong><br />
+      <i>Sørg for at språket til innholdet på alle nettsider er angitt i
+        koden.</i>
+      <br /><br />
+      <strong>Nivå A (krav):</strong> Standard naturlig språk på hver nettside
+      kan bestemmes programmeringsmessig.
+      <br />
+
+      <br />
+      <strong>Løsningsforslag, eksempler og unntak:</strong> <br />
+      <a href="https://www.uutilsynet.no/wcag-standarden/sprak-i-koden/223">3.1.1 Språk på siden (Nivå A) | Tilsynet for
+        universell utforming av
+        ikt (uutilsynet.no)</a><br />
+      <br /><strong>Techniques:</strong><br />
+      • H57: Using language attributes on the html element <br />
+    </p>
+    <div class="feil">
       <p>
-        <strong>KORT FORTALT:</strong><br />
-        <i>Tilby brukeren flere måter å navigere på.</i>
-        <br /><br />
-        <strong>Nivå AA (krav):</strong> Det finnes mer enn én måte å finne frem
-        til en webside på innenfor et sett av websider. Unntaket er hvis
-        websiden utgjør resultatet av, eller et trinn i, en prosess. <br />
-
-        <br />
-        <strong>Løsningsforslag, eksempler og unntak:</strong> <br />
-        <a href="https://www.uutilsynet.no/regelverk/navigasjonsmetoder/217"
-          >2.4.5 Flere måter (Nivå AA) | Tilsynet for universell utforming av
-          ikt (uutilsynet.no)</a
-        ><br />
-        <br /><strong>Techniques:</strong><br />
-        Using two or more of the following techniques: <br />
-        • G125: Providing links to navigate to related Web pages <br />
-        • G64: Providing a Table of Contents <br />
-        • G63: Providing a site map <br />
-        • G161: Providing a search function to help users find content <br />
-        • G185: Linking to all of the pages on the site from the home page
-        <br />
-        Advisory:<br />
-        • H59: Using the link element and navigation tools
+        <strong>Elementer som ikke består kravet:</strong><br />
+        Liste med elementer
       </p>
-      <div class="feil">
-        <p>
-          <strong>Elementer som ikke består kravet:</strong><br />
-          Liste med elementer
-        </p>
-      </div>
     </div>
+  </div>
 
-    <button type="button" class="collapsible">
-      2.4.6 Overskrifter og ledetekster
-    </button>
-    <div class="content">
-      <h2>2.4.6 Overskrifter og ledetekster (Nivå AA)</h2>
+  <button type="button" class="collapsible">
+    3.1.2 Språk på deler av innhold
+  </button>
+  <div class="content">
+    <h2>3.1.2 Språk på deler av innhold (Nivå AA)</h2>
+    <p>
+      <strong>KORT FORTALT:</strong><br />
+      <i>Sørg for at alle deler av innholdet som er på et annet språk enn
+        resten av siden er markert i koden.</i>
+      <br /><br />
+      <strong>Nivå AA (krav):</strong> Naturlig språk i de enkelte avsnittene
+      eller setningene som innholdet består av, kan bestemmes
+      programmeringsmessig. Unntaket er egennavn, tekniske termer, ord av
+      ubestemmelig språklig opphav, samt ord eller uttrykk som har blitt en
+      del av språket i den omkringliggende teksten.
+      <br />
+
+      <br />
+      <strong>Løsningsforslag, eksempler og unntak:</strong> <br />
+      <a href="https://www.uutilsynet.no/wcag-standarden/sprak-i-koden/223">3.1.2 Språk på deler av innhold (Nivå AA) |
+        Tilsynet for universell
+        utforming av ikt (uutilsynet.no)</a><br />
+      <br /><strong>Techniques:</strong><br />
+      • H58: Using language attributes to identify changes in the human
+      language <br />
+    </p>
+    <div class="feil">
       <p>
-        <strong>KORT FORTALT:</strong><br />
-        <i>Sørg for at ledetekster og overskrifter er beskrivende.</i>
-        <br /><br />
-        <strong>Nivå AA (krav):</strong> Overskrifter og ledetekster beskriver
-        emne eller formål. <br />
-
-        <br />
-        <strong>Løsningsforslag, eksempler og unntak:</strong> <br />
-        <a
-          href="https://www.uutilsynet.no/wcag-standarden/246-overskrifter-og-ledetekster-niva-aa/108"
-          >2.4.6 Overskrifter og ledetekster (Nivå AA) | Tilsynet for universell
-          utforming av ikt (uutilsynet.no)</a
-        ><br />
-        <br /><strong>Techniques:</strong><br />
-        • G130: Providing descriptive headings <br />
-        • G131: Providing descriptive labels <br />
-        <br />
+        <strong>Elementer som ikke består kravet:</strong><br />
+        Liste med elementer
       </p>
-      <div class="feil">
-        <p>
-          <strong>Elementer som ikke består kravet:</strong><br />
-          Liste med elementer
-        </p>
-      </div>
     </div>
+  </div>
 
-    <button type="button" class="collapsible">2.4.7 Synlig fokus</button>
-    <div class="content">
-      <h2>2.4.7 Synlig fokus (Nivå AA)</h2>
+  <button type="button" class="collapsible">3.2.1 Fokus</button>
+  <div class="content">
+    <h2>3.2.1 Fokus (Nivå A)</h2>
+    <p>
+      <strong>KORT FORTALT:</strong><br />
+      <i>Når en komponent kommer i fokus medfører dette ikke automatisk
+        betydelige endringer i siden.</i>
+      <br /><br />
+      <strong>Nivå A (krav):</strong>Når en komponent kommer i fokus, medfører
+      det ikke kontekstendring.
+      <br />
+
+      <br />
+      <strong>Løsningsforslag, eksempler og unntak:</strong> <br />
+      <a href="https://www.uutilsynet.no/wcag-standarden/tastaturnavigasjon/37">3.2.1 Fokus (Nivå A) | Tilsynet for
+        universell utforming av ikt
+        (uutilsynet.no)</a><br />
+      <br /><strong>Techniques:</strong><br />
+      • G107: Using "activate" rather than "focus" as a trigger for changes of
+      context <br />
+      Advisory: <br />
+      • G200: Opening new windows and tabs from a link only when necessary
+      <br />
+      • G201: Giving users advanced warning when opening a new window <br />
+    </p>
+    <div class="feil">
       <p>
-        <strong>KORT FORTALT:</strong><br />
-        <i
-          >Sørg for at alt innhold får synlig fokus når du navigerer med
-          tastatur.</i
-        >
-        <br /><br />
-        <strong>Nivå AA (krav):</strong> Tastaturbetjente brukergrensesnitt har
-        en betjeningsmodus der fokusindikatoren for tastaturet er synlig.
-        <br />
-
-        <br />
-        <strong>Løsningsforslag, eksempler og unntak:</strong> <br />
-        <a
-          href="https://www.uutilsynet.no/wcag-standarden/tastaturnavigasjon/37"
-          >2.4.7 Synlig fokus (Nivå AA) | Tilsynet for universell utforming av
-          ikt (uutilsynet.no)</a
-        ><br />
-        <br /><strong>Techniques:</strong><br />
-        • G149: Using user interface components that are highlighted by the user
-        agent when they receive focus <br />
-        • C15: Using CSS to change the presentation of a user interface
-        component when it receives focus <br />
-        • G165: Using the default focus indicator for the platform so that high
-        visibility default focus indicators will carry over <br />
-        <br />
+        <strong>Elementer som ikke består kravet:</strong><br />
+        Liste med elementer
       </p>
-      <div class="feil">
-        <p>
-          <strong>Elementer som ikke består kravet:</strong><br />
-          Liste med elementer
-        </p>
-      </div>
-    </div>     
-
-    <button type="button" class="collapsible">2.5.1 Pekerbevegelser</button>
-    <div class="content">
-      <h2>2.5.1 Pekerbevegelser (Nivå A)</h2>
-      <p>
-        <strong>KORT FORTALT:</strong><br />
-        <i>Innhold på nettsiden skal kunne brukes med enkel pekerinput.</i>
-        <br /><br />
-        <strong>Nivå A (krav): </strong>Formålet med suksesskriteriet er å sikre
-        at brukere kan bruke innholdet på nettsiden med enkel pekerinput, fra
-        for eksempel mus eller berøringsskjerm. <br />
-        Dette er viktig for brukere som ikke kan trykke flere plasser på
-        skjermen samtidig, eller som ikke kan bevege pekeren i bestemte mønster.
-        <br />
-        <br />
-        <strong>Løsningsforslag, eksempler og unntak:</strong> <br />
-        <a
-          href="https://www.uutilsynet.no/wcag-standarden/251-pekerbevegelser-niva/148"
-          >2.5.1 Pekerbevegelser (Nivå A) | Tilsynet for universell utforming av
-          ikt (uutilsynet.no)</a
-        ><br />
-        <br /><strong>Techniques:</strong><br />
-        • G215: Providing controls to achieve the same result as path based or
-        multipoint gestures <br />
-        • G216: Providing single point activation for a control slider
-        <br />
-      </p>
-      <div class="feil">
-        <p>
-          <strong>Elementer som ikke består kravet:</strong><br />
-          Liste med elementer
-        </p>
-      </div>
     </div>
+  </div>
 
-    <button type="button" class="collapsible">2.5.3 Ledetekst i navn</button>
-    <div class="content">
-      <h2>2.5.3 Ledetekst i navn (Nivå A)</h2>
+  <button type="button" class="collapsible">3.2.2 Inndata</button>
+  <div class="content">
+    <h2>3.2.2 Inndata (Nivå A)</h2>
+    <p>
+      <strong>KORT FORTALT:</strong><br />
+      <i>Endring av verdien til et skjemafelt medfører ikke automatisk
+        betydelige endringer i siden.</i>
+      <br /><br />
+      <strong>Nivå A (krav):</strong>Endring av innstillingene til en
+      brukergrensesnittkomponent medfører ikke automatisk kontekstendring med
+      mindre brukeren er blitt varslet om det før bruk av komponenten.
+      <br />
+
+      <br />
+      <strong>Løsningsforslag, eksempler og unntak:</strong> <br />
+      <a href="https://www.uutilsynet.no/wcag-standarden/tastaturnavigasjon/37">3.2.2 Inndata (Nivå A) | Tilsynet for
+        universell utforming av ikt
+        (uutilsynet.no)</a><br />
+      <br /><strong>Techniques:</strong><br />
+      • G80: Providing a submit button to initiate a change of context <br />
+      • G13: Describing what will happen before a change to a form control
+      that causes a change of context to occur is made <br />
+    </p>
+    <div class="feil">
       <p>
-        <strong>KORT FORTALT:</strong><br />
-        <i
-          >Brukere som bruker visuelle ledetekster skal også kunne bruke kodede
-          ledetekster.</i
-        >
-        <br /><br />
-        <strong>Nivå A (krav): </strong>For brukergrensesnittkomponenter med
-        ledetekster som inneholder tekst eller bilder av tekst, inneholder
-        navnet teksten som presenteres visuelt. <br />
-        Formålet med suksesskriteriet er å sikre at personer som bruker de
-        visuelle ledetekstene også kan bruke de programmeringsmessig bestemte
-        (dvs. kodede) ledetekstene. <br />
-        Et eksempel på dette er personer som bruker taleinput.
-        <br />
-        <br />
-        <strong>Løsningsforslag, eksempler og unntak:</strong> <br />
-        <a
-          href="https://www.uutilsynet.no/wcag-standarden/253-ledetekst-i-navn-niva/150"
-          >2.5.3 Ledetekst i navn (Nivå A) | Tilsynet for universell utforming
-          av ikt (uutilsynet.no)</a
-        ><br />
-        <br /><strong>Techniques:</strong><br />
-        • G208: Including the text of the visible label as part of the
-        accessible name <br />
-        • G211: Matching the accessible name to the visible label <br />
-        Advisory: <br />
-        • G162: Positioning labels to maximize predictability of relationships
-        <br />
+        <strong>Elementer som ikke består kravet:</strong><br />
+        Liste med elementer
       </p>
-      <div class="feil">
-        <p>
-          <strong>Elementer som ikke består kravet:</strong><br />
-          Liste med elementer
-        </p>
-      </div>
     </div>
+  </div>
 
-    <button type="button" class="collapsible">3.1.1 Språk på siden</button>
-    <div class="content">
-      <h2>3.1.1 Språk på siden (Nivå A)</h2>
+  <button type="button" class="collapsible">
+    3.2.3 Konsekvent navigering
+  </button>
+  <div class="content">
+    <h2>3.2.3 Konsekvent navigering (Nivå AA)</h2>
+    <p>
+      <strong>KORT FORTALT:</strong><br />
+      <i>Navigasjonslinker som gjentas på flere sider skal ha en konsekvent
+        rekkefølge.</i>
+      <br /><br />
+      <strong>Nivå AA (krav):</strong>Navigeringsmekanismer som gjentas på
+      flere websider innenfor et sett av websider, opptrer i samme relative
+      rekkefølge hver gang de gjentas, med mindre brukeren selv foretar en
+      endring.
+      <br />
+
+      <br />
+      <strong>Løsningsforslag, eksempler og unntak:</strong> <br />
+      <a href="https://www.uutilsynet.no/wcag-standarden/323-konsekvent-navigering-niva-aa/113">3.2.3 Konsekvent
+        navigering (Nivå AA) | Tilsynet for universell
+        utforming av ikt (uutilsynet.no)</a><br />
+      <br /><strong>Techniques:</strong><br />
+      • G61: Presenting repeated components in the same relative order each
+      time they appear <br />
+    </p>
+    <div class="feil">
       <p>
-        <strong>KORT FORTALT:</strong><br />
-        <i
-          >Sørg for at språket til innholdet på alle nettsider er angitt i
-          koden.</i
-        >
-        <br /><br />
-        <strong>Nivå A (krav):</strong> Standard naturlig språk på hver nettside
-        kan bestemmes programmeringsmessig.
-        <br />
-
-        <br />
-        <strong>Løsningsforslag, eksempler og unntak:</strong> <br />
-        <a href="https://www.uutilsynet.no/wcag-standarden/sprak-i-koden/223"
-          >3.1.1 Språk på siden (Nivå A) | Tilsynet for universell utforming av
-          ikt (uutilsynet.no)</a
-        ><br />
-        <br /><strong>Techniques:</strong><br />
-        • H57: Using language attributes on the html element <br />
+        <strong>Elementer som ikke består kravet:</strong><br />
+        Liste med elementer
       </p>
-      <div class="feil">
-        <p>
-          <strong>Elementer som ikke består kravet:</strong><br />
-          Liste med elementer
-        </p>
-      </div>
     </div>
+  </div>
 
-    <button type="button" class="collapsible">
-      3.1.2 Språk på deler av innhold
-    </button>
-    <div class="content">
-      <h2>3.1.2 Språk på deler av innhold (Nivå AA)</h2>
+  <button type="button" class="collapsible">
+    3.2.4 Konsekvent identifikasjon
+  </button>
+  <div class="content">
+    <h2>3.2.4 Konsekvent identifikasjon (Nivå AA)</h2>
+    <p>
+      <strong>KORT FORTALT:</strong><br />
+      <i>Elementer som har samme funksjonalitet på tvers av flere sider er
+        utformet likt.</i>
+      <br /><br />
+      <strong>Nivå AA (krav):</strong>Komponenter som har samme funksjonalitet
+      innenfor en samling av nettsider, identifiseres på en konsekvent måte.
+      <br />
+
+      <br />
+      <strong>Løsningsforslag, eksempler og unntak:</strong> <br />
+      <a href="https://www.uutilsynet.no/wcag-standarden/324-konsekvent-identifikasjon-niva-aa/115">3.2.4 Konsekvent
+        identifikasjon (Nivå AA) | Tilsynet for universell
+        utforming av ikt (uutilsynet.no)</a><br />
+      <br /><strong>Techniques:</strong><br />
+      • G197: Using labels, names, and text alternatives consistently for
+      content that has the same functionality <br />
+    </p>
+    <div class="feil">
       <p>
-        <strong>KORT FORTALT:</strong><br />
-        <i
-          >Sørg for at alle deler av innholdet som er på et annet språk enn
-          resten av siden er markert i koden.</i
-        >
-        <br /><br />
-        <strong>Nivå AA (krav):</strong> Naturlig språk i de enkelte avsnittene
-        eller setningene som innholdet består av, kan bestemmes
-        programmeringsmessig. Unntaket er egennavn, tekniske termer, ord av
-        ubestemmelig språklig opphav, samt ord eller uttrykk som har blitt en
-        del av språket i den omkringliggende teksten.
-        <br />
-
-        <br />
-        <strong>Løsningsforslag, eksempler og unntak:</strong> <br />
-        <a href="https://www.uutilsynet.no/wcag-standarden/sprak-i-koden/223"
-          >3.1.2 Språk på deler av innhold (Nivå AA) | Tilsynet for universell
-          utforming av ikt (uutilsynet.no)</a
-        ><br />
-        <br /><strong>Techniques:</strong><br />
-        • H58: Using language attributes to identify changes in the human
-        language <br />
+        <strong>Elementer som ikke består kravet:</strong><br />
+        Liste med elementer
       </p>
-      <div class="feil">
-        <p>
-          <strong>Elementer som ikke består kravet:</strong><br />
-          Liste med elementer
-        </p>
-      </div>
     </div>
+  </div>
 
-    <button type="button" class="collapsible">3.2.1 Fokus</button>
-    <div class="content">
-      <h2>3.2.1 Fokus (Nivå A)</h2>
+  <button type="button" class="collapsible">
+    3.3.1 Identifikasjon av feil
+  </button>
+  <div class="content">
+    <h2>3.3.1 Identifikasjon av feil (Skjema)(Nivå A)</h2>
+    <p>
+      <strong>KORT FORTALT:</strong><br />
+      <i>
+        For feil som oppdages automatisk må du vise hvor feilen har oppstått
+        og gi en tekstbeskrivelse av feilen.</i>
+      <br /><br />
+      <strong>Nivå A (krav):</strong>Hvis en inndatafeil oppdages automatisk,
+      identifiseres elementet som feilen berører, og brukeren får en
+      tekstbeskrivelse av feilen.
+      <br />
+
+      <br />
+      <strong>Løsningsforslag, eksempler og unntak:</strong> <br />
+      <a href="https://www.uutilsynet.no/wcag-standarden/skjema/38">3.3.1 Identifikasjon av feil (Nivå A) | Tilsynet for
+        universell
+        utforming av ikt (uutilsynet.no)</a><br />
+      <br /><strong>Techniques:</strong><br />
+      Situation A: If a form contains fields for which information from the
+      user is mandatory. <br />
+      • G83: Providing text descriptions to identify required fields that were
+      not completed <br />
+      • ARIA21: Using Aria-Invalid to Indicate An Error Field <br />
+      Situation B: If information provided by the user is required to be in a
+      specific data format or of certain values. <br />
+      • ARIA18: Using aria-alertdialog to Identify Errors <br />
+      • ARIA19: Using ARIA role=alert or Live Regions to Identify Errors
+      <br />
+      • ARIA21: Using Aria-Invalid to Indicate An Error Field <br />
+      • G84: Providing a text description when the user provides information
+      that is not in the list of allowed values <br />
+      • G85: Providing a text description when user input falls outside the
+      required format or values
+    </p>
+    <div class="feil">
       <p>
-        <strong>KORT FORTALT:</strong><br />
-        <i
-          >Når en komponent kommer i fokus medfører dette ikke automatisk
-          betydelige endringer i siden.</i
-        >
-        <br /><br />
-        <strong>Nivå A (krav):</strong>Når en komponent kommer i fokus, medfører
-        det ikke kontekstendring.
-        <br />
-
-        <br />
-        <strong>Løsningsforslag, eksempler og unntak:</strong> <br />
-        <a
-          href="https://www.uutilsynet.no/wcag-standarden/tastaturnavigasjon/37"
-          >3.2.1 Fokus (Nivå A) | Tilsynet for universell utforming av ikt
-          (uutilsynet.no)</a
-        ><br />
-        <br /><strong>Techniques:</strong><br />
-        • G107: Using "activate" rather than "focus" as a trigger for changes of
-        context <br />
-        Advisory: <br />
-        • G200: Opening new windows and tabs from a link only when necessary
-        <br />
-        • G201: Giving users advanced warning when opening a new window <br />
+        <strong>Elementer som ikke består kravet:</strong><br />
+        Liste med elementer
       </p>
-      <div class="feil">
-        <p>
-          <strong>Elementer som ikke består kravet:</strong><br />
-          Liste med elementer
-        </p>
-      </div>
     </div>
+  </div>
 
-    <button type="button" class="collapsible">3.2.2 Inndata</button>
-    <div class="content">
-      <h2>3.2.2 Inndata (Nivå A)</h2>
+  <button type="button" class="collapsible">
+    3.3.2 Ledetekster eller instruksjoner
+  </button>
+  <div class="content">
+    <h2>3.3.2 Ledetekster eller instruksjoner (Skjema)(Nivå A)</h2>
+    <p>
+      <strong>KORT FORTALT:</strong><br />
+      <i>
+        Det vises ledetekster eller instruksjoner når du har skjemaelementer
+        som må fylles ut.</i>
+      <br /><br />
+      <strong>Nivå A (krav):</strong>Det vises ledetekster eller instruksjoner
+      når innholdet krever inndata fra brukeren.
+      <br />
+
+      <br />
+      <strong>Løsningsforslag, eksempler og unntak:</strong> <br />
+      <a href="https://www.uutilsynet.no/wcag-standarden/skjema/38">Ledetekster eller instruksjoner (Nivå A) | Tilsynet
+        for universell
+        utforming av ikt (uutilsynet.no)</a><br />
+      <br /><strong>Techniques:</strong><br />
+      • G131: Providing descriptive labels: <br />
+      ‣ ARIA1: Using the aria-describedby property to provide a descriptive
+      label for user interface controls <br />
+      ‣ G89: Providing expected data format and example <br />
+      ‣ G184: Providing text instructions at the beginning of a form or set of
+      fields that describes the necessary input<br />
+      ‣ G83: Providing text descriptions to identify required fields that were
+      not completed <br />
+      • H44: Using label elements to associate text labels with form controls
+      <br />
+      <br />
+      • ARIA21: Using Aria-Invalid to Indicate An Error Field <br />
+      • G84: Providing a text description when the user provides information
+      that is not in the list of allowed values <br />
+      • G85: Providing a text description when user input falls outside the
+      required format or values
+    </p>
+    <div class="feil">
       <p>
-        <strong>KORT FORTALT:</strong><br />
-        <i
-          >Endring av verdien til et skjemafelt medfører ikke automatisk
-          betydelige endringer i siden.</i
-        >
-        <br /><br />
-        <strong>Nivå A (krav):</strong>Endring av innstillingene til en
-        brukergrensesnittkomponent medfører ikke automatisk kontekstendring med
-        mindre brukeren er blitt varslet om det før bruk av komponenten.
-        <br />
-
-        <br />
-        <strong>Løsningsforslag, eksempler og unntak:</strong> <br />
-        <a
-          href="https://www.uutilsynet.no/wcag-standarden/tastaturnavigasjon/37"
-          >3.2.2 Inndata (Nivå A) | Tilsynet for universell utforming av ikt
-          (uutilsynet.no)</a
-        ><br />
-        <br /><strong>Techniques:</strong><br />
-        • G80: Providing a submit button to initiate a change of context <br />
-        • G13: Describing what will happen before a change to a form control
-        that causes a change of context to occur is made <br />
+        <strong>Elementer som ikke består kravet:</strong><br />
+        Liste med elementer
       </p>
-      <div class="feil">
-        <p>
-          <strong>Elementer som ikke består kravet:</strong><br />
-          Liste med elementer
-        </p>
-      </div>
     </div>
+  </div>
 
-    <button type="button" class="collapsible">
-      3.2.3 Konsekvent navigering
-    </button>
-    <div class="content">
-      <h2>3.2.3 Konsekvent navigering (Nivå AA)</h2>
+  <button type="button" class="collapsible">3.3.3 Forslag ved feil</button>
+  <div class="content">
+    <h2>3.3.3 Forslag ved feil (Nivå AA)</h2>
+    <p>
+      <strong>KORT FORTALT:</strong><br />
+      <i>Dersom feil blir oppdaget automatisk, gi brukeren et forslag til
+        hvordan feilen kan rettes.</i>
+      <br /><br />
+      <strong>Nivå AA (krav): </strong>Hvis en inndatafeil oppdages automatisk
+      og det finnes forslag til hvordan den kan rettes, presenteres forslagene
+      for brukeren, med mindre dette innebærer risiko for sikkerheten eller
+      formålet med innholdet.
+      <br />
+
+      <br />
+      <strong>Løsningsforslag, eksempler og unntak:</strong> <br />
+      <a href="https://www.uutilsynet.no/wcag-standarden/skjema/38">3.3.3 Forslag ved feil (Nivå AA) | Tilsynet for
+        universell utforming
+        av ikt (uutilsynet.no)</a><br />
+      <br /><strong>Techniques:</strong><br />
+      Situation A: If a mandatory field contains no information: <br />
+      • G83: Providing text descriptions to identify required fields that were
+      not completed <br />
+      • ARIA2: Identifying a required field with the aria-required property<br />
+
+      Situation B: If information for a field is required to be in a specific
+      data format: <br />
+      • ARIA18: Using aria-alertdialog to Identify Errors<br />
+      • G85: Providing a text description when user input falls outside the
+      required format or values<br />
+      • G177: Providing suggested correction text<br />
+
+      Situation C: Information provided by the user is required to be one of a
+      limited set of values: <br />
+      • ARIA18: Using aria-alertdialog to Identify Errors <br />
+      • G84: Providing a text description when the user provides information
+      that is not in the list of allowed values <br />
+      • G177: Providing suggested correction text
+    </p>
+    <div class="feil">
       <p>
-        <strong>KORT FORTALT:</strong><br />
-        <i
-          >Navigasjonslinker som gjentas på flere sider skal ha en konsekvent
-          rekkefølge.</i
-        >
-        <br /><br />
-        <strong>Nivå AA (krav):</strong>Navigeringsmekanismer som gjentas på
-        flere websider innenfor et sett av websider, opptrer i samme relative
-        rekkefølge hver gang de gjentas, med mindre brukeren selv foretar en
-        endring.
-        <br />
-
-        <br />
-        <strong>Løsningsforslag, eksempler og unntak:</strong> <br />
-        <a
-          href="https://www.uutilsynet.no/wcag-standarden/323-konsekvent-navigering-niva-aa/113"
-          >3.2.3 Konsekvent navigering (Nivå AA) | Tilsynet for universell
-          utforming av ikt (uutilsynet.no)</a
-        ><br />
-        <br /><strong>Techniques:</strong><br />
-        • G61: Presenting repeated components in the same relative order each
-        time they appear <br />
+        <strong>Elementer som ikke består kravet:</strong><br />
+        Liste med elementer
       </p>
-      <div class="feil">
-        <p>
-          <strong>Elementer som ikke består kravet:</strong><br />
-          Liste med elementer
-        </p>
-      </div>
     </div>
+  </div>
 
-    <button type="button" class="collapsible">
-      3.2.4 Konsekvent identifikasjon
-    </button>
-    <div class="content">
-      <h2>3.2.4 Konsekvent identifikasjon (Nivå AA)</h2>
+  <button type="button" class="collapsible">4.1.1 Parsing</button>
+  <div class="content">
+    <h2>4.1.1 Parsing (oppdeling, Nivå A)</h2>
+    <p>
+      <strong>KORT FORTALT:</strong><br />
+      <i>Alle sider skal være uten store kodefeil.</i>
+      <br /><br />
+      <strong>Nivå A (krav): </strong>I innhold som implementeres ved hjelp av
+      oppmerkingsspråk, har elementene fullstendige start- og sluttkoder,
+      elementene er nøstet i henhold til spesifikasjonene, <br />elementene
+      inneholder ikke dupliserte attributter, og eventuelle ID-er er unike.
+      Unntaket er hvis spesifikasjonene tillater disse funksjonene.
+      <br />
+
+      <br />
+      <strong>Løsningsforslag, eksempler og unntak:</strong> <br />
+      <a href="https://www.uutilsynet.no/regelverk/kodestandarder-og-validering/212">4.1.1 Parsing (oppdeling, Nivå A) |
+        Tilsynet for universell utforming
+        av ikt (uutilsynet.no)</a><br />
+      <br /><strong>Techniques:</strong><br />
+      • G134: Validating Web pages <br />
+      • G192: Fully conforming to specifications <br />
+
+      Ensuring that Web pages can be parsed by using one of the following
+      techniques: <br />
+      • H74: Ensuring that opening and closing tags are used according to
+      specification AND H93: Ensuring that id attributes are unique on a Web
+      page AND H94: Ensuring that elements do not contain duplicate
+      attributes<br />
+    </p>
+    <div class="feil">
       <p>
-        <strong>KORT FORTALT:</strong><br />
-        <i
-          >Elementer som har samme funksjonalitet på tvers av flere sider er
-          utformet likt.</i
-        >
-        <br /><br />
-        <strong>Nivå AA (krav):</strong>Komponenter som har samme funksjonalitet
-        innenfor en samling av nettsider, identifiseres på en konsekvent måte.
-        <br />
-
-        <br />
-        <strong>Løsningsforslag, eksempler og unntak:</strong> <br />
-        <a
-          href="https://www.uutilsynet.no/wcag-standarden/324-konsekvent-identifikasjon-niva-aa/115"
-          >3.2.4 Konsekvent identifikasjon (Nivå AA) | Tilsynet for universell
-          utforming av ikt (uutilsynet.no)</a
-        ><br />
-        <br /><strong>Techniques:</strong><br />
-        • G197: Using labels, names, and text alternatives consistently for
-        content that has the same functionality <br />
+        <strong>Elementer som ikke består kravet:</strong><br />
+        Liste med elementer
       </p>
-      <div class="feil">
-        <p>
-          <strong>Elementer som ikke består kravet:</strong><br />
-          Liste med elementer
-        </p>
-      </div>
     </div>
+  </div>
 
-    <button type="button" class="collapsible">
-      3.3.1 Identifikasjon av feil
-    </button>
-    <div class="content">
-      <h2>3.3.1 Identifikasjon av feil (Skjema)(Nivå A)</h2>
+  <button type="button" class="collapsible">4.1.2 Navn, rolle, verdi</button>
+  <div class="content">
+    <h2>4.1.2 Navn, rolle, verdi (Nivå A)</h2>
+    <p>
+      <strong>KORT FORTALT:</strong><br />
+      <i>Alle komponenter har navn og rolle bestemt i koden.</i>
+      <br /><br />
+      <strong>Nivå A (krav): </strong>For alle brukergrensesnittkomponenter
+      (blant annet skjemaelementer, lenker og komponenter som genereres ved
+      hjelp av skript), kan navn og rolle bestemmes programmeringsmessig.
+      <br />
+      Tilstander, egenskaper og verdier som kan angis av brukeren, kan angis
+      programmeringsmessig, og informasjon om endringer i disse elementene er
+      tilgjengelig for brukeragenter, inkludert kompenserende teknologi.
+      <br />
+      Merknad: Dette suksesskriteriet er primært beregnet på produsenter av
+      webinnhold som utvikler eller lager skript til egne
+      brukergrensesnittkomponenter. <br />
+      Standard HTML-kontrollelementer oppfyller for eksempel allerede dette
+      suksesskriteriet når de brukes i henhold til spesifikasjonen.
+      <br />
+
+      <br />
+      <strong>Løsningsforslag, eksempler og unntak:</strong> <br />
+      <a href="https://www.uutilsynet.no/wcag-standarden/412-navn-rolle-verdi-niva/121">4.1.2 Navn, rolle, verdi (Nivå
+        A) | Tilsynet for universell utforming
+        av ikt (uutilsynet.no)</a><br />
+      <br /><strong>Techniques:</strong><br />
+      • ARIA14: Using aria-label to provide an invisible label where a visible
+      label cannot be used <br />
+      • ARIA16: Using aria-labelledby to provide a name for user interface
+      controls <br />
+    </p>
+    <div class="feil">
       <p>
-        <strong>KORT FORTALT:</strong><br />
-        <i>
-          For feil som oppdages automatisk må du vise hvor feilen har oppstått
-          og gi en tekstbeskrivelse av feilen.</i
-        >
-        <br /><br />
-        <strong>Nivå A (krav):</strong>Hvis en inndatafeil oppdages automatisk,
-        identifiseres elementet som feilen berører, og brukeren får en
-        tekstbeskrivelse av feilen.
-        <br />
-
-        <br />
-        <strong>Løsningsforslag, eksempler og unntak:</strong> <br />
-        <a href="https://www.uutilsynet.no/wcag-standarden/skjema/38"
-          >3.3.1 Identifikasjon av feil (Nivå A) | Tilsynet for universell
-          utforming av ikt (uutilsynet.no)</a
-        ><br />
-        <br /><strong>Techniques:</strong><br />
-        Situation A: If a form contains fields for which information from the
-        user is mandatory. <br />
-        • G83: Providing text descriptions to identify required fields that were
-        not completed <br />
-        • ARIA21: Using Aria-Invalid to Indicate An Error Field <br />
-        Situation B: If information provided by the user is required to be in a
-        specific data format or of certain values. <br />
-        • ARIA18: Using aria-alertdialog to Identify Errors <br />
-        • ARIA19: Using ARIA role=alert or Live Regions to Identify Errors
-        <br />
-        • ARIA21: Using Aria-Invalid to Indicate An Error Field <br />
-        • G84: Providing a text description when the user provides information
-        that is not in the list of allowed values <br />
-        • G85: Providing a text description when user input falls outside the
-        required format or values
+        <strong>Elementer som ikke består kravet:</strong><br />
+        Liste med elementer
       </p>
-      <div class="feil">
-        <p>
-          <strong>Elementer som ikke består kravet:</strong><br />
-          Liste med elementer
-        </p>
-      </div>
     </div>
+  </div>
 
-    <button type="button" class="collapsible">
-      3.3.2 Ledetekster eller instruksjoner
-    </button>
-    <div class="content">
-      <h2>3.3.2 Ledetekster eller instruksjoner (Skjema)(Nivå A)</h2>
+  <button type="button" class="collapsible">4.1.3 Statusbeskjeder</button>
+  <div class="content">
+    <h2>4.1.3 Statusbeskjeder (Nivå AA)</h2>
+    <p>
+      <strong>KORT FORTALT:</strong><br />
+      <i>Brukeren skal få statusbeskjeder om viktige endringer på nettsiden
+        uten at det gir kontekstendring.</i>
+      <br /><br />
+      <strong>Nivå AA (krav): </strong>Formålet med suksesskriteriet er å
+      sikre at brukeren får statusbeskjeder og blir oppmerksom på viktige
+      endringer eller oppdateringer på nettsiden. <br />
+      Med rett koding, blir innholdet i statusbeskjeder lest opp av
+      skjermlesere.
+      <br />
+      <br />
+      <strong>Løsningsforslag, eksempler og unntak:</strong> <br />
+      <a href="https://www.uutilsynet.no/wcag-standarden/413-statusbeskjeder-niva-aa/152">4.1.3 Statusbeskjeder (Nivå
+        AA) | Tilsynet for universell utforming
+        av ikt (uutilsynet.no)</a><br />
+      <br /><strong>Techniques:</strong><br />
+      Situation A: If a status message advises on the success or results of an
+      action, or the state of an application: <br />
+      • ARIA22: Using role=status to present status messages in combination
+      with any of the following: G199: Providing success feedback when data is
+      submitted successfully <br />
+      Situation B: If a status message conveys a suggestion, or a warning on
+      the existence of an error: <br />
+      • ARIA19: Using ARIA role=alert or Live Regions to Identify Errors
+      Situation C: If a status message conveys information on the progress of
+      a process: <br />
+      • ARIA23: Using role=log to identify sequential information updates
+      <br />
+    </p>
+    <div class="feil">
       <p>
-        <strong>KORT FORTALT:</strong><br />
-        <i>
-          Det vises ledetekster eller instruksjoner når du har skjemaelementer
-          som må fylles ut.</i
-        >
-        <br /><br />
-        <strong>Nivå A (krav):</strong>Det vises ledetekster eller instruksjoner
-        når innholdet krever inndata fra brukeren.
-        <br />
-
-        <br />
-        <strong>Løsningsforslag, eksempler og unntak:</strong> <br />
-        <a href="https://www.uutilsynet.no/wcag-standarden/skjema/38"
-          >Ledetekster eller instruksjoner (Nivå A) | Tilsynet for universell
-          utforming av ikt (uutilsynet.no)</a
-        ><br />
-        <br /><strong>Techniques:</strong><br />
-        • G131: Providing descriptive labels: <br />
-        ‣ ARIA1: Using the aria-describedby property to provide a descriptive
-        label for user interface controls <br />
-        ‣ G89: Providing expected data format and example <br />
-        ‣ G184: Providing text instructions at the beginning of a form or set of
-        fields that describes the necessary input<br />
-        ‣ G83: Providing text descriptions to identify required fields that were
-        not completed <br />
-        • H44: Using label elements to associate text labels with form controls
-        <br />
-        <br />
-        • ARIA21: Using Aria-Invalid to Indicate An Error Field <br />
-        • G84: Providing a text description when the user provides information
-        that is not in the list of allowed values <br />
-        • G85: Providing a text description when user input falls outside the
-        required format or values
+        <strong>Elementer som ikke består kravet:</strong><br />
+        Liste med elementer
       </p>
-      <div class="feil">
-        <p>
-          <strong>Elementer som ikke består kravet:</strong><br />
-          Liste med elementer
-        </p>
-      </div>
     </div>
+  </div>
 
-    <button type="button" class="collapsible">3.3.3 Forslag ved feil</button>
-    <div class="content">
-      <h2>3.3.3 Forslag ved feil (Nivå AA)</h2>
-      <p>
-        <strong>KORT FORTALT:</strong><br />
-        <i
-          >Dersom feil blir oppdaget automatisk, gi brukeren et forslag til
-          hvordan feilen kan rettes.</i
-        >
-        <br /><br />
-        <strong>Nivå AA (krav): </strong>Hvis en inndatafeil oppdages automatisk
-        og det finnes forslag til hvordan den kan rettes, presenteres forslagene
-        for brukeren, med mindre dette innebærer risiko for sikkerheten eller
-        formålet med innholdet.
-        <br />
+  <footer>
+    <p>
+      Kriterier som er krav, men som ikke gjelder nettsiden: 2.2.1 (Justerbar
+      hastighet), 1.4.2 (Styring av lyd), 2.2.2 (Pause, topp, skjul), 2.3.1
+      (Terskelverdi på maksimalt tre glimt), 3.3.4 (Forhinding av juridiske-,
+      økonomiske-, datafeil), 2.5.4 (Bevegelsesaktivering)
+    </p>
+  </footer>
 
-        <br />
-        <strong>Løsningsforslag, eksempler og unntak:</strong> <br />
-        <a href="https://www.uutilsynet.no/wcag-standarden/skjema/38"
-          >3.3.3 Forslag ved feil (Nivå AA) | Tilsynet for universell utforming
-          av ikt (uutilsynet.no)</a
-        ><br />
-        <br /><strong>Techniques:</strong><br />
-        Situation A: If a mandatory field contains no information: <br />
-        • G83: Providing text descriptions to identify required fields that were
-        not completed <br />
-        • ARIA2: Identifying a required field with the aria-required property<br />
+  <script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
 
-        Situation B: If information for a field is required to be in a specific
-        data format: <br />
-        • ARIA18: Using aria-alertdialog to Identify Errors<br />
-        • G85: Providing a text description when user input falls outside the
-        required format or values<br />
-        • G177: Providing suggested correction text<br />
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+      });
+    }
 
-        Situation C: Information provided by the user is required to be one of a
-        limited set of values: <br />
-        • ARIA18: Using aria-alertdialog to Identify Errors <br />
-        • G84: Providing a text description when the user provides information
-        that is not in the list of allowed values <br />
-        • G177: Providing suggested correction text
-      </p>
-      <div class="feil">
-        <p>
-          <strong>Elementer som ikke består kravet:</strong><br />
-          Liste med elementer
-        </p>
-      </div>
-    </div>
+    var coll = document.getElementsByClassName("bilderknapp");
+    var i;
 
-    <button type="button" class="collapsible">4.1.1 Parsing</button>
-    <div class="content">
-      <h2>4.1.1 Parsing (oppdeling, Nivå A)</h2>
-      <p>
-        <strong>KORT FORTALT:</strong><br />
-        <i>Alle sider skal være uten store kodefeil.</i>
-        <br /><br />
-        <strong>Nivå A (krav): </strong>I innhold som implementeres ved hjelp av
-        oppmerkingsspråk, har elementene fullstendige start- og sluttkoder,
-        elementene er nøstet i henhold til spesifikasjonene, <br />elementene
-        inneholder ikke dupliserte attributter, og eventuelle ID-er er unike.
-        Unntaket er hvis spesifikasjonene tillater disse funksjonene.
-        <br />
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function () {
+        this.classList.toggle("active1");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+      });
+    }
+  </script>
+</body>
 
-        <br />
-        <strong>Løsningsforslag, eksempler og unntak:</strong> <br />
-        <a
-          href="https://www.uutilsynet.no/regelverk/kodestandarder-og-validering/212"
-          >4.1.1 Parsing (oppdeling, Nivå A) | Tilsynet for universell utforming
-          av ikt (uutilsynet.no)</a
-        ><br />
-        <br /><strong>Techniques:</strong><br />
-        • G134: Validating Web pages <br />
-        • G192: Fully conforming to specifications <br />
-
-        Ensuring that Web pages can be parsed by using one of the following
-        techniques: <br />
-        • H74: Ensuring that opening and closing tags are used according to
-        specification AND H93: Ensuring that id attributes are unique on a Web
-        page AND H94: Ensuring that elements do not contain duplicate
-        attributes<br />
-      </p>
-      <div class="feil">
-        <p>
-          <strong>Elementer som ikke består kravet:</strong><br />
-          Liste med elementer
-        </p>
-      </div>
-    </div>
-
-    <button type="button" class="collapsible">4.1.2 Navn, rolle, verdi</button>
-    <div class="content">
-      <h2>4.1.2 Navn, rolle, verdi (Nivå A)</h2>
-      <p>
-        <strong>KORT FORTALT:</strong><br />
-        <i>Alle komponenter har navn og rolle bestemt i koden.</i>
-        <br /><br />
-        <strong>Nivå A (krav): </strong>For alle brukergrensesnittkomponenter
-        (blant annet skjemaelementer, lenker og komponenter som genereres ved
-        hjelp av skript), kan navn og rolle bestemmes programmeringsmessig.
-        <br />
-        Tilstander, egenskaper og verdier som kan angis av brukeren, kan angis
-        programmeringsmessig, og informasjon om endringer i disse elementene er
-        tilgjengelig for brukeragenter, inkludert kompenserende teknologi.
-        <br />
-        Merknad: Dette suksesskriteriet er primært beregnet på produsenter av
-        webinnhold som utvikler eller lager skript til egne
-        brukergrensesnittkomponenter. <br />
-        Standard HTML-kontrollelementer oppfyller for eksempel allerede dette
-        suksesskriteriet når de brukes i henhold til spesifikasjonen.
-        <br />
-
-        <br />
-        <strong>Løsningsforslag, eksempler og unntak:</strong> <br />
-        <a
-          href="https://www.uutilsynet.no/wcag-standarden/412-navn-rolle-verdi-niva/121"
-          >4.1.2 Navn, rolle, verdi (Nivå A) | Tilsynet for universell utforming
-          av ikt (uutilsynet.no)</a
-        ><br />
-        <br /><strong>Techniques:</strong><br />
-        • ARIA14: Using aria-label to provide an invisible label where a visible
-        label cannot be used <br />
-        • ARIA16: Using aria-labelledby to provide a name for user interface
-        controls <br />
-      </p>
-      <div class="feil">
-        <p>
-          <strong>Elementer som ikke består kravet:</strong><br />
-          Liste med elementer
-        </p>
-      </div>
-    </div>
-
-    <button type="button" class="collapsible">4.1.3 Statusbeskjeder</button>
-    <div class="content">
-      <h2>4.1.3 Statusbeskjeder (Nivå AA)</h2>
-      <p>
-        <strong>KORT FORTALT:</strong><br />
-        <i
-          >Brukeren skal få statusbeskjeder om viktige endringer på nettsiden
-          uten at det gir kontekstendring.</i
-        >
-        <br /><br />
-        <strong>Nivå AA (krav): </strong>Formålet med suksesskriteriet er å
-        sikre at brukeren får statusbeskjeder og blir oppmerksom på viktige
-        endringer eller oppdateringer på nettsiden. <br />
-        Med rett koding, blir innholdet i statusbeskjeder lest opp av
-        skjermlesere.
-        <br />
-        <br />
-        <strong>Løsningsforslag, eksempler og unntak:</strong> <br />
-        <a
-          href="https://www.uutilsynet.no/wcag-standarden/413-statusbeskjeder-niva-aa/152"
-          >4.1.3 Statusbeskjeder (Nivå AA) | Tilsynet for universell utforming
-          av ikt (uutilsynet.no)</a
-        ><br />
-        <br /><strong>Techniques:</strong><br />
-        Situation A: If a status message advises on the success or results of an
-        action, or the state of an application: <br />
-        • ARIA22: Using role=status to present status messages in combination
-        with any of the following: G199: Providing success feedback when data is
-        submitted successfully <br />
-        Situation B: If a status message conveys a suggestion, or a warning on
-        the existence of an error: <br />
-        • ARIA19: Using ARIA role=alert or Live Regions to Identify Errors
-        Situation C: If a status message conveys information on the progress of
-        a process: <br />
-        • ARIA23: Using role=log to identify sequential information updates
-        <br />
-      </p>
-      <div class="feil">
-        <p>
-          <strong>Elementer som ikke består kravet:</strong><br />
-          Liste med elementer
-        </p>
-      </div>
-    </div>
-
-    <footer>
-      <p>
-        Kriterier som er krav, men som ikke gjelder nettsiden: 2.2.1 (Justerbar
-        hastighet), 1.4.2 (Styring av lyd), 2.2.2 (Pause, topp, skjul), 2.3.1
-        (Terskelverdi på maksimalt tre glimt), 3.3.4 (Forhinding av juridiske-,
-        økonomiske-, datafeil), 2.5.4 (Bevegelsesaktivering)
-      </p>
-    </footer>
-
-    <script>
-      var coll = document.getElementsByClassName("collapsible");
-      var i;
-
-      for (i = 0; i < coll.length; i++) {
-        coll[i].addEventListener("click", function () {
-          this.classList.toggle("active");
-          var content = this.nextElementSibling;
-          if (content.style.display === "block") {
-            content.style.display = "none";
-          } else {
-            content.style.display = "block";
-          }
-        });
-      }
-    </script>
-  </body>
 </html>
