@@ -93,7 +93,7 @@
         BILDER
       </button>
       <div class="bilder">
-        <img src="riktigalttekst.png" title="Beskrivelse av bilde">
+        <img src="bilder/riktigalttekst.png" title="Beskrivelse av bilde">
       </div>
 
     </div>
@@ -459,12 +459,12 @@
         BILDER
       </button>
       <div class="bilder">
-        <img src="utencss1.png" title="For stor logo">
-        <img src="utencss2.png" title="Logisk rekkefølge">
-        <img src="utencss3.png" title="Gjentagende meny">
-        <img src="utencss4.png" title="Dobbel dato">
-        <img src="utencss5.png" title="Logisk rekkefølge, store bilder">
-        <img src="utencss6.png" title="Selvhjelp side">
+        <img src="bilder/utencss1.png" title="For stor logo">
+        <img src="bilder/utencss2.png" title="Logisk rekkefølge">
+        <img src="bilder/utencss3.png" title="Gjentagende meny">
+        <img src="bilder/utencss4.png" title="Dobbel dato">
+        <img src="bilder/utencss5.png" title="Logisk rekkefølge, store bilder">
+        <img src="bilder/utencss6.png" title="Selvhjelp side">
       </div>
     </div>
   </div>
@@ -525,7 +525,7 @@
           <th>Lenke til side</th>
         </tr>
         <tr>
-          <td>Finner ingen informasjon på nettsiden eller i skjema som kun er kommunisert med farge.</td>
+          <td>Finner ingen informasjon på nettsiden eller i skjema som kun er kommunisert med sensoriske egenskaper</td>
           <td><a href="https://www.hedmark-ikt.no/">Forside</a></td>
         </tr>
       </table>
@@ -613,14 +613,45 @@
       <a href="https://www.uutilsynet.no/wcag-standarden/135-identifiser-formal-med-inndata-niva-aa/142">1.3.5
         Identifiser formål med inndata | Tilsynet for universell
         utforming av ikt (uutilsynet.no)</a><br />
+      <hr>
       <br /><strong>Techniques:</strong><br />
       • H98: Using HTML 5.2 autocomplete attributes <br />
+      • Using type and autocomplete to further specify the input (phone number on checkout for shipping that can only be
+      a national phone number
+      would be: <br />
+      input type=tel name=shiptel autocomplete="shipping tel-national")
     </p>
     <div class="feil">
       <p>
         <strong>Elementer som ikke består kravet:</strong><br />
-        Liste med elementer
       </p>
+      <table>
+        <tr>
+          <th>Mangel</th>
+          <th>Lenke til side</th>
+        </tr>
+        <tr>
+          <td>Skjema-felt bruker ikke autocomplete, bruker ikke beskrivende name value. Aria labels er lagt inn i kode
+            men ikke brukt riktig ("aria-describedby=nf-error-6)</td>
+          <td><a href="https://www.hedmark-ikt.no/konsulenttilgang/">Skjema: konsulenttilgang</a></td>
+        </tr>
+        <tr>
+          <td>Overnevnte gjelder alle skjema, også påmelding</td>
+          <td><a href="https://www.hedmark-ikt.no/dig-lunsj/pamelding-til-dig-lunsj/">Skjema: påmelding til dig.
+              lunsj</a></td>
+        </tr>
+        <tr>
+          <td>(Usikker på om det gjelder siden det ikke er del av skjema, men det er inputfelt..) Søkboks på forsiden
+          </td>
+          <td><a href="https://www.hedmark-ikt.no/">Forside</a></td>
+        </tr>
+        <tr>
+          <td>Kommentarfelt-skjema
+          </td>
+          <td><a href="https://www.hedmark-ikt.no/faq/hvordan-bytte-passord-med-sms/">Artikkel</a></td>
+        </tr>
+      </table>
+      <br />
     </div>
   </div>
 
@@ -658,8 +689,31 @@
     <div class="feil">
       <p>
         <strong>Elementer som ikke består kravet:</strong><br />
-        Liste med elementer
       </p>
+      <table>
+        <tr>
+          <th>Mangel</th>
+          <th>Lenke til side</th>
+        </tr>
+        <table>
+          <p>
+            <strong>Elementer som består kravet:</strong>
+          </p>
+          <tr>
+            <th>Riktig</th>
+            <th>Lenke til side</th>
+          </tr>
+          <tr>
+            <td>Finner ingen informasjon på nettsiden eller i skjema som kun er kommunisert med farge.</td>
+            <td><a href="https://www.hedmark-ikt.no/">Forside</a></td>
+          </tr>
+          <tr>
+            <td>Skjema blir ikke bare rødt når felt ikke er fylt ut, beskriver også skriftlig at feltet må fylles ut
+            </td>
+            <td><a href="https://www.hedmark-ikt.no/dig-lunsj/pamelding-til-dig-lunsj/">Skjema: påmelding til dig.
+                lunsj</a></td>
+          </tr>
+        </table>
     </div>
   </div>
 
@@ -689,6 +743,7 @@
       <a href="https://www.uutilsynet.no/wcag-standarden/143-kontrast-minimum-niva-aa/95">1.4.3 Kontrast (Nivå AA) |
         Tilsynet for universell utforming av ikt
         (uutilsynet.no)</a><br />
+      <hr>
       <br /><strong>Techniques:</strong><br />
       Situation A: text is less than 18 point if not bold and less than 14
       point if bold <br />
@@ -703,12 +758,92 @@
       if bold <br />
       • G145: Ensuring that a contrast ratio of at least 3:1 exists between
       text (and images of text) and background behind the text <br />
-    </p>
+    </p><br />
     <div class="feil">
+      <p><i>Brukt www.contrastchecker.com for test</i></p>
       <p>
         <strong>Elementer som ikke består kravet:</strong><br />
-        Liste med elementer
       </p>
+      <table>
+        <tr>
+          <th>Mangel</th>
+          <th>Lenke til side</th>
+        </tr>
+        <tr>
+          <td>Standard tekst mot bakgrunn under 'Aktuelt' og lignende bokser består alle krav bortsett ifra 'Color diff'
+            som vil si greyscale for fargeblinde</td>
+          <td><a href="https://www.hedmark-ikt.no">Forside</a></td>
+        </tr>
+        <tr>
+          <td>På sider med svart tekst på hvit bakgrunn (og andre sider, men der er det satte farger) består ikke krav
+            G148 ved at color og background color er spesifisert</td>
+          <td><a href="https://www.hedmark-ikt.no/hedmark-ikts-historie/">Vår historie</a></td>
+        </tr>
+        <tr>
+          <td>Søkebar på forside består ingen av kravene til kontrast og farge, placeholder tekst har ikke tilstrekkelig
+            kontrast mot bakgrunn. Samme gjelder skjema-input felter, slik som påmelding skjema etc.</td>
+          <td><a href="https://www.hedmark-ikt.no">Forside</a></td>
+        </tr>
+        <tr>
+          <td>Dato for publisering på artikler består ingen av kravene til kontrast og farge</td>
+          <td><a href="https://www.hedmark-ikt.no/">Forside</a></td>
+        </tr>
+        <tr>
+          <td>Hover på prosjekt-tittel består ikke 'Color diff' krav</td>
+          <td><a href="https://www.hedmark-ikt.no/">Forside</a></td>
+        </tr>
+        <tr>
+          <td>Les mer bokser består ingen av kravene til kontrast og farge</td>
+          <td><a href="https://www.hedmark-ikt.no/sikkerhet/">Har du problemer med kurset</a></td>
+        </tr>
+        <tr>
+          <td>Hover på 'Hjem' meny-element består ikke AAA krav dersom vi definerer 1em som 16px (minste
+            skalert)(standard). Kun dette meny-elementet som skifter farge på hover *verdt å merke.</td>
+          <td><a href="https://www.hedmark-ikt.no/">Forside</a></td>
+        </tr>
+        <tr>
+          <td>Hover på linker består ikke krav AAA (enhanced contrast under 18pt) og ikke 'color diff'</td>
+          <td><a href="https://www.hedmark-ikt.no/smart-hamar-inviterer-til-digitalt-innbyggerverksted/">Artikkel</a>
+          </td>
+        </tr>
+      </table>
+      <br />
+      <strong>Elementer som består kravet:</strong><br />
+      <table>
+        <tr>
+          <th>Riktig</th>
+          <th>Lenke til side</th>
+        </tr>
+        <tr>
+          <td>Standard test mot bakgrunn under 'Aktuelt' består krav AA, AAA og colors</td>
+          <td><a href="https://www.hedmark-ikt.no/prosjekter">Prosjekter</a></td>
+        </tr>
+        <tr>
+          <td>Sider med hvit bakgrunn og svart tekst består alle krav</td>
+          <td><a href="https://www.hedmark-ikt.no/hedmark-ikts-historie/">Vår historie</a></td>
+        </tr>
+        <tr>
+          <td>Hover på prosjekt-tittel består AA18pt, AAA18pt og colors</td>
+          <td><a href="https://www.hedmark-ikt.no/prosjekter/">Prosjekter</a></td>
+        </tr>
+        <tr>
+          <td>Overskrifter, knapper og titler møter alle krav</td>
+          <td><a href="https://www.hedmark-ikt.no/">Forside</a></td>
+        </tr>
+      </table>
+      <button type="button" class="bilderknapp">
+        BILDER
+      </button>
+      <div class="bilder">
+        <img src="bilder/kontrastaktuelttekst.png" title="Kontrastsjekk 'aktuelt' tekst">
+        <img src="bilder/kontrastsokebar.png" title="Kontrastsjekk search bar">
+        <img src="bilder/kontrast.png" title="Kontrastsjekk påmeldingsskjema">
+        <img src="bilder/kontrastartikkeldato.png" title="Kontrastsjekk publiseringsdato">
+        <img src="bilder/kontrastprosjekttittelhover.png" title="Kontrastsjekk prosjekttittel hover">
+        <img src="bilder/kontrastlesmerbokser.png" title="Kontrastsjekk les mer bokser">
+        <img src="bilder/kontrasthjemhover.png" title="Kontrastsjekk hover hjem-menyelement">
+        <img src="bilder/kontrasthoverlink.png" title="Kontrastsjekk hover lenker">
+      </div>
     </div>
   </div>
 
@@ -864,6 +999,7 @@
       <a href="https://www.uutilsynet.no/wcag-standarden/1411-kontrast-ikke-tekstlig-innhold-niva-aa/145">1.4.11
         Kontrast for ikke-tekstlig innhold (Nivå AA) | Tilsynet for
         universell utforming av ikt (uutilsynet.no)</a><br />
+      <hr>
       <br /><strong>Techniques:</strong><br />
       Situation A: Color is used to identify user interface components or used
       to identify user interface component states <br />
@@ -875,12 +1011,45 @@
       <br />
       • G209: Provide sufficient contrast at the boundaries between adjoining
       colors
-    </p>
+    </p><br />
     <div class="feil">
       <p>
         <strong>Elementer som ikke består kravet:</strong><br />
-        Liste med elementer
       </p>
+      <table>
+        <tr>
+          <th>Mangel</th>
+          <th>Lenke til side</th>
+        </tr>
+        <tr>
+          <td>Kontrast mellom knappe-meny på forsiden og bakgrunn</td>
+          <td><a href="https://www.hedmark-ikt.no/">Forside</a></td>
+        </tr>
+      </table>
+      <br />
+      <strong>Elementer som består kravet:</strong><br />
+      <table>
+        <tr>
+          <th>Riktig</th>
+          <th>Lenke til side</th>
+        </tr>
+        <tr>
+          <td>Toppmeny-knapper har god kontrast ved hover (anbefaler å gjøre om titlene til lenker og bruke hover før
+            dropdown meny også)</td>
+          <td><a href="https://www.hedmark-ikt.no/">Forside</a></td>
+        </tr>
+        <tr>
+          <td>Knapper har generelt god kontrast (les mer, etc.)</td>
+          <td><a href="https://www.hedmark-ikt.no/dig-lunsj/">Dig. lunsj</a></td>
+        </tr>
+      </table>
+      <button type="button" class="bilderknapp">
+        BILDER
+      </button>
+      <div class="bilder">
+        <img src="bilder/kontrastsjekkfosideknapper1.png" title="Kontrastsjekk forsideknapper mot bakgrunn">
+        <img src="bilder/kontrastsjekkfosideknapper2.png" title="Kontrastsjekk forsideknapper mot bakgrunn">
+      </div>
     </div>
   </div>
 
