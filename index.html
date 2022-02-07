@@ -865,7 +865,8 @@
       <strong>Løsningsforslag, eksempler og unntak:</strong> <br />
       <a href="https://www.uutilsynet.no/wcag-standarden/utforming-og-presentasjon/227">1.4.4 Endring av tekststørrelse
         (Nivå AA) | Tilsynet for universell
-        utforming av ikt (uutilsynet.no)</a><br />
+        utforming av ikt (uutilsynet.no)</a><br /><br />
+      <hr>
       <br /><strong>Techniques:</strong><br />
       • G142: Using a technology that has commonly-available user agents that
       support zoom <br />
@@ -890,8 +891,23 @@
     <div class="feil">
       <p>
         <strong>Elementer som ikke består kravet:</strong><br />
-        Liste med elementer
       </p>
+      <br />
+      <p><strong>Elementer som består kravet:</strong></p>
+      <table>
+        <tr>
+          <th>Riktig</th>
+          <th>Lenke til side</th>
+        </tr>
+        <tr>
+          <td>Består automatisk G142 pga default i nettlesere, em units blir brukt</td>
+          <td><a href="https://www.hedmark-ikt.no/">Forside</a></td>
+        </tr>
+        <tr>
+          <td>Funksjonalitet og innhold blir ikke mistet på zoom</td>
+          <td><a href="https://www.hedmark-ikt.no/">Forside</a></td>
+        </tr>
+      </table>
     </div>
   </div>
 
@@ -919,6 +935,7 @@
       <a href="https://www.uutilsynet.no/wcag-standarden/145-bilder-av-tekst-niva-aa/97">1.4.5 Bilder av tekst (Nivå AA)
         | Tilsynet for universell utforming
         av ikt (uutilsynet.no)</a><br />
+      <hr>
       <br /><strong>Techniques:</strong><br />
       • C22: Using CSS to control visual presentation of text <br />
       • C30: Using CSS to replace text with images of text and providing user
@@ -935,8 +952,40 @@
     <div class="feil">
       <p>
         <strong>Elementer som ikke består kravet:</strong><br />
-        Liste med elementer
       </p>
+      <table>
+        <tr>
+          <th>Feil</th>
+          <th>Lenke til side</th>
+        </tr>
+        <tr>
+          <td>Brukerveiledninger har screenshots som inneholder tekst, noen sider består kravet da beskrivelsen er god
+            nok i tekstformat, men enkelte av veiledningene baserer seg for mye på visuell beskrivelse av løsningen</td>
+          <td><a href="https://www.hedmark-ikt.no/faq/lmp-aktivere-telefon-i-elas/">Eksempel på dårlig veiledning (all
+              tekst er i bildeformat)</a></td>
+        </tr>
+        <tr>
+          <td>Enkelte knapper inneholder paragrafer med tekst inne i knappen, dette kan være forvirrende for
+            synshemmede/brukere av skjermleser</td>
+          <td><a href="https://www.hedmark-ikt.no/selvhjelp/">Brukerveileder-knapp</a></td>
+        </tr>
+      </table>
+      <br />
+      <p><strong>Elementer som består kravet:</strong></p>
+      <table>
+        <tr>
+          <th>Riktig</th>
+          <th>Lenke til side</th>
+        </tr>
+        <tr>
+          <td>Letter spacing er brukt i CSS</td>
+          <td><a href="https://www.hedmark-ikt.no/">Forside</a></td>
+        </tr>
+        <tr>
+          <td>Informasjonsstruktur er for det meste ivaretatt</td>
+          <td><a href="https://www.hedmark-ikt.no/">Forside</a></td>
+        </tr>
+      </table>
     </div>
   </div>
 
@@ -961,6 +1010,7 @@
       <a href="https://www.uutilsynet.no/wcag-standarden/1410-dynamisk-tilpasning-reflow-niva-aa/144">1.4.10 Dynamisk
         tilpasning (Reflow. Nivå AA) | Tilsynet for
         universell utforming av ikt (uutilsynet.no)</a><br />
+      <hr>
       <br /><strong>Techniques:</strong><br />
       • C32: Using media queries and grid CSS to reflow columns <br />
       • C31: Using CSS Flexbox to reflow content <br />
@@ -972,8 +1022,21 @@
     <div class="feil">
       <p>
         <strong>Elementer som ikke består kravet:</strong><br />
-        Liste med elementer
       </p>
+
+      <br />
+      <p><strong>Elementer som består kravet:</strong></p>
+      <table>
+        <tr>
+          <th>Riktig</th>
+          <th>Lenke til side</th>
+        </tr>
+        <tr>
+          <td>Nettside kan forstørres til 400% uten å miste informasjon eller funksjonalitet. Reflow antageligvis
+            innebygget ifra wordpress by default. Godkjent.</td>
+          <td><a href="https://www.hedmark-ikt.no/">Forside</a></td>
+        </tr>
+      </table>
     </div>
   </div>
 
@@ -1043,8 +1106,7 @@
           <th>Lenke til side</th>
         </tr>
         <tr>
-          <td>Toppmeny-knapper har god kontrast ved hover (anbefaler å gjøre om titlene til lenker og bruke hover før
-            dropdown meny også)</td>
+          <td>line-spacing påvirker ikke informasjon eller visning, høyde er ikke fastsatt (kan overstyres)</td>
           <td><a href="https://www.hedmark-ikt.no/">Forside</a></td>
         </tr>
         <tr>
@@ -1078,16 +1140,17 @@
       Suksesskriteriet gjelder muligheten for å endre på:
       <br />
 
-      -linjehøyde (avstand mellom linjer) <br />
-      -avstand etter avsnitt <br />
-      -avstanden mellom bokstaver i en linje eller blokk av tekst <br />
-      -avstanden mellom ord
+      -linjehøyde (avstand mellom linjer) (line-height: minst 1.5x font-size) <br />
+      -avstand etter avsnitt (margin-bottom: minst 2x font-size) <br />
+      -avstanden mellom bokstaver i en linje eller blokk av tekst (letter-spacing: minst 0.12x font-size)<br />
+      -avstanden mellom ord (word-spacing: minst 0.16x font-size)
       <br />
       <br />
       <strong>Løsningsforslag, eksempler og unntak:</strong> <br />
       <a href="https://www.uutilsynet.no/wcag-standarden/1412-tekstavstand-niva-aa/146">1.4.12 Tekstavstand (Nivå AA) |
         Tilsynet for universell utforming av
         ikt (uutilsynet.no)</a><br />
+      <hr>
       <br /><strong>Techniques:</strong><br />
       • C36: Allowing for text spacing override <br />
       • C35: Allowing for text spacing without wrapping <br />
@@ -1099,9 +1162,70 @@
     </p>
     <div class="feil">
       <p>
-        <strong>Elementer som ikke består kravet:</strong><br />
-        Liste med elementer
+        <strong>Elementer som ikke består kravet:</strong>
+        <br />
       </p>
+      <table>
+        <tr>
+          <th>Mangel</th>
+          <th>Lenke til side</th>
+        </tr>
+        <tr>
+          <td>Tekst i 'aktuelt' boks på forsiden fungerer med endret spacing, men linker går utenfor boks.</td>
+          <td><a href="https://www.hedmark-ikt.no/">Forside</a></td>
+        </tr>
+        <tr>
+          <td>Toppmeny overlapper med endret spacing, mulig dette løser seg hvis man gjør om til linker som jeg
+            tidligere har foreslått</td>
+          <td><a href="https://www.hedmark-ikt.no/">Forside</a></td>
+        </tr>
+        <tr>
+          <td>Height er teknisk sett satt til 100% men jeg ser ikke at dette er et problem siden den er satt med %</td>
+          <td><a href="https://www.hedmark-ikt.no/">Forside</a></td>
+        </tr>
+        <tr>
+          <td>Tidslinje under prosjekter flyter ut av boks</td>
+          <td><a href="https://www.hedmark-ikt.no/prosjekter/m365/">Prosjekter > M365 > tidslinje</a></td>
+        </tr>
+        <tr>
+          <td>Avkrysningsbokser fungerer dårlig med endret spacing</td>
+          <td><a href="https://www.hedmark-ikt.no/konsulenttilgang">Konsulenttilgang</a></td>
+        </tr>
+      </table>
+      <br />
+      <strong>Elementer som består kravet:</strong><br />
+      <table>
+        <tr>
+          <th>Riktig</th>
+          <th>Lenke til side</th>
+        </tr>
+        <tr>
+          <td>Forsidemeny fungerer med endret spacing</td>
+          <td><a href="https://www.hedmark-ikt.no/">Forside</a></td>
+        </tr>
+        <tr>
+          <td>Øvrig tekst fungerer med endret spacing</td>
+          <td><a href="https://www.hedmark-ikt.no/">Forside</a></td>
+        </tr>
+        <tr>
+          <td>Dropdown ifra toppmeny fungerer med endret spacing</td>
+          <td><a href="https://www.hedmark-ikt.no/">Forside</a></td>
+        </tr>
+        <tr>
+          <td>Skjema fungerer greit med enkelte unntak</td>
+          <td><a href="https://www.hedmark-ikt.no/konsulenttilgang">Konsulenttilgang</a></td>
+        </tr>
+      </table>
+      <button type="button" class="bilderknapp">
+        BILDER
+      </button>
+      <div class="bilder">
+        <img src="bilder/textspacingforside.png" title="Textspacing forside">
+        <img src="bilder/textspacingmenyer.png" title="Textspacing menyer">
+        <img src="bilder/textspacingdropdown.png" title="Textspacing dropdown">
+        <img src="bilder/textspacingtidslinje.png" title="Textspacing tidslinje">
+        <img src="bilder/textspacingskjema.png" title="Textspacing skjema">
+      </div>
     </div>
   </div>
 
@@ -1131,6 +1255,7 @@
         href="https://www.uutilsynet.no/wcag-standarden/1413-pekerfolsomt-innhold-eller-innhold-ved-tastaturfokus-niva-aa/147">1.4.13
         Pekerfølsomt innhold eller innhold ved tastaturfokus (Nivå AA)
         | Tilsynet for universell utforming av ikt (uutilsynet.no)</a><br />
+      <hr>
       <br /><strong>Techniques:</strong><br />
       • SCR39: Making content on focus or hover hoverable, dismissible, and
       persistent <br />
@@ -1140,9 +1265,53 @@
     </p>
     <div class="feil">
       <p>
-        <strong>Elementer som ikke består kravet:</strong><br />
-        Liste med elementer
+        <strong>Elementer som ikke består kravet:</strong>
+        <br />
       </p>
+      <table>
+        <tr>
+          <th>Mangel</th>
+          <th>Lenke til side</th>
+        </tr>
+        <tr>
+          <td>Kan ikke lukke dropdown ifra toppmeny med esc</td>
+          <td><a href="https://www.hedmark-ikt.no/">Forside</a></td>
+        </tr>
+        <tr>
+          <td>(enkelte deler av) Dropdown toppmeny overlapper (deler av) innhold på siden</td>
+          <td><a href="https://www.hedmark-ikt.no/">Forside</a></td>
+        </tr>
+        <tr>
+          <td>Må hover over dropdownmeny for at den skal holde seg åpen, kan ikke bare klikke (fungerer i mobilmeny, det
+            er fint), dette gjelder også ved bruk av tab-navigering hvor det å tab'e menyelementene ikke åpner dropdown
+            (må holde mus over menyelement for å se dropdown man velger med tab)</td>
+          <td><a href="https://www.hedmark-ikt.no/">Forside</a></td>
+        </tr>
+      </table>
+      <br />
+      <strong>Elementer som består kravet:</strong><br />
+      <table>
+        <tr>
+          <th>Riktig</th>
+          <th>Lenke til side</th>
+        </tr>
+        <tr>
+          <td>Tittel-attributt ser ikke ut til å være brukt noe sted (bilder for eks), så denne type hover er ikke
+            relevant men vil antageligvis være innebygget i nettleser dersom det bli brukt i fremtiden</td>
+          <td><a href="https://www.hedmark-ikt.no/">Forside</a></td>
+        </tr>
+        <tr>
+          <td>Skjema 'vennligst fyll ut dette feltet' hover kan lukkes med esc</td>
+          <td><a href="https://www.hedmark-ikt.no/konsulenttilgang/">Konsulenttilgang</a></td>
+        </tr>
+      </table>
+      <button type="button" class="bilderknapp">
+        BILDER
+      </button>
+      <div class="bilder">
+        <img src="bilder/hovermeny.png" title="Dropdown meny hover: overlapper innhold">
+        <img src="bilder/textspacingmenyer.png" title="Textspacing menyer">
+      </div>
     </div>
   </div>
 
@@ -1166,6 +1335,7 @@
       <a href="https://www.uutilsynet.no/wcag-standarden/tastaturnavigasjon/37">2.1.1 Tastatur (Nivå A) | Tilsynet for
         universell utforming av ikt
         (uutilsynet.no)</a><br />
+      <hr>
       <br /><strong>Techniques:</strong><br />
       • G202: Ensuring keyboard control for all functionality <br />
       • Ensuring keyboard control: H91: Using HTML form controls and links
@@ -1174,9 +1344,57 @@
     </p>
     <div class="feil">
       <p>
-        <strong>Elementer som ikke består kravet:</strong><br />
-        Liste med elementer
+        <strong>Elementer som ikke består kravet:</strong>
+        <br />
       </p>
+      <table>
+        <tr>
+          <th>Mangel</th>
+          <th>Lenke til side</th>
+        </tr>
+        <tr>
+          <td>Bruker kan ikke se tydelig hvor på nettstedet de er, siden toppmeny ikke åpnes med tastaturnavigasjon</td>
+          <td><a href="https://www.hedmark-ikt.no/">Forside</a></td>
+        </tr>
+        <tr>
+          <td>Bruker må tab-navigere igjennom alle menylinker før de kan tab'e til innholdet på siden, dette burde løses
+            med en 'skip to content' knapp eller lignende - mer om dette under §2.4.1</td>
+          <td><a href="https://www.hedmark-ikt.no/">Forside</a></td>
+        </tr>
+        <tr>
+          <td>Kan ikke velge avkrysningsknapper med tastaturnavigasjon (skjema)</td>
+          <td><a href="https://www.hedmark-ikt.no/konsulenttilgang/">Konsulenttilgang</a></td>
+        </tr>
+        <tr>
+          <td>Kan ikke velge dato med tastaturnavigasjon (skjema)</td>
+          <td><a href="https://www.hedmark-ikt.no/konsulenttilgang/">Konsulenttilgang</a></td>
+        </tr>
+        <tr>
+          <td>Kan ikke sende inn skjema med tastaturnavigasjon (skjema)</td>
+          <td><a href="https://www.hedmark-ikt.no/konsulenttilgang/">Konsulenttilgang</a></td>
+        </tr>
+      </table>
+      <br />
+      <strong>Elementer som består kravet:</strong><br />
+      <table>
+        <tr>
+          <th>Riktig</th>
+          <th>Lenke til side</th>
+        </tr>
+        <tr>
+          <td>Øvrige linker fungerer med tastaturnavigasjon</td>
+          <td><a href="https://www.hedmark-ikt.no/">Forside</a></td>
+        </tr>
+        <tr>
+          <td>Kan navigere i meny med tastaturnavigasjon</td>
+          <td><a href="https://www.hedmark-ikt.no/konsulenttilgang/">Konsulenttilgang</a></td>
+        </tr>
+        <tr>
+          <td>Kan navigere i 'skuffer' og 'vis mer' bokser (collapsables) med tastatur, men får ikke visuell
+            tilbakemelding</td>
+          <td><a href="https://www.hedmark-ikt.no/sikkerhet/">Sikkerhet > Har du problemer med kurset?</a></td>
+        </tr>
+      </table>
     </div>
   </div>
 
@@ -1201,14 +1419,27 @@
       <a href="https://www.uutilsynet.no/wcag-standarden/tastaturnavigasjon/37">2.1.2 Ingen tastaturfelle (Nivå A) |
         Tilsynet for universell
         utforming av ikt (uutilsynet.no)</a><br />
+      <hr>
       <br /><strong>Techniques:</strong><br />
       • G21: Ensuring that users are not trapped in content <br />
     </p>
     <div class="feil">
       <p>
         <strong>Elementer som ikke består kravet:</strong><br />
-        Liste med elementer
       </p>
+
+      <br />
+      <p><strong>Elementer som består kravet:</strong></p>
+      <table>
+        <tr>
+          <th>Riktig</th>
+          <th>Lenke til side</th>
+        </tr>
+        <tr>
+          <td>Har ikke oppdaget noen tastaturfelle på nettsiden</td>
+          <td><a href="https://www.hedmark-ikt.no/">Forside</a></td>
+        </tr>
+      </table>
     </div>
   </div>
 
@@ -1235,6 +1466,7 @@
       <a href="https://www.uutilsynet.no/wcag-standarden/214-hurtigtaster-som-bestar-av-ett-tegn-niva/782">2.1.4
         Hurtigtaster som består av ett tegn (Nivå A) | Tilsynet for
         universell utforming av ikt (uutilsynet.no)</a><br />
+      <hr>
       <br /><strong>Techniques:</strong><br />
       • G217: Providing a mechanism to allow users to remap or turn off
       character key shortcuts <br />
@@ -1243,8 +1475,20 @@
     <div class="feil">
       <p>
         <strong>Elementer som ikke består kravet:</strong><br />
-        Liste med elementer
       </p>
+
+      <br />
+      <p><strong>Elementer som består kravet:</strong></p>
+      <table>
+        <tr>
+          <th>Riktig</th>
+          <th>Lenke til side</th>
+        </tr>
+        <tr>
+          <td>Nettleserstandard</td>
+          <td><a href="https://www.hedmark-ikt.no/">Forside</a></td>
+        </tr>
+      </table>
     </div>
   </div>
 
@@ -1263,6 +1507,7 @@
       <a href="https://www.uutilsynet.no/wcag-standarden/tastaturnavigasjon/37">2.4.1 Hoppe over blokker (Nivå A) |
         Tilsynet for universell utforming
         av ikt (uutilsynet.no)</a><br />
+      <hr>
       <br /><strong>Techniques:</strong><br />
       Creating links to skip blocks of repeated material using one of the
       following techniques: <br />
@@ -1280,9 +1525,34 @@
     </p>
     <div class="feil">
       <p>
-        <strong>Elementer som ikke består kravet:</strong><br />
-        Liste med elementer
+        <strong>Elementer som ikke består kravet:</strong>
+        <br />
       </p>
+      <table>
+        <tr>
+          <th>Mangel</th>
+          <th>Lenke til side</th>
+        </tr>
+        <tr>
+          <td>Mangler måte for å hoppe direkte til side-innhold uten å måtte navigere gjennom alle meny-linker først.
+            *Burde inkludere tabindex="-1" på skip-link target (der lenken fører). Denne navigasjonsknappen skal være
+            gjemt (hidden) slik at skjermlesere kan interagere med den men den ikke er til bry ellers </td>
+          <td><a href="https://www.hedmark-ikt.no/">Forside</a></td>
+        </tr>
+      </table>
+      <br />
+      <strong>Elementer som består kravet:</strong><br />
+      <table>
+        <tr>
+          <th>Riktig</th>
+          <th>Lenke til side</th>
+        </tr>
+        <tr>
+          <td>Overskrift på innholdssider er markert som H1 og kan dermed navigeres til direkte, dette er bra og gjør
+            teknisk sett at man slipper å bruke aria landmarks/regions: anbefaler allikevel å bruke begge deler slik at
+            brukere har alternativer da det er svært individuelt hvordan man foretrekker å navigere</td>
+        </tr>
+      </table>
     </div>
   </div>
 
@@ -1301,6 +1571,7 @@
       <a href="https://www.uutilsynet.no/wcag-standarden/sidetittel-navigasjon/221">2.4.2 Sidetitler (Nivå A) | Tilsynet
         for universell utforming av ikt
         (uutilsynet.no)</a><br />
+      <hr>
       <br /><strong>Techniques:</strong><br />
       • G88: Providing descriptive titles for Web pages <br />
       • H25: Providing a title using the title element <br />
@@ -1311,8 +1582,21 @@
     <div class="feil">
       <p>
         <strong>Elementer som ikke består kravet:</strong><br />
-        Liste med elementer
       </p>
+
+      <br />
+      <p><strong>Elementer som består kravet:</strong></p>
+      <table>
+        <tr>
+          <th>Riktig</th>
+          <th>Lenke til side</th>
+        </tr>
+        <tr>
+          <td>Sidetitler finnes på hver side, er godt beskrivende for formålet, presenterer den aktuelle siden (eks:
+            sikkerhet) før den overordnede siden (Hedmark IKT), og inkluderer den overordnede siden (Hedmark IKT)</td>
+          <td><a href="https://www.hedmark-ikt.no/">Forside</a></td>
+        </tr>
+      </table>
     </div>
   </div>
 
@@ -1482,9 +1766,36 @@
     </p>
     <div class="feil">
       <p>
-        <strong>Elementer som ikke består kravet:</strong><br />
-        Liste med elementer
+        <strong>Elementer som ikke består kravet:</strong>
+        <br />
       </p>
+      <table>
+        <tr>
+          <th>Mangel</th>
+          <th>Lenke til side</th>
+        </tr>
+        <tr>
+          <td>Ingen fokusindikator ved tastaturfokus toppmeny (bortsett ifra elementer i dropdown, men dropdown åpnes
+            ikke)</td>
+          <td><a href="https://www.hedmark-ikt.no/">Forside</a></td>
+        </tr>
+        <tr>
+          <td>Ingen fokusindikator 'skuffer' under 'om prosjektet' på prosjektsider</td>
+          <td><a href="https://www.hedmark-ikt.no/prosjekter/m365/">Prosjekt: M365 > om prosjektet </a></td>
+        </tr>
+        <tr>
+          <td>Ingen fokusindikator 'collapsables'</td>
+          <td><a href="https://www.hedmark-ikt.no/sikkerhet/">Sikkerhet > Har du problemer med kurset?</a></td>
+        </tr>
+      </table>
+      <br />
+      <strong>Elementer som består kravet:</strong><br />
+      <table>
+        <tr>
+          <th>Riktig</th>
+          <th>Lenke til side</th>
+        </tr>
+      </table>
     </div>
   </div>
 
@@ -2009,7 +2320,7 @@
   <footer>
     <p>
       Kriterier som er krav, men som ikke gjelder nettsiden: 2.2.1 (Justerbar
-      hastighet), 1.4.2 (Styring av lyd), 2.2.2 (Pause, topp, skjul), 2.3.1
+      hastighet), 1.4.2 (Styring av lyd), 2.2.2 (Pause, stopp, skjul), 2.3.1
       (Terskelverdi på maksimalt tre glimt), 3.3.4 (Forhinding av juridiske-,
       økonomiske-, datafeil), 2.5.4 (Bevegelsesaktivering)
     </p>
