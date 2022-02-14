@@ -1617,6 +1617,7 @@
       <a href="https://www.uutilsynet.no/wcag-standarden/tastaturnavigasjon/37">2.4.3 Fokusrekkefølge (Nivå A) |
         Tilsynet for universell utforming av
         ikt (uutilsynet.no)</a><br />
+      <hr>
       <br /><strong>Techniques:</strong><br />
       • G59: Placing the interactive elements in an order that follows
       sequences and relationships within the content <br />
@@ -1627,8 +1628,20 @@
     <div class="feil">
       <p>
         <strong>Elementer som ikke består kravet:</strong><br />
-        Liste med elementer
       </p>
+
+      <br />
+      <p><strong>Elementer som består kravet:</strong></p>
+      <table>
+        <tr>
+          <th>Riktig</th>
+          <th>Lenke til side</th>
+        </tr>
+        <tr>
+          <td>Lenker er presentert i en logisk rekkefølge med tastaturnavigasjon</td>
+          <td><a href="https://www.hedmark-ikt.no/">Forside</a></td>
+        </tr>
+      </table>
     </div>
   </div>
 
@@ -1649,6 +1662,7 @@
       <a href="https://www.uutilsynet.no/wcag-standarden/244-formal-med-lenke-i-kontekst-niva/106">2.4.4 Formål med
         lenke (i kontekst, Nivå A) | Tilsynet for universell
         utforming av ikt (uutilsynet.no)</a><br />
+      <hr>
       <br /><strong>Techniques:</strong><br />
       • G91: Providing link text that describes the purpose of a link <br />
       • H30: Providing link text that describes the purpose of a link for
@@ -1665,9 +1679,56 @@
     </p>
     <div class="feil">
       <p>
-        <strong>Elementer som ikke består kravet:</strong><br />
-        Liste med elementer
+        <strong>Elementer som ikke består kravet:</strong>
+        <br />
+        Generelt må lenker tas en titt på, dette inngår i implementering av ARIA
       </p>
+      <table>
+        <tr>
+          <th>Mangel</th>
+          <th>Lenke til side</th>
+        </tr>
+        <tr>
+          <td>Lenker har ikke tittel eller aria label for å beskrive meningen med lenken</td>
+          <td><a href="https://www.hedmark-ikt.no/">Forside</a></td>
+        </tr>
+        <tr>
+          <td>Finnes ikke alternativer for å bytte mellom kort eller lang lenkebeskrivelse</td>
+          <td><a href="https://www.hedmark-ikt.no/">Forside</a></td>
+        </tr>
+        <tr>
+          <td>Les mer lenker burde informere om at de er les mer lenker, tittelen er samme som overskriften for
+            artikkelen.. ikke nødvendigvis et problem da de leder til artikkelen men noe å tenke på</td>
+          <td><a href="https://www.hedmark-ikt.no/">Forside</a></td>
+        </tr>
+        <tr>
+          <td>Lenker til de ulike kommunenettstedene er kun beskrevet med for eks "Hamar" istedet for "Hamar kommunes
+            nettsted" eller lignende</td>
+          <td><a href="https://www.hedmark-ikt.no/om-oss/">Om oss</a></td>
+        </tr>
+        <tr>
+          <td>Som tidligere nevnt fører "fjernstyring" lenke på forsiden direkte til nedlasting av teamviewer, dette
+            blir ikke informert om hverken i lenketeksten eller visuelt</td>
+          <td><a href="https://www.hedmark-ikt.no/">Forside</a></td>
+        </tr>
+        <tr>
+          <td>Lenke for publisert dato på artikler har lenke til artikkelen, aka stemmer ikke teksten (dato) overens med
+            lenken (artikkel) - må ha ekstra beskrivelse her.</td>
+          <td><a href="https://www.hedmark-ikt.no/">Forside</a></td>
+        </tr>
+      </table>
+      <br />
+      <strong>Elementer som består kravet:</strong><br />
+      <table>
+        <tr>
+          <th>Riktig</th>
+          <th>Lenke til side</th>
+        </tr>
+        <tr>
+          <td>Meny-lenker har lenketekst som forteller hva de omhandler</td>
+          <td><a href="https://www.hedmark-ikt.no/">Forside</a></td>
+        </tr>
+      </table>
     </div>
   </div>
 
@@ -1689,6 +1750,7 @@
       <a href="https://www.uutilsynet.no/regelverk/navigasjonsmetoder/217">2.4.5 Flere måter (Nivå AA) | Tilsynet for
         universell utforming av
         ikt (uutilsynet.no)</a><br />
+      <hr>
       <br /><strong>Techniques:</strong><br />
       Using two or more of the following techniques: <br />
       • G125: Providing links to navigate to related Web pages <br />
@@ -1703,8 +1765,25 @@
     <div class="feil">
       <p>
         <strong>Elementer som ikke består kravet:</strong><br />
-        Liste med elementer
       </p>
+
+      <br />
+      <p><strong>Elementer som består kravet:</strong></p>
+      <table>
+        <tr>
+          <th>Riktig</th>
+          <th>Lenke til side</th>
+        </tr>
+        <tr>
+          <td>Kan navigere nettsiden både med meny og med søk-bar (*Søkbar trenger en oppdatering siden den ikke har
+            beskrivende tekst eller søk-knapp, men allikevel)</td>
+          <td><a href="https://www.hedmark-ikt.no/">Forside</a></td>
+        </tr>
+        <tr>
+          <td>Mobilmeny (vindusmeny) gir god oversikt over nettsidens struktur, noe mer uklart med destop versjon</td>
+          <td><a href="https://www.hedmark-ikt.no/">Forside</a></td>
+        </tr>
+      </table>
     </div>
   </div>
 
@@ -1725,16 +1804,57 @@
       <a href="https://www.uutilsynet.no/wcag-standarden/246-overskrifter-og-ledetekster-niva-aa/108">2.4.6 Overskrifter
         og ledetekster (Nivå AA) | Tilsynet for universell
         utforming av ikt (uutilsynet.no)</a><br />
+      <hr>
       <br /><strong>Techniques:</strong><br />
-      • G130: Providing descriptive headings <br />
-      • G131: Providing descriptive labels <br />
+      • G130: Providing descriptive headings<br />
+      • G131: Providing descriptive labels (forms)<br />
       <br />
     </p>
     <div class="feil">
       <p>
         <strong>Elementer som ikke består kravet:</strong><br />
-        Liste med elementer
       </p>
+      <table>
+        <tr>
+          <th>Mangel</th>
+          <th>Lenke til side</th>
+        </tr>
+        <tr>
+          <td>Ikke nødvendigvis feil, men "øvrige kunder" er ikke 'selvsigende' for hva siden inneholder. Kunne vært
+            bedre
+          </td>
+          <td><a href="https://www.hedmark-ikt.no/ovrige-kunder/">Øvrige kunder</a></td>
+        </tr>
+        <tr>
+          <td>Prosjekt "sak-arkiv" kan lett misforstås som arkiv over tidligere prosjekter, men er usikker på hvordan
+            dette kan skrives bedre siden det er prosjektnavnet</td>
+          <td><a href="https://www.hedmark-ikt.no/prosjekter/sak-arkiv/">Sak arkiv</a></td>
+        </tr>
+        <tr>
+          <td>"Required"/påkrevd må inkluderes i parantes bak labels for skjema når feltet er påkrevd (G131). Forslag
+            til
+            required labels finnes under <a href="https://www.w3.org/WAI/WCAG21/Techniques/html/H90">techniques:
+              H90</a></td>
+          <td><a href="https://www.hedmark-ikt.no/dig-lunsj/pamelding-til-dig-lunsj/">Påmelding dig. lunsj</a></td>
+        </tr>
+      </table>
+
+      <br />
+      <p><strong>Elementer som består kravet:</strong></p>
+      <table>
+        <tr>
+          <th>Riktig</th>
+          <th>Lenke til side</th>
+        </tr>
+        <tr>
+          <td>De fleste overskrifter (H1/meny) beskriver godt hva siden inneholder</td>
+          <td><a href="https://www.hedmark-ikt.no/">Forside</a></td>
+        </tr>
+        <tr>
+          <td>Mobilmeny (vindusmeny) gir god oversikt over nettsidens struktur, noe mer uklart med destop versjon</td>
+          <td><a href="https://www.hedmark-ikt.no/">Forside</a></td>
+        </tr>
+      </table>
     </div>
   </div>
 
@@ -1755,11 +1875,12 @@
       <a href="https://www.uutilsynet.no/wcag-standarden/tastaturnavigasjon/37">2.4.7 Synlig fokus (Nivå AA) | Tilsynet
         for universell utforming av
         ikt (uutilsynet.no)</a><br />
+      <hr>
       <br /><strong>Techniques:</strong><br />
       • G149: Using user interface components that are highlighted by the user
       agent when they receive focus <br />
       • C15: Using CSS to change the presentation of a user interface
-      component when it receives focus <br />
+      component when it receives focus (clickable:focus)<br />
       • G165: Using the default focus indicator for the platform so that high
       visibility default focus indicators will carry over <br />
       <br />
@@ -1784,8 +1905,26 @@
           <td><a href="https://www.hedmark-ikt.no/prosjekter/m365/">Prosjekt: M365 > om prosjektet </a></td>
         </tr>
         <tr>
-          <td>Ingen fokusindikator 'collapsables'</td>
+          <td>Ingen fokusindikator 'skuffer' under 'systemeiere' på for kunder sider</td>
+          <td><a href="https://www.hedmark-ikt.no/internt/systemeiere-systemansvarlige-og-superbrukere/">For
+              kunder>Systemeiere...</a></td>
+        </tr>
+        <tr>
+          <td>Ingen fokusindikator 'collapsables' ('får ikke tilgang/mistet passord' etc)</td>
           <td><a href="https://www.hedmark-ikt.no/sikkerhet/">Sikkerhet > Har du problemer med kurset?</a></td>
+        </tr>
+        <tr>
+          <td>Ingen fokusindikator søkeboks forside</td>
+          <td><a href="https://www.hedmark-ikt.no/">Forside</a></td>
+        </tr>
+        <tr>
+          <td>Fokusindikator er synlig på knapper "velg kategori" under selvhjelp, men svært lav kontrast som burde
+            bedres (svart mot mørk brun)</td>
+          <td><a href="https://www.hedmark-ikt.no/selvhjelp/">Selvhjelp>Velg en kategori</a></td>
+        </tr>
+        <tr>
+          <td>Ingen fokusindikator bilder på prosjekter-side (Gjøre overskrift og bilde til ett element?)</td>
+          <td><a href="https://www.hedmark-ikt.no/prosjekter/">Prosjekter</a></td>
         </tr>
       </table>
       <br />
@@ -1795,7 +1934,39 @@
           <th>Riktig</th>
           <th>Lenke til side</th>
         </tr>
+        <tr>
+          <td>Fokusindikator på forside er tydelige, med unntak søk-boksen</td>
+          <td><a href="https://www.hedmark-ikt.no">Forside</a></td>
+        </tr>
+        <tr>
+          <td>Fokusindikator i skjema er OK, man kan se hvilket felt man har valgt - men det er ikke så tydelig som det
+            kanskje kunne vært</td>
+          <td><a href="https://www.hedmark-ikt.no/konsulenttilgang/">Konsulenttilgang</a></td>
+        </tr>
+        <tr>
+          <td>Fokusindikator tydelig på 'organisasjonskart' under ansatte, men samme problem som med tab navigasjon;
+            hver sirkel/ikon/tittel kombo har hvert sitt fokus-element istedet for at de er gruppert. For eks har
+            'strategisk utvikling og digitalisering' fokusindikator både på sirkel, ikon og tittel, imens flere av de
+            andre kun har fokusindikator/tab på tittel.</td>
+          <td><a href="https://www.hedmark-ikt.no/ansatte/">Ansatte</a></td>
+        </tr>
+        <tr>
+          <td>Samme som over gjelder på selvhjelp/micrsoft-teams og lignende sider, der hver av knappene har to 'lenker'
+            så man må tab'e to ganger for hvert ikon.</td>
+          <td><a href="hhttps://www.hedmark-ikt.no/selvhjelp/microsoft-teams/">Kategorier under microsoft teams</a></td>
+        </tr>
+        <tr>
+          <td>Fokusindikator sjekket på alle sider</td>
+          <td><a href="https://www.hedmark-ikt.no">Forside</a></td>
+        </tr>
       </table>
+      <button type="button" class="bilderknapp">
+        BILDER
+      </button>
+      <div class="bilder">
+        <img src="bilder/fokusindikatorprintselvhjelp.png"
+          title="Fokusindikator satt til 'print' under velg en kategori, lite synlig">
+      </div>
     </div>
   </div>
 
@@ -1817,6 +1988,7 @@
       <a href="https://www.uutilsynet.no/wcag-standarden/251-pekerbevegelser-niva/148">2.5.1 Pekerbevegelser (Nivå A) |
         Tilsynet for universell utforming av
         ikt (uutilsynet.no)</a><br />
+      <hr>
       <br /><strong>Techniques:</strong><br />
       • G215: Providing controls to achieve the same result as path based or
       multipoint gestures <br />
@@ -1824,10 +1996,19 @@
       <br />
     </p>
     <div class="feil">
-      <p>
-        <strong>Elementer som ikke består kravet:</strong><br />
-        Liste med elementer
-      </p>
+      <br />
+      <strong>Elementer som består kravet:</strong><br />
+      <table>
+        <tr>
+          <th>Riktig</th>
+          <th>Lenke til side</th>
+        </tr>
+        <tr>
+          <td>Finner ingen funksjonalitet på nettsiden som ikke kan gjennomføres med enkel pekerinput, nettleserstandard
+          </td>
+          <td><a href="https://www.hedmark-ikt.no">Forside</a></td>
+        </tr>
+      </table>
     </div>
   </div>
 
@@ -1852,6 +2033,7 @@
       <a href="https://www.uutilsynet.no/wcag-standarden/253-ledetekst-i-navn-niva/150">2.5.3 Ledetekst i navn (Nivå A)
         | Tilsynet for universell utforming
         av ikt (uutilsynet.no)</a><br />
+      <hr>
       <br /><strong>Techniques:</strong><br />
       • G208: Including the text of the visible label as part of the
       accessible name <br />
@@ -1863,8 +2045,24 @@
     <div class="feil">
       <p>
         <strong>Elementer som ikke består kravet:</strong><br />
-        Liste med elementer
       </p>
+      <table>
+        <tr>
+          <th>Mangel</th>
+          <th>Lenke til side</th>
+        </tr>
+        <tr>
+          <td>Foreslår at aria-label blir brukt mer, lenker har beskrivende titler som "les mer" men mer omfattende
+            accessibility beskrivelse (les mer (om...) hadde vært bedre.</td>
+          <td><a href="https://www.hedmark-ikt.no/">Forside</a></td>
+        </tr>
+        <tr>
+          <td>Nok en gang svært usikker på hvor bra knapper med masse informasjon fungerer slik som "klikk her for å se
+            telefonnummer til vår..." (brukerstøtteknapp). Kan fort hende at dette ville vært bedre erstattet med
+            accessible tekst som oppsummerer knapp istedet.</td>
+          <td><a href="https://www.hedmark-ikt.no/kontaktinformasjon/">Kontakt brukerstøtte</a></td>
+        </tr>
+      </table>
     </div>
   </div>
 
@@ -1885,14 +2083,24 @@
       <a href="https://www.uutilsynet.no/wcag-standarden/sprak-i-koden/223">3.1.1 Språk på siden (Nivå A) | Tilsynet for
         universell utforming av
         ikt (uutilsynet.no)</a><br />
+      <hr>
       <br /><strong>Techniques:</strong><br />
       • H57: Using language attributes on the html element <br />
     </p>
     <div class="feil">
-      <p>
-        <strong>Elementer som ikke består kravet:</strong><br />
-        Liste med elementer
-      </p>
+      <br />
+      <strong>Elementer som består kravet:</strong><br />
+      <table>
+        <tr>
+          <th>Riktig</th>
+          <th>Lenke til side</th>
+        </tr>
+        <tr>
+          <td>html lang=no er på plass på alle sider
+          </td>
+          <td><a href="https://www.hedmark-ikt.no">Forside</a></td>
+        </tr>
+      </table>
     </div>
   </div>
 
@@ -1918,15 +2126,25 @@
       <a href="https://www.uutilsynet.no/wcag-standarden/sprak-i-koden/223">3.1.2 Språk på deler av innhold (Nivå AA) |
         Tilsynet for universell
         utforming av ikt (uutilsynet.no)</a><br />
+      <hr>
       <br /><strong>Techniques:</strong><br />
       • H58: Using language attributes to identify changes in the human
       language <br />
     </p>
     <div class="feil">
-      <p>
-        <strong>Elementer som ikke består kravet:</strong><br />
-        Liste med elementer
-      </p>
+      <br />
+      <strong>Elementer som består kravet:</strong><br />
+      <table>
+        <tr>
+          <th>Riktig</th>
+          <th>Lenke til side</th>
+        </tr>
+        <tr>
+          <td>Finner ingen del av nettsiden som er på et annet språk, godkjent
+          </td>
+          <td><a href="https://www.hedmark-ikt.no">Forside</a></td>
+        </tr>
+      </table>
     </div>
   </div>
 
