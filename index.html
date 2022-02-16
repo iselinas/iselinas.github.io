@@ -2165,6 +2165,7 @@
       <a href="https://www.uutilsynet.no/wcag-standarden/tastaturnavigasjon/37">3.2.1 Fokus (Nivå A) | Tilsynet for
         universell utforming av ikt
         (uutilsynet.no)</a><br />
+      <hr>
       <br /><strong>Techniques:</strong><br />
       • G107: Using "activate" rather than "focus" as a trigger for changes of
       context <br />
@@ -2175,9 +2176,47 @@
     </p>
     <div class="feil">
       <p>
-        <strong>Elementer som ikke består kravet:</strong><br />
-        Liste med elementer
+        <strong>Elementer som ikke består kravet:</strong>
+        <br />
+        Igjen; generelt må lenker tas en titt på
       </p>
+      <table>
+        <tr>
+          <th>Mangel</th>
+          <th>Lenke til side</th>
+        </tr>
+        <tr>
+          <td>Det er ikke et krav fra WCAG, men å implementere H83 target attribute kan bedre bruken av nettsiden ved at
+            bruker får beskjed om noe åpnes i nytt vindu - dette er brukt for lenker i tekst men ikke i knappene på
+            forsiden eller under nettvett for eks</td>
+          <td><a href="https://www.hedmark-ikt.no/">Forside</a></td>
+        </tr>
+        <tr>
+          <td>Finnes ikke alternativer for å bytte mellom kort eller lang lenkebeskrivelse</td>
+          <td><a href="https://www.hedmark-ikt.no/">Forside</a></td>
+        </tr>
+      </table>
+      <br />
+      <strong>Elementer som består kravet:</strong><br />
+      <table>
+        <tr>
+          <th>Riktig</th>
+          <th>Lenke til side</th>
+        </tr>
+        <tr>
+          <td>I enkelte av tekstene er det oppgitt at lenken åpnes i ny fane i teksten, men er usikker på hvor godt
+            dette fungerer for skjermleser siden teksten kommer etter linken. Dette kan inkluderes slik:
+            href="help.html" target="_blank">Show Help (opens new window)
+          </td>
+          <td><a href="https://www.hedmark-ikt.no/sikkerhet/nettvett/">Nettvett</a></td>
+        </tr>
+        <tr>
+          <td>Finner ingen lenker som aktiveres på fokus fremfor klikk, skjema sender ikke inn uten at man må klikke på
+            knapp
+          </td>
+          <td><a href="https://www.hedmark-ikt.no/">Forside</a></td>
+        </tr>
+      </table>
     </div>
   </div>
 
@@ -2199,16 +2238,26 @@
       <a href="https://www.uutilsynet.no/wcag-standarden/tastaturnavigasjon/37">3.2.2 Inndata (Nivå A) | Tilsynet for
         universell utforming av ikt
         (uutilsynet.no)</a><br />
+      <hr>
       <br /><strong>Techniques:</strong><br />
       • G80: Providing a submit button to initiate a change of context <br />
       • G13: Describing what will happen before a change to a form control
       that causes a change of context to occur is made <br />
     </p>
     <div class="feil">
-      <p>
-        <strong>Elementer som ikke består kravet:</strong><br />
-        Liste med elementer
-      </p>
+      <br />
+      <strong>Elementer som består kravet:</strong><br />
+      <table>
+        <tr>
+          <th>Riktig</th>
+          <th>Lenke til side</th>
+        </tr>
+        <tr>
+          <td>Skjema og andre inputfelter setter ikke automatisk igang en handling, man må klikke en knapp eller enter
+          </td>
+          <td><a href="https://www.hedmark-ikt.no">Forside</a></td>
+        </tr>
+      </table>
     </div>
   </div>
 
@@ -2544,7 +2593,7 @@
     </p>
   </footer>
 
-  <script>    
+  <script>
     var coll = document.getElementsByClassName("collapsible");
     var i;
 
