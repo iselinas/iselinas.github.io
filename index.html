@@ -2383,6 +2383,27 @@
             more knapp</td>
           <td><a href="https://www.hedmark-ikt.no/">Forside</a></td>
         </tr>
+        <tr>
+          <td>Lenker til mail kan gjerne ha label om at det er en send-mail lenke</td>
+          <td><a href="https://www.hedmark-ikt.no/kontaktinformasjon/">Kontaktinformasjon</a></td>
+        </tr>
+        <tr>
+          <td>Knapper med flere elementer i seg kan gjerne ha en label om at det er en knapp (pr nå er det kun
+            class=btn)(Brukerstøtteknapp har class btn-sikkerhet?)(alle disse type knappene heter btn-sikkerhet..)</td>
+          <td><a href="https://www.hedmark-ikt.no/kontaktinformasjon/">Kontaktinformasjon</a></td>
+          <td><a href="https://www.hedmark-ikt.no/selvhjelp/">Selvhjelp</a></td>
+        </tr>
+        <tr>
+          <td>Mangel på labels blir tydelig når det er flere lenker under hverandre, for eks lenker til avdelinger under
+            'ansatte' - her vil label om hvor lenken fører hen være nyttig. Alle lenkene har samme oppsett, som gjør det
+            tydelig at de er samme type lenke, men identifikasjon utover det er uklar.</td>
+          <td><a href="https://www.hedmark-ikt.no/ansatte/">Ansatte</a></td>
+        </tr>
+        <tr>
+          <td>Mangel på labels gjør det vanskelig å bedømme om identifikasjonen er konsekvent; for eksempel har "se
+            veilederen her" samme class som "les mer" knapper. Labels/names må utbedres, så kan kravet vurderes.</td>
+          <td><a href="https://www.hedmark-ikt.no/selvhjelp/">Selvhjelp</a></td>
+        </tr>
       </table>
       <br />
       <strong>Elementer som består kravet:</strong><br />
@@ -2395,6 +2416,11 @@
           <td>Identifikasjonen er konsekvent, men identifikasjonen i seg selv kan forbedres.
           </td>
           <td><a href="https://www.hedmark-ikt.no">Forside</a></td>
+        </tr>
+        <tr>
+          <td>Søk-felt har samme name gjennom hele nettsiden, men kan gjerne bedres fra name='s'
+          </td>
+          <td><a href="https://www.hedmark-ikt.no/selvhjelp/">Selvhjelp</a></td>
         </tr>
       </table>
     </div>
@@ -2421,6 +2447,7 @@
       <a href="https://www.uutilsynet.no/wcag-standarden/skjema/38">3.3.1 Identifikasjon av feil (Nivå A) | Tilsynet for
         universell
         utforming av ikt (uutilsynet.no)</a><br />
+      <hr>
       <br /><strong>Techniques:</strong><br />
       Situation A: If a form contains fields for which information from the
       user is mandatory. <br />
@@ -2441,8 +2468,22 @@
     <div class="feil">
       <p>
         <strong>Elementer som ikke består kravet:</strong><br />
-        Liste med elementer
       </p>
+      <br />
+      <strong>Elementer som består kravet:</strong><br />
+      <table>
+        <tr>
+          <th>Riktig</th>
+          <th>Lenke til side</th>
+        </tr>
+        <tr>
+          <td>ARIA labels brukes ikke, skjema må ses nærmere på og gjerne kodes på nytt siden det ikke er mulig å sende
+            inn skjema kun ved hjelp av tastatur, så dette kravet må man komme tilbake til. Bruker får tilbakemelding om
+            feil i utfylling av skjema per nå.
+          </td>
+          <td><a href="https://www.hedmark-ikt.no/konsulenttilgang/">Konsulenttilgang skjema</a></td>
+        </tr>
+      </table>
     </div>
   </div>
 
@@ -2466,6 +2507,7 @@
       <a href="https://www.uutilsynet.no/wcag-standarden/skjema/38">Ledetekster eller instruksjoner (Nivå A) | Tilsynet
         for universell
         utforming av ikt (uutilsynet.no)</a><br />
+      <hr>
       <br /><strong>Techniques:</strong><br />
       • G131: Providing descriptive labels: <br />
       ‣ ARIA1: Using the aria-describedby property to provide a descriptive
@@ -2487,8 +2529,22 @@
     <div class="feil">
       <p>
         <strong>Elementer som ikke består kravet:</strong><br />
-        Liste med elementer
       </p>
+      <br />
+      <strong>Elementer som består kravet:</strong><br />
+      <table>
+        <tr>
+          <th>Riktig</th>
+          <th>Lenke til side</th>
+        </tr>
+        <tr>
+          <td>Samme som forrige punkt, skjema må utbedres før jeg kommer tilbake til dette kravet. Per nå er
+            ledetekster/instruksjoner OK. Bruker får tilbakemelding både i farge, symbol og tekst 'dette er et påkrevd
+            felt'/'skriv inn en gyldig e-postadresse'
+          </td>
+          <td><a href="https://www.hedmark-ikt.no/konsulenttilgang/">Konsulenttilgang skjema</a></td>
+        </tr>
+      </table>
     </div>
   </div>
 
@@ -2511,6 +2567,7 @@
       <a href="https://www.uutilsynet.no/wcag-standarden/skjema/38">3.3.3 Forslag ved feil (Nivå AA) | Tilsynet for
         universell utforming
         av ikt (uutilsynet.no)</a><br />
+      <hr>
       <br /><strong>Techniques:</strong><br />
       Situation A: If a mandatory field contains no information: <br />
       • G83: Providing text descriptions to identify required fields that were
@@ -2534,8 +2591,22 @@
     <div class="feil">
       <p>
         <strong>Elementer som ikke består kravet:</strong><br />
-        Liste med elementer
       </p>
+      <br />
+      <strong>Elementer som består kravet:</strong><br />
+      <table>
+        <tr>
+          <th>Riktig</th>
+          <th>Lenke til side</th>
+        </tr>
+        <tr>
+          <td>Samme som forrige punkt, skjema må utbedres før jeg kommer tilbake til dette kravet. Per nå er
+            forslag ved feil OK. Bruker får tilbakemelding både i farge, symbol og tekst 'dette er et påkrevd
+            felt'/'skriv inn en gyldig e-postadresse'
+          </td>
+          <td><a href="https://www.hedmark-ikt.no/konsulenttilgang/">Konsulenttilgang skjema</a></td>
+        </tr>
+      </table>
     </div>
   </div>
 
@@ -2572,8 +2643,35 @@
     <div class="feil">
       <p>
         <strong>Elementer som ikke består kravet:</strong><br />
-        Liste med elementer
       </p>
+      <table>
+        <tr>
+          <td>Script og style trenger ikke 'type' attributt, dette kan fjernes, CSS parse errors og andre warnings og
+            errors må fikses. Link til resultat:</td>
+          <td><a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fwww.hedmark-ikt.no%2F">Kodefeil forside</a></td>
+        </tr>
+        <tr>
+          <td>!De andre sidene må sjekkes etter at problemene med forsiden er fikset, da mye av koden er gjennomgående
+            og
+            samme error/warnings vil dukke opp på resten av sidene. Eksempler på feil på andre sider er knappene med
+            flere
+            elementer i seg (btn-sikkerhet)</td>
+          <td><a href="https://www.hedmark-ikt.no/selvhjelp/">Selvhjelp</a></td>
+        </tr>
+        <br />
+      </table>
+      <strong>Elementer som består kravet:</strong><br />
+      <table>
+        <tr>
+          <th>Riktig</th>
+          <th>Lenke til side</th>
+        </tr>
+        <tr>
+          <td>Side sjekket med <a href="https://validator.w3.org/">W3 Markup Validation Service</a>.
+          </td>
+          <td><a href="https://www.hedmark-ikt.no/">Forside</a></td>
+        </tr>
+      </table>
     </div>
   </div>
 
@@ -2604,6 +2702,7 @@
       <a href="https://www.uutilsynet.no/wcag-standarden/412-navn-rolle-verdi-niva/121">4.1.2 Navn, rolle, verdi (Nivå
         A) | Tilsynet for universell utforming
         av ikt (uutilsynet.no)</a><br />
+      <hr>
       <br /><strong>Techniques:</strong><br />
       • ARIA14: Using aria-label to provide an invisible label where a visible
       label cannot be used <br />
@@ -2613,8 +2712,14 @@
     <div class="feil">
       <p>
         <strong>Elementer som ikke består kravet:</strong><br />
-        Liste med elementer
       </p>
+      <table>
+        <tr>
+          <td>Aria-labelledby må implementeres</td>
+          <td><a href="https://www.hedmark-ikt.no/">Forside</a></td>
+        </tr>
+        <br />
+      </table>
     </div>
   </div>
 
@@ -2637,12 +2742,13 @@
       <a href="https://www.uutilsynet.no/wcag-standarden/413-statusbeskjeder-niva-aa/152">4.1.3 Statusbeskjeder (Nivå
         AA) | Tilsynet for universell utforming
         av ikt (uutilsynet.no)</a><br />
+      <hr>
       <br /><strong>Techniques:</strong><br />
       Situation A: If a status message advises on the success or results of an
       action, or the state of an application: <br />
       • ARIA22: Using role=status to present status messages in combination
-      with any of the following: G199: Providing success feedback when data is
-      submitted successfully <br />
+      with any of the following: <br />
+      G199: Providing success feedback when data is submitted successfully <br />
       Situation B: If a status message conveys a suggestion, or a warning on
       the existence of an error: <br />
       • ARIA19: Using ARIA role=alert or Live Regions to Identify Errors
@@ -2654,8 +2760,29 @@
     <div class="feil">
       <p>
         <strong>Elementer som ikke består kravet:</strong><br />
-        Liste med elementer
       </p>
+      <table>
+        <tr>
+          <td>ARIA attributt role=status må implementeres på antall søkeresultater etter et søk (per nå er det bare en
+            h2).</td>
+          <td><a href="https://www.hedmark-ikt.no/?s=">Søkeresultat</a></td>
+        </tr>
+        <br />
+      </table>
+      <table>
+        <tr>
+          <th>Riktig</th>
+          <th>Lenke til side</th>
+        </tr>
+        <tr>
+          <td>Searchbar har role=search</td>
+          <td><a href="https://www.hedmark-ikt.no/">Forside</a></td>
+        </tr>
+        <tr>
+          <td>Skjema-feil har role=alert</td>
+          <td><a href="https://www.hedmark-ikt.no/konsulenttilgang">Konsulenttilgang</a></td>
+        </tr>
+      </table>
     </div>
   </div>
 
