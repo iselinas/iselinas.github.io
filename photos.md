@@ -30,3 +30,4 @@
 ![utencss6](https://user-images.githubusercontent.com/56344634/154429486-6e0c0d06-f2d0-446c-8926-3b4a2464e683.png)
 ![toppmenyresponsivoverlapp](https://user-images.githubusercontent.com/56344634/154438755-f427cdc2-29ae-41fb-be9d-904b7483c35e.png)
 ![toppmenyresponsiv](https://user-images.githubusercontent.com/56344634/154438762-94cee239-8ed2-403d-8b1d-4c1710e42e57.png)
+![fokusrekkefølge](https://user-images.githubusercontent.com/56344634/154682365-fbed0922-e7f0-4260-8cf1-873fc88cf767.png)
