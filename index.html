@@ -294,7 +294,7 @@
       different presentations <br />
       • ARIA24: Semantically identifying a font icon with role="img" <br />
       • Making information and relationships conveyed through presentation
-      programmatically determinable
+      programmatically determinable <br />
       • Headings, tables, cells and lists are correctly coded and identified
     </p>
     <p>
@@ -378,7 +378,7 @@
     <h2>1.3.2 Meningsfylt rekkefølge (Nivå A)</h2>
     <p>
       <strong>KORT FORTALT:</strong><br />
-      <i>Presenter innhold i en meningsfull rekkefølge.</i>
+      <i>Presenter innhold i en meningsfull rekkefølge. Spesifikt alt innhold på siden (DOM)</i>
       <br /><br />
       <strong>Nivå A (krav):</strong> 
       Når rekkefølgen som innholdet presenteres i, påvirker meningsinnholdet, kan en korrekt leserekkefølge
@@ -412,19 +412,6 @@
             dato for publisert artikkel vises to ganger</td>
           <td><a href="https://www.hedmark-ikt.no">Forside</a></td>
         </tr>
-        <tr>
-          <td>Logobilde er veldig stort, unødvendig når det kun skal være liten logo - tydelig når man slår av CSS</td>
-          <td><a href="https://www.hedmark-ikt.no">Forside</a></td>
-        </tr>
-        <tr>
-          <td>Logisk tab-navigasjon, dårlig visuell tilbakemelding</td>
-          <td><a href="https://www.hedmark-ikt.no">Forside</a></td>
-        </tr>
-        <tr>
-          <td>Organisasjonskart på ansatte-side er ikke i logisk rekkefølge, her starter tab nederst og hopper frem og
-            tilbake uten mening</td>
-          <td><a href="https://www.hedmark-ikt.no/ansatte/">Ansatte og organisering</a></td>
-        </tr>
       </table>
       <br />
       <strong>Elementer som består kravet:</strong>
@@ -434,8 +421,7 @@
           <th>Lenke til side</th>
         </tr>
         <tr>
-          <td>Logisk rekkefølge på innhold på forside og prosjektside (antageligvis de andre sidene også - I'll get to
-            it)</td>
+          <td>Logisk rekkefølge på innhold på øvrige sider</td>
           <td><a href="https://www.hedmark-ikt.no/prosjekter">Prosjekter</a></td>
         </tr>
       </table>
@@ -443,8 +429,6 @@
         BILDER
       </button>
       <div class="bilder">
-        <img src="https://user-images.githubusercontent.com/56344634/154429466-c34d5915-ba14-4abe-bf5c-50f279875e9e.png"
-          title="For stor logo">
         <img src="https://user-images.githubusercontent.com/56344634/154429469-e82532d3-18ed-4225-afb4-8801b9bc9043.png"
           title="Logisk rekkefølge">
         <img src="https://user-images.githubusercontent.com/56344634/154429474-aa0ce51b-4df1-4d3e-a173-36b559026277.png"
@@ -1082,11 +1066,6 @@
           <th>Riktig</th>
           <th>Lenke til side</th>
         </tr>
-        <tr>
-          <td>line-spacing påvirker ikke informasjon eller visning, høyde er ikke fastsatt (kan overstyres)</td>
-          <td><a href="https://www.hedmark-ikt.no/">Forside</a></td>
-        </tr>
-        <tr>
           <td>Knapper har generelt god kontrast (les mer, etc.)</td>
           <td><a href="https://www.hedmark-ikt.no/dig-lunsj/">Dig. lunsj</a></td>
         </tr>
@@ -1168,6 +1147,11 @@
           <td>Avkrysningsbokser fungerer dårlig med endret spacing</td>
           <td><a href="https://www.hedmark-ikt.no/konsulenttilgang">Konsulenttilgang</a></td>
         </tr>
+        <tr>
+          <td>Line-spacing påvirker ikke informasjon eller visning, høyde er ikke fastsatt (kan overstyres)</td>
+          <td><a href="https://www.hedmark-ikt.no/">Forside</a></td>
+        </tr>
+        <tr>
       </table>
       <br />
       <strong>Elementer som består kravet:</strong>
@@ -1574,7 +1558,7 @@
     <h2>2.4.3 Fokusrekkefølge (Nivå A)</h2>
     <p>
       <strong>KORT FORTALT:</strong><br />
-      <i>Presenter innholdet i en logisk rekkefølge.</i>
+      <i>Presenter innholdet i en logisk rekkefølge. Spesifikt tab order (focusable components).</i>
       <br /><br />
       <strong>Nivå A (krav):</strong> 
       Hvis en webside kan navigeres sekvensielt og navigeringssekvensen påvirker betydning eller betjening,
@@ -1594,8 +1578,23 @@
       • C27: Making the DOM order match the visual order <br />
     </p><br/>
     <div class="feil">
-        <strong>Elementer som ikke består kravet:</strong><br />
-      <br />
+        <strong>Elementer som ikke består kravet:</strong>
+        <table>
+          <tr>
+            <th>Mangel</th>
+            <th>Lenke til side</th>
+          </tr>
+          <tr>
+            <td>Organisasjonskart på ansatte-side er ikke i logisk rekkefølge, her starter tab nederst og hopper frem og
+              tilbake uten mening</td>
+            <td><a href="https://www.hedmark-ikt.no/ansatte/">Ansatte og organisering</a></td>
+          </tr>
+          <tr>
+            <td>Organisasjonskart er vanskelig å navigere med tab fordi man har flere fokus-områder for hvert element og 
+              dermed må tab'e flere ganger for å komme til neste element på noen av dem.</td>
+            <td><a href="https://www.hedmark-ikt.no/ansatte/">Ansatte og organisering</a></td>
+          </tr>
+        </table>
       <strong>Elementer som består kravet:</strong>
       <table>
         <tr>
@@ -1603,10 +1602,17 @@
           <th>Lenke til side</th>
         </tr>
         <tr>
-          <td>Lenker er presentert i en logisk rekkefølge med tastaturnavigasjon</td>
+          <td>Øvrige lenker er presentert i en logisk rekkefølge med tastaturnavigasjon</td>
           <td><a href="https://www.hedmark-ikt.no/">Forside</a></td>
         </tr>
       </table>
+      <button type="button" class="bilderknapp">
+        BILDER
+      </button>
+      <div class="bilder">
+        <img src="https://user-images.githubusercontent.com/56344634/154682365-fbed0922-e7f0-4260-8cf1-873fc88cf767.png"
+          title="Tre ulike fokuspunkter på ett element i ansatt-tre">
+      </div>
     </div>
   </div>
 
@@ -1850,7 +1856,7 @@
         </tr>
         <tr>
           <td>Ingen fokusindikator ved tastaturfokus toppmeny (bortsett ifra elementer i dropdown, men dropdown åpnes
-            ikke)</td>
+            ikke) - dårlig visuell tilbakemelding</td>
           <td><a href="https://www.hedmark-ikt.no/">Forside</a></td>
         </tr>
         <tr>
@@ -2723,6 +2729,8 @@
         }
       });
     }
+
+
   </script>
 </body>
 
