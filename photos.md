@@ -32,3 +32,11 @@
 ![toppmenyresponsiv](https://user-images.githubusercontent.com/56344634/154438762-94cee239-8ed2-403d-8b1d-4c1710e42e57.png)
 ![fokusrekkefølge](https://user-images.githubusercontent.com/56344634/154682365-fbed0922-e7f0-4260-8cf1-873fc88cf767.png)
 ![bildeavtabell](https://user-images.githubusercontent.com/56344634/155950508-58b41171-1969-4369-b9b5-29d48af3e0bb.png)
+![skaleringsflytt](https://user-images.githubusercontent.com/56344634/155958683-75bab6b8-11db-4008-9ebd-1b67049907b8.png)
+![hamburgermeny](https://user-images.githubusercontent.com/56344634/155958732-949ad38a-50a8-4d15-a99f-214e51f18dec.png)
+![mobilmeny](https://user-images.githubusercontent.com/56344634/155959379-041c6f95-0e0d-4085-967f-344827568228.png)
+![liggendemobil](https://user-images.githubusercontent.com/56344634/155959405-16b6699c-ee0f-4d8e-b3e7-b6fd4350f367.png)
+![overlappskalering](https://user-images.githubusercontent.com/56344634/155959653-695860a1-0f7d-4f85-b853-95e76599b3c6.png)
+
+
+
