@@ -37,6 +37,4 @@
 ![mobilmeny](https://user-images.githubusercontent.com/56344634/155959379-041c6f95-0e0d-4085-967f-344827568228.png)
 ![liggendemobil](https://user-images.githubusercontent.com/56344634/155959405-16b6699c-ee0f-4d8e-b3e7-b6fd4350f367.png)
 ![overlappskalering](https://user-images.githubusercontent.com/56344634/155959653-695860a1-0f7d-4f85-b853-95e76599b3c6.png)
-
-
-
+![arialfeilskrevet](https://user-images.githubusercontent.com/56344634/155961766-94967d2b-cce3-4673-87ed-27c8323456c1.png)
