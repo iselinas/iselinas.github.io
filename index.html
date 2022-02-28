@@ -65,9 +65,13 @@
         </tr>
         <tr>
           <td>I samme artikkel/nyhetsbrev som under "elementer som består kravet" er det lenger ned på siden ikke en
-            alternativ beskrivelse til skjermbilde og kun referert som "slik ser varselet ut. Må være konsekvent på
-            tilgjengelighetstiltak"</td>
+            alternativ beskrivelse til skjermbilde og kun referert som "slik ser varselet ut."" Må være konsekvent på
+            tilgjengelighetstiltak</td>
           <td><a href="https://www.hedmark-ikt.no/gamle-pc-er-blir-deaktivert/">Gamle PC-er blir deaktivert</a></td>
+        </tr>
+        <tr>
+          <td>Bilde av tabell uten alt-tekst, dette kan ikke leses av skjermlesere og lignende.</td>
+          <td><a href="https://www.hedmark-ikt.no/nyhetsbrev/oppgradering-av-acos/">Nyhetsbrev oppgradering av Acos</a></td>
         </tr>
       </table>
       <br />
@@ -82,7 +86,7 @@
           <td><a href="https://www.hedmark-ikt.no/">Hjem-side</a></td>
         </tr>
         <tr>
-          <td>Nyhetsbrev har egen bildebeskrivelse under skjermbilder, veldig bra</td>
+          <td>Nyhetsbrev har egen bildebeskrivelse under skjermbilder, veldig bra. Dette må videreføres i andre brukerveiledninger også.</td>
           <td><a href="https://www.hedmark-ikt.no/gamle-pc-er-blir-deaktivert/">Gamle PC-er blir deaktivert</a></td>
         </tr>
       </table>
@@ -93,50 +97,10 @@
         <img src="https://user-images.githubusercontent.com/56344634/154429445-4256f54b-c328-4a1f-894e-a1d38e79f55c.png"
           title="Beskrivelse av bilde">
       </div>
-    </div>
-  </div>
-
-  <button type="button" class="collapsible">
-    1.2.1 Bare lyd og bare video
-  </button>
-  <div class="content">
-    <h2>1.2.1 Bare lyd og bare video (Nivå A)</h2>
-    <p>
-      <strong>KORT FORTALT:</strong><br />
-      <i>
-        Gi brukeren et alternativ når innholdet presenteres kun som video
-        eller lyd.</i>
-      <br /><br />
-      <strong>Nivå A (krav):</strong> 
-      For forhåndsinnspilt innhold som bare er lyd eller video gjelder følgende, bortsett fra når lyden eller videoen
-      utgjør et mediealternativ til tekst og er tydelig merket som det.
-      <br />
-      • Forhåndsinnspilt lyd (bare lyd): Det gis tilgang til et alternativ til
-      tidsbaserte medier som presenterer informasjon som tilsvarer det
-      forhåndsinnspilte lydinnholdet. <br />
-      • Forhåndsinnspilt video (bare video): Det gis tilgang til enten et
-      alternativ til tidsbaserte medier eller et lydspor som presenterer
-      informasjon som tilsvarer det forhåndsinnspilte videoinnholdet.
-      <br /><br />
-      <strong>Løsningsforslag, eksempler og unntak:</strong> <br />
-      <a href="https://www.uutilsynet.no/wcag-standarden/121-bare-lyd-og-bare-video-forhandsinnspilt-niva/88">
-        1.2.1 Bare lyd og bare video (forhåndsinnspilt, Nivå A) | Tilsynet for universell utforming av ikt (uutilsynet.no)</a><br />
-      <br />
-      <hr>
-      <br />
-      <strong>Techniques:</strong><br />
-      • G158: Providing an alternative for time-based media for audio-only
-      content <br />
-      • G159: Providing an alternative for time-based media for video-only
-      content <br />
-      • G166: Providing audio that describes the important video content and
-      describing it as such <br />
-      • H96: Using the track element to provide audio descriptions <br />
-    </p><br />
-    <div class="feil">
-        <strong>Elementer som ikke består kravet:</strong><br />
-        <p>Usikker på om dette kravet egentlig er relevant, kan ikke finne kun audio eller kun video på nettsiden</p>
-        <br />
+      <div class="bilder">
+        <img src="https://user-images.githubusercontent.com/56344634/155950508-58b41171-1969-4369-b9b5-29d48af3e0bb.png"
+          title="Bilde av tabell">
+      </div>
     </div>
   </div>
 
@@ -200,6 +164,10 @@
         <tr>
           <td>Ingen teksting på video webinarer</td>
           <td><a href="https://www.hedmark-ikt.no/webinar/">Webinar</a></td>
+        </tr>
+        <tr>
+          <td>Kan konkluderes med at alle videoer på nettsiden mangler teksting</td>
+          <td><a href="https://www.hedmark-ikt.no/">Forside</a></td>
         </tr>
       </table>
       <br />
@@ -309,20 +277,23 @@
           <th>Lenke til side</th>
         </tr>
         <tr>
-          <td>Generelt brukes ikke ARIA labels på nettsiden, dette kan være et alternativ til oppgradering av koden</td>
+          <td>Generelt brukes ikke ARIA på nettsiden, dette burde inkluderes i oppdatering av koden. Dette gjelder både 
+            regions, grouping, landmarks, role, labels etc. Enkelte steder (slik som skjema konsulenttilgang, antageligvis fordi
+            dette er "lånt kode") er aria-labelledby og aria-describedby inkludert i koden, men ikke riktig utfylt. 
+          </td>
           <td><a href="https://www.hedmark-ikt.no">Forside</a></td>
         </tr>
         <tr>
-          <td>Headings er markert som H1 etc, men det er ikke videre hierarki i headings. ARIA level for headings kan
-            være bra her</td>
+          <td>Headings er markert som H1 etc, men det er ikke videre hierarki i headings. For mange headings er markert som H1 og H2 
+            fremfor å ta i bruk hele hierarki ned til H6. ARIA level for headings kan være et alternativ.</td>
           <td><a href="https://www.hedmark-ikt.no">Forside</a></td>
         </tr>
         <tr>
-          <td>Header og menyer er ikke markert opp som ARIA regions og labels</td>
+          <td>Header og menyer er ikke markert opp med ARIA. Landmarks, regions og labels.</td>
           <td><a href="https://www.hedmark-ikt.no">Forside</a></td>
         </tr>
         <tr>
-          <td>Meny på prosjekt-side er ikke markert opp med ARIA levels</td>
+          <td>Meny på prosjekt-side er ikke markert opp</td>
           <td><a href="https://www.hedmark-ikt.no/prosjekter/">Prosjekter</a></td>
         </tr>
         <tr>
@@ -336,7 +307,7 @@
           <td><a href="https://www.hedmark-ikt.no/prosjekter/m365/">Prosjekter > M356</a></td>
         </tr>
         <tr>
-          <td>Listemeny på proskektsider har ikke tabindex value</td>
+          <td>Listemeny på prosjektsider har kun role="tab", lite tilbakemelding på at dette er bokser som åpner og lukkes</td>
           <td><a href="https://www.hedmark-ikt.no/prosjekter/m365/">Prosjekter > M356</a></td>
         </tr>
         <tr>
@@ -365,6 +336,10 @@
         <tr>
           <td>Listeelement "forsidemeny-container" er kodet som liste og har id forsidemeny</td>
           <td><a href="https://www.hedmark-ikt.no/">Forside</a></td>
+        </tr>
+        <tr>
+          <td>Skjema konsulenttilgang har role=form</td>
+          <td><a href="https://www.hedmark-ikt.no/konsulenttilgang/">Konsulenttilgang</a></td>
         </tr>
       </table>
       </p>
@@ -408,9 +383,12 @@
         </tr>
         <tr>
           <td>Det er mye unødvendig og overlappende kode, med CSS avslått dukker toppmenyen opp igjen under footer
-            (dette er mobilmenyen), og
-            dato for publisert artikkel vises to ganger</td>
+            (dette er mobilmenyen), og dato for publisert artikkel vises to ganger</td>
           <td><a href="https://www.hedmark-ikt.no">Forside</a></td>
+        </tr>
+        <tr>
+          <td>Organisasjonskart følger ikke DOM order og har flere lenker knyttet til samme element/område</td>
+          <td><a href="https://www.hedmark-ikt.no/ansatte/">Ansatte</a></td>
         </tr>
       </table>
       <br />
@@ -421,8 +399,8 @@
           <th>Lenke til side</th>
         </tr>
         <tr>
-          <td>Logisk rekkefølge på innhold på øvrige sider</td>
-          <td><a href="https://www.hedmark-ikt.no/prosjekter">Prosjekter</a></td>
+          <td>Logisk rekkefølge som følger DOM på innhold på øvrige sider</td>
+          <td><a href="https://www.hedmark-ikt.no">Forside</a></td>
         </tr>
       </table>
       <button type="button" class="bilderknapp">
@@ -479,12 +457,12 @@
           <th>Lenke til side</th>
         </tr>
         <tr>
-          <td>Brukerveiledninger kan antageligvis bli bedret både mtp alt tekst og bildebeskrivelser (1.1.1) og
-            nettsiden må gjennomgås for beskrivelser som "til venstre"/"under"/"den grønne knappen" osv..</td>
+          <td>Brukerveiledninger kan bli bedret både mtp alt tekst og bildebeskrivelser (1.1.1) og
+            gjennomgås for beskrivelser som "til venstre"/"under"/"den grønne knappen" osv..</td>
           <td><a href="https://www.hedmark-ikt.no/selvhjelp">Brukerveiledning</a></td>
         </tr>
         <tr>
-          <td>Må sjekke skjema med skjermleser</td>
+          <td>Skjema har mangler knyttet til skjermleser og tastaturnavigasjon, tilbakemelding utover visuell er mangelfull</td>
           <td><a href="https://www.hedmark-ikt.no/konsulenttilgang">Konsulenttilgang</a><br /><a
               href="https://www.hedmark-ikt.no/dig-lunsj/pamelding-til-dig-lunsj/">Påmelding dig. lunsj</a></td>
         </tr>
@@ -497,7 +475,7 @@
           <th>Lenke til side</th>
         </tr>
         <tr>
-          <td>Finner ingen informasjon på nettsiden eller i skjema som kun er kommunisert med sensoriske egenskaper</td>
+          <td>Finner ingen informasjon på nettsiden som kun er kommunisert med sensoriske egenskaper sett bort fra overnevnte</td>
           <td><a href="https://www.hedmark-ikt.no/">Forside</a></td>
         </tr>
       </table>
@@ -542,9 +520,8 @@
         </tr>
         <tr>
           <td>Etter oppdatering 17.02.22: toppmeny-elementer flytter på seg ('om oss' og 'for kunder' havner under
-            resten) når man skalerer. Først ved 1125px endres meny til hamburgermeny. Ikke nødvendigvis et problem, men
-            kan være disorienterende. Spesielt mtp. §1.4.13 da lverste meny ender opp med å overlappe nederste del av
-            meny i denne visningen. </td>
+            resten) når man skalerer. Først ved 1125px endres meny til hamburgermeny. Kan være disorienterende. 
+            Spesielt mtp. §1.4.13 da øverste meny ender opp med å overlappe nederste del av meny i denne visningen. </td>
           <td><a href="https://www.hedmark-ikt.no/">Forside</a></td>
         </tr>
         <tr>
@@ -556,6 +533,21 @@
           <td><a href="https://www.hedmark-ikt.no/">Forside</a></td>
         </tr>
       </table>
+      <button type="button" class="bilderknapp">
+        BILDER
+      </button>
+      <div class="bilder">
+        <img src="https://user-images.githubusercontent.com/56344634/155958683-75bab6b8-11db-4008-9ebd-1b67049907b8.png"
+          title="Menyelementer flyttes under skalering">
+        <img src="https://user-images.githubusercontent.com/56344634/155958732-949ad38a-50a8-4d15-a99f-214e51f18dec.png"
+          title="Hamburgermeny">
+        <img src="https://user-images.githubusercontent.com/56344634/155959379-041c6f95-0e0d-4085-967f-344827568228.png"
+          title="Mobilmeny">
+        <img src="https://user-images.githubusercontent.com/56344634/155959405-16b6699c-ee0f-4d8e-b3e7-b6fd4350f367.png"
+          title="Horisontal visning mobil">
+        <img src="https://user-images.githubusercontent.com/56344634/155959653-695860a1-0f7d-4f85-b853-95e76599b3c6.png"
+          title="Overlapp skalering">
+      </div>
     </div>
   </div>
 
@@ -930,8 +922,12 @@
         </tr>
         <tr>
           <td>Enkelte knapper inneholder paragrafer med tekst inne i knappen, dette kan være forvirrende for
-            synshemmede/brukere av skjermleser</td>
+            synshemmede/brukere av skjermleser. Disse knappene blir ikke lett identifisert av assistive technology heller.</td>
           <td><a href="https://www.hedmark-ikt.no/selvhjelp/">Brukerveileder-knapp</a></td>
+        </tr>
+        <tr>
+          <td>Bilde av tabell</td>
+          <td><a href="https://www.hedmark-ikt.no/nyhetsbrev/oppgradering-av-acos/">Nyhetsbrev oppgradering av Acos</a></td>
         </tr>
       </table>
       <br />
@@ -949,6 +945,14 @@
           <td>Informasjonsstruktur er for det meste ivaretatt</td>
           <td><a href="https://www.hedmark-ikt.no/">Forside</a></td>
         </tr>
+        <tr>
+          <td>Bruker navngitte fonter (men Arial er feilstavet til Aril i body)</td>
+          <td><a href="https://www.hedmark-ikt.no/">Forside</a></td>
+        </tr>   
+        <tr>
+          <td>CSS er brukt for visuell presentasjon</td>
+          <td><a href="https://www.hedmark-ikt.no/">Forside</a></td>
+        </tr>     
       </table>
     </div>
   </div>
@@ -995,7 +999,7 @@
         </tr>
         <tr>
           <td>Nettside kan forstørres til 400% uten å miste informasjon eller funksjonalitet. Reflow antageligvis
-            innebygget ifra wordpress by default. Godkjent.</td>
+            innebygget ifra wordpress. Godkjent.</td>
           <td><a href="https://www.hedmark-ikt.no/">Forside</a></td>
         </tr>
       </table>
@@ -1046,7 +1050,7 @@
           <th>Lenke til side</th>
         </tr>
         <tr>
-          <td>Kontrast mellom knappe-meny på forsiden og bakgrunn</td>
+          <td>Kontrast mellom knappe-meny på forsiden og bakgrunn er for lav. Dropshadow hjelper noe, men border kan gjerne forsterkes.</td>
           <td><a href="https://www.hedmark-ikt.no/">Forside</a></td>
         </tr>
         <tr>
@@ -1066,8 +1070,8 @@
           <th>Riktig</th>
           <th>Lenke til side</th>
         </tr>
-          <td>Knapper har generelt god kontrast (les mer, etc.)</td>
-          <td><a href="https://www.hedmark-ikt.no/dig-lunsj/">Dig. lunsj</a></td>
+          <td>Knapper har generelt god kontrast (les mer, menyvalg, etc.)</td>
+          <td><a href="https://www.hedmark-ikt.no/">Forside</a></td>
         </tr>
       </table>
       <button type="button" class="bilderknapp">
@@ -1136,20 +1140,12 @@
           <td><a href="https://www.hedmark-ikt.no/">Forside</a></td>
         </tr>
         <tr>
-          <td>Height er teknisk sett satt til 100% men jeg ser ikke at dette er et problem siden den er satt med %</td>
-          <td><a href="https://www.hedmark-ikt.no/">Forside</a></td>
-        </tr>
-        <tr>
           <td>Tidslinje under prosjekter flyter ut av boks</td>
           <td><a href="https://www.hedmark-ikt.no/prosjekter/m365/">Prosjekter > M365 > tidslinje</a></td>
         </tr>
         <tr>
           <td>Avkrysningsbokser fungerer dårlig med endret spacing</td>
           <td><a href="https://www.hedmark-ikt.no/konsulenttilgang">Konsulenttilgang</a></td>
-        </tr>
-        <tr>
-          <td>Line-spacing påvirker ikke informasjon eller visning, høyde er ikke fastsatt (kan overstyres)</td>
-          <td><a href="https://www.hedmark-ikt.no/">Forside</a></td>
         </tr>
         <tr>
       </table>
@@ -1175,6 +1171,14 @@
         <tr>
           <td>Skjema fungerer greit med enkelte unntak</td>
           <td><a href="https://www.hedmark-ikt.no/konsulenttilgang">Konsulenttilgang</a></td>
+        </tr>
+        <tr>
+          <td>Line-spacing påvirker ikke informasjon eller visning, høyde er ikke fastsatt (kan overstyres)</td>
+          <td><a href="https://www.hedmark-ikt.no/">Forside</a></td>
+        </tr>
+        <tr>
+          <td>Height er teknisk sett satt til 100% men jeg ser ikke at dette er et problem siden den er satt med %</td>
+          <td><a href="https://www.hedmark-ikt.no/">Forside</a></td>
         </tr>
       </table>
       <button type="button" class="bilderknapp">
@@ -1261,7 +1265,7 @@
         </tr>
         <tr>
           <td>Tittel-attributt ser ikke ut til å være brukt noe sted (bilder for eks), så denne type hover er ikke
-            relevant men vil antageligvis være innebygget i nettleser dersom det bli brukt i fremtiden</td>
+            relevant men vil antageligvis være innebygget i nettleser dersom det blir brukt i fremtiden</td>
           <td><a href="https://www.hedmark-ikt.no/">Forside</a></td>
         </tr>
         <tr>
@@ -1316,7 +1320,8 @@
           <th>Lenke til side</th>
         </tr>
         <tr>
-          <td>Bruker kan ikke se tydelig hvor på nettstedet de er, siden toppmeny ikke åpnes med tastaturnavigasjon</td>
+          <td>Bruker kan ikke se tydelig hvor på nettstedet de er, eller hva de navigerer til,
+            fordi toppmeny ikke åpnes med tastaturnavigasjon. (dropdown vises ikke)</td>
           <td><a href="https://www.hedmark-ikt.no/">Forside</a></td>
         </tr>
         <tr>
@@ -1358,6 +1363,7 @@
           <td><a href="https://www.hedmark-ikt.no/sikkerhet/">Sikkerhet > Har du problemer med kurset?</a></td>
         </tr>
       </table>
+      <p>Mer om dette under "skjermleser"</p>
     </div>
   </div>
 
@@ -1493,6 +1499,10 @@
             gjemt (hidden) slik at skjermlesere kan interagere med den men den ikke er til bry ellers </td>
           <td><a href="https://www.hedmark-ikt.no/">Forside</a></td>
         </tr>
+        <tr>
+          <td>Manglende landmarks, regions, groups, main content etc.</td>
+          <td><a href="https://www.hedmark-ikt.no/">Forside</a></td>
+        </tr>
       </table>
       <br />
       <strong>Elementer som består kravet:</strong>
@@ -1502,11 +1512,12 @@
           <th>Lenke til side</th>
         </tr>
         <tr>
-          <td>Overskrift på innholdssider er markert som H1 og kan dermed navigeres til direkte, dette er bra og gjør
-            teknisk sett at man slipper å bruke aria landmarks/regions: anbefaler allikevel å bruke begge deler slik at
-            brukere har alternativer da det er svært individuelt hvordan man foretrekker å navigere</td>
+          <td>Overskrift på innholdssider er markert som H1 og kan dermed navigeres til direkte, dette er positivt: 
+            anbefaler allikevel å bruke ARIA så brukere har alternativer da det er svært individuelt hvordan man 
+            foretrekker å navigere. H1-H6 hierarki er også manglende.</td>
         </tr>
       </table>
+      <p>Mer om dette under 'skjermleser'</p>
     </div>
   </div>
 
@@ -1594,6 +1605,12 @@
               dermed må tab'e flere ganger for å komme til neste element på noen av dem.</td>
             <td><a href="https://www.hedmark-ikt.no/ansatte/">Ansatte og organisering</a></td>
           </tr>
+          <tr>
+            <td>Tab-navigasjon følger DOM order for det meste, men vil være mer effektiv dersom elementer er markert
+              opp riktig og overskriftshierarki etc. er korrekt.
+            </td>
+            <td><a href="https://www.hedmark-ikt.no/">Forside</a></td>
+          </tr>
         </table>
       <strong>Elementer som består kravet:</strong>
       <table>
@@ -1606,6 +1623,7 @@
           <td><a href="https://www.hedmark-ikt.no/">Forside</a></td>
         </tr>
       </table>
+      <p>Accessibility tree må tas en titt på</p>
       <button type="button" class="bilderknapp">
         BILDER
       </button>
@@ -1742,12 +1760,18 @@
         </tr>
         <tr>
           <td>Kan navigere nettsiden både med meny og med søk-bar (*Søkbar trenger en oppdatering siden den ikke har
-            beskrivende tekst eller søk-knapp, men allikevel)</td>
+            beskrivende tekst, etter oppdatering er det nå søk-knapp)</td>
           <td><a href="https://www.hedmark-ikt.no/">Forside</a></td>
         </tr>
         <tr>
-          <td>Mobilmeny (vindusmeny) gir god oversikt over nettsidens struktur, noe mer uklart med destop versjon</td>
+          <td>Mobilmeny (vindusmeny) gir god oversikt over nettsidens struktur</td>
           <td><a href="https://www.hedmark-ikt.no/">Forside</a></td>
+        </tr>
+        <tr>
+          <td>Flere av sidene som har med hverandre å gjøre, linker til hverandre. Eksempel: "styret" under "ansatte" lenker til
+            "styret" siden.
+          </td>
+          <td><a href="https://www.hedmark-ikt.no/ansatte/">Ansatte</a></td>
         </tr>
       </table>
     </div>
@@ -1795,9 +1819,7 @@
         </tr>
         <tr>
           <td>"Required"/påkrevd må inkluderes i parantes bak labels for skjema når feltet er påkrevd (G131). Forslag
-            til
-            required labels finnes under <a href="https://www.w3.org/WAI/WCAG21/Techniques/html/H90">techniques:
-              H90</a></td>
+            til required labels finnes under <a href="https://www.w3.org/WAI/WCAG21/Techniques/html/H90">techniques: H90</a></td>
           <td><a href="https://www.hedmark-ikt.no/dig-lunsj/pamelding-til-dig-lunsj/">Påmelding dig. lunsj</a></td>
         </tr>
       </table>
@@ -1810,10 +1832,6 @@
         </tr>
         <tr>
           <td>De fleste overskrifter (H1/meny) beskriver godt hva siden inneholder</td>
-          <td><a href="https://www.hedmark-ikt.no/">Forside</a></td>
-        </tr>
-        <tr>
-          <td>Mobilmeny (vindusmeny) gir god oversikt over nettsidens struktur, noe mer uklart med destop versjon</td>
           <td><a href="https://www.hedmark-ikt.no/">Forside</a></td>
         </tr>
       </table>
@@ -1885,6 +1903,18 @@
           <td>Ingen fokusindikator bilder på prosjekter-side (Gjøre overskrift og bilde til ett element?)</td>
           <td><a href="https://www.hedmark-ikt.no/prosjekter/">Prosjekter</a></td>
         </tr>
+        <tr>
+          <td>Savner indikator for hvilken side man er inne på (meny-knapp ha mørkere farge eller lignende :active). Spesielt
+            i mobilvisning er dette savnet.
+          </td>
+          <td><a href="https://www.hedmark-ikt.no/">Forside</a></td>
+        </tr>
+        <tr>
+          <td>Hover store knapper (kurs på nettvett siden f.eks.) gir dårlig visuell tilbakemelding, kun ikonet som
+            skifter farge (mørk blå, liten forandring også) og ikke hele knappen.
+          </td>
+          <td><a href="https://www.hedmark-ikt.no/sikkerhet/nettvett/">Nettvett</a></td>
+        </tr>
       </table>
       <br /><br />
       <strong>Elementer som består kravet:</strong><br />
@@ -1925,6 +1955,8 @@
       <div class="bilder">
         <img src="https://user-images.githubusercontent.com/56344634/154429408-c12e9a6b-2dfa-4f2e-9bb4-1f38002043f5.png"
           title="Fokusindikator satt til 'print' under velg en kategori, lite synlig">
+          <img src="https://user-images.githubusercontent.com/56344634/155963568-2ed72483-a235-4e3d-b0ed-e3b9044f956d.png"
+          title="Hover store knapper">
       </div>
     </div>
   </div>
@@ -2011,14 +2043,15 @@
           <th>Lenke til side</th>
         </tr>
         <tr>
-          <td>Foreslår at aria-label blir brukt mer, lenker har beskrivende titler som "les mer" men mer omfattende
+          <td>Foreslår at ARIA blir brukt mer, lenker har beskrivende titler som "les mer" men mer omfattende
             accessibility beskrivelse (les mer (om...) hadde vært bedre.</td>
           <td><a href="https://www.hedmark-ikt.no/">Forside</a></td>
         </tr>
         <tr>
-          <td>Nok en gang svært usikker på hvor bra knapper med masse informasjon fungerer slik som "klikk her for å se
+          <td>Svært usikker på hvor bra knapper med masse informasjon fungerer slik som "klikk her for å se
             telefonnummer til vår..." (brukerstøtteknapp). Kan fort hende at dette ville vært bedre erstattet med
-            accessible tekst som oppsummerer knapp istedet.</td>
+            accessible tekst som oppsummerer knapp istedet. Mest sannsynlig burde dette endres på helt, med bakgrunn i 
+            koderegler. </td>
           <td><a href="https://www.hedmark-ikt.no/kontaktinformasjon/">Kontakt brukerstøtte</a></td>
         </tr>
       </table>
@@ -2026,6 +2059,7 @@
       <br/>
       <strong>Elementer som består kravet:</strong><br />
       <br />
+      <p>Generelt må ARIA implementeres før dette kravet kan vurderes.</p>
     </div>
   </div>
 
@@ -2710,7 +2744,7 @@
     </ul>
     <br>
     <p>Må sjekke hvordan lenker fungerer med skjermleser, slik som "les mer" lenker (vanlige knapper) og 
-      "du kan laste ned teamviewer ved å klikk her" (lenker der selve teksten er en lenke). Spesielt interessant
+      "du kan laste ned teamviewer ved å klikke her" (lenker der selve teksten er en lenke). Spesielt interessant
       vil være hvordan de store knappene med informasjon inne i knappen på f.eks. /sikkerhet vil fungere med skjermleser.
       <br /> Hvordan fungerer collapsibles med skjermleser? /sikkerhet
       <br /> Hvordan fungerer "kartet" på ansatte-siden med skjermleser? Rekkefølgen er ikke logisk, men hva leses hver av 
@@ -2720,7 +2754,7 @@
       <br/>
       <br/>
       Skjemafelt må sjekkes, selv om skjema skal oppdateres. Leses inputfelt opp, hva hvis et felt mangler utfylling?
-      Hva slags tilbakemelding får man hvis inputfelt ike er utfylt og man prøver å sende inn skjema?
+      Hva slags tilbakemelding får man hvis inputfelt ikke er utfylt og man prøver å sende inn skjema?
       <br />
       Hva slags tilbakemelding får man på lenker som fører til en handling? For eksempel nedlastinger som starter ved klikk, åpning
       av e-post etc. Telefonnr, får man beskjed om at det åpner telefonappen hvis man klikker/begynner det bare å ringe?
@@ -2728,12 +2762,33 @@
     <br/>
     <p>Mobilmeny</p>
     <p>Fylle inn funn under §2.1.1</p>
+
+    <button type="button" class="collapsible" id="skjermleser">Forside</button>
+      <div class="content">
+        <ul>
+          <li>Ingen hovedlandemerker (kan ikke navigere til hoveddelen av en side/hovedinformasjonen med skjermleser)</li>
+          <li>Må navigere gjennom toppmeny for å komme til hovedsiden</li>
+          <li>Kan navigere fra H1, H2 etc. Dette er en måte å komme til hovedinformasjonen på siden, men vil hoppe over menyer slik som den på forsiden.</li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+    <button type="button" class="collapsible" id="skjermleser">Brukerveiledning</button>
+      <div class="content">
+      </div>
+    <button type="button" class="collapsible" id="skjermleser">Konsulenttilgang</button>
+      <div class="content">
+      </div>
+    <button type="button" class="collapsible" id="skjermleser">Sikkerhet</button>
+      <div class="content">
+      </div>  
   </div>
 
   <footer>
     <p>
-      Kriterier som er krav, men som ikke gjelder nettsiden: 2.2.1 (Justerbar
-      hastighet), 1.4.2 (Styring av lyd), 2.2.2 (Pause, stopp, skjul), 2.3.1
+      Kriterier som er krav, men som ikke gjelder nettsiden: 1.2.1 (Bare lyd og bare video), 
+      2.2.1 (Justerbar hastighet), 1.4.2 (Styring av lyd), 2.2.2 (Pause, stopp, skjul), 2.3.1
       (Terskelverdi på maksimalt tre glimt), 3.3.4 (Forhinding av juridiske-,
       økonomiske-, datafeil), 2.5.4 (Bevegelsesaktivering)
     </p>
