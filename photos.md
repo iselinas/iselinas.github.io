@@ -38,3 +38,4 @@
 ![liggendemobil](https://user-images.githubusercontent.com/56344634/155959405-16b6699c-ee0f-4d8e-b3e7-b6fd4350f367.png)
 ![overlappskalering](https://user-images.githubusercontent.com/56344634/155959653-695860a1-0f7d-4f85-b853-95e76599b3c6.png)
 ![arialfeilskrevet](https://user-images.githubusercontent.com/56344634/155961766-94967d2b-cce3-4673-87ed-27c8323456c1.png)
+![fokusnettvett](https://user-images.githubusercontent.com/56344634/155963568-2ed72483-a235-4e3d-b0ed-e3b9044f956d.png)
