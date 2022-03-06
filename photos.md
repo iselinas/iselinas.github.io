@@ -39,3 +39,6 @@
 ![overlappskalering](https://user-images.githubusercontent.com/56344634/155959653-695860a1-0f7d-4f85-b853-95e76599b3c6.png)
 ![arialfeilskrevet](https://user-images.githubusercontent.com/56344634/155961766-94967d2b-cce3-4673-87ed-27c8323456c1.png)
 ![fokusnettvett](https://user-images.githubusercontent.com/56344634/155963568-2ed72483-a235-4e3d-b0ed-e3b9044f956d.png)
+![nybakgrunnfargekontrast](https://user-images.githubusercontent.com/56344634/156933419-0f1c117d-9bdc-42e7-ab05-0a61fbb77de8.png)
+![kontastnylesmerknapp](https://user-images.githubusercontent.com/56344634/156933435-59958769-26f6-4726-a8a5-a9b39f82387e.png)
+
