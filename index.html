@@ -2774,54 +2774,164 @@
   <button type="button" class="collapsible" id="skjermleser">Skjermleser-test</button>
   <div class="content">
     <h2>Skjermleser-test</h2>
-    <strong>Elementer som må testes</strong>
-    <ul>
-      <li>Lenker</li>
-      <li>Tekstalternativer</li>
-      <li>Skjema</li>
-      <li>Lenker som fører til handling</li>
-      <li>Collapsables og skuffe-menyer</li>
-    </ul>
     <br>
-    <p>Må sjekke hvordan lenker fungerer med skjermleser, slik som "les mer" lenker (vanlige knapper) og 
-      "du kan laste ned teamviewer ved å klikke her" (lenker der selve teksten er en lenke). Spesielt interessant
-      vil være hvordan de store knappene med informasjon inne i knappen på f.eks. /sikkerhet vil fungere med skjermleser.
-      <br /> Hvordan fungerer collapsibles med skjermleser? /sikkerhet
-      <br /> Hvordan fungerer "kartet" på ansatte-siden med skjermleser? Rekkefølgen er ikke logisk, men hva leses hver av 
-      fokus-områdene opp som? Samme link tre ganger, eller ulike ting? *Dette må selvfølgelig endres på uansett.
-      <br /> Hva leses fanene under "om prosjektet" opp som? De kan tab'es til, men får ingen visuell tilbakemelding, hva er
-      audio tilbakemelding?
-      <br/>
-      <br/>
-      Skjemafelt må sjekkes, selv om skjema skal oppdateres. Leses inputfelt opp, hva hvis et felt mangler utfylling?
-      Hva slags tilbakemelding får man hvis inputfelt ikke er utfylt og man prøver å sende inn skjema?
-      <br />
-      Hva slags tilbakemelding får man på lenker som fører til en handling? For eksempel nedlastinger som starter ved klikk, åpning
-      av e-post etc. Telefonnr, får man beskjed om at det åpner telefonappen hvis man klikker/begynner det bare å ringe?
+    <p>
+      I denne seksjonen presenterer jeg mine funn etter å ha gått gjennom flere av sidene på nettstedet med skjermleser. 
+      Det tas høyde for at jeg personlig ikke har mye erfaring med bruk av skjermleser, og at enkelte av observasjonene og resultatene
+      dermed kan være påvirket av dette. Enkelte av tingene jeg nevner kan i visse situasjoner bestå krav til tilgjengelighet, men jeg
+      har basert min vurdering i at opplevelsen av nettsiden skal være nær lik og by på så lite problemer som mulig for brukere
+      med assisterende teknologi. <br />
+      Det er ikke alle undersider jeg gjennomgår, da dette vil ta svært lang tid og produsere svært lite nye resultater. Sidene jeg 
+      gjennomgår er forside, brukerveiledning, konsulenttilgang, sikkerhet, prosjekter, prosjektside og ansatte siden. Dette burde være
+      tilstrekkelig for å gi et inntrykk av hvordan navigering med skjermlesing fungerer på nettsiden, og inkludere alle type elementer
+      som finnes på siden. 
     </p>
     <br/>
-    <p>Mobilmeny</p>
-    <p>Fylle inn funn under §2.1.1</p>
+    <p>- Mobilmeny</p>
+    <p>- Fylle inn funn under §2.1.1</p>
 
     <button type="button" class="collapsible" id="skjermleser">Forside</button>
       <div class="content">
-        <ul>
-          <li>Ingen hovedlandemerker (kan ikke navigere til hoveddelen av en side/hovedinformasjonen med skjermleser)</li>
-          <li>Må navigere gjennom toppmeny for å komme til hovedsiden</li>
-          <li>Kan navigere fra H1, H2 etc. Dette er en måte å komme til hovedinformasjonen på siden, men vil hoppe over menyer slik som den på forsiden.</li>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
+        <p>
+          •	Ingen hovedlandemerker (kan ikke navigere til hoveddelen av en side/hovedinformasjonen med skjermleser) <br />
+          •	Må navigere gjennom toppmeny for å komme til hovedsiden <br />
+          •	Kan navigere fra H1, H2 etc. Dette er en måte å komme til hovedinformasjonen på siden, 
+          men vil hoppe over menyer slik som den på forsiden. <br />
+          •	Leses opp 1 av 8 for eks for hver lenkeboks i menyen, så man vet hvor mange flere valg det er innen hver «skuff» <br />
+          •	Søkeboks i meny leses opp som «search for, search for» før den leser opp «søk på nettsiden». 
+          Generelt må alle deler av søkboksen oppdateres, leses bare som «search for landemerke», «search for» og igjen 
+          «search for» for å velge knappen som søker <br />
+          •	^Det blir også veldig mye «search for» etter hverandre, da den først går gjennom alle valgene for søkboksen i toppmenyen, 
+          og deretter alle valgene for søkboksen på toppen av forsiden <br />
+          •	Menyen på forsiden blir registrert som et navigasjonslandemerke, og hver boks blir lest opp som x/6 som er bra. 
+          Gir grei oversikt over hva det er man navigerer. <br />
+          •	Får ingen tilbakemelding om at «fjernstyring» kommer til å laste ned automatisk før den har begynt å laste ned. 
+          Burde i det minste få en bekreftelsesboks først. <br />
+          •	Landemerker er kun for forsidemeny, og deretter footer. Kan ikke navigere til hovedinnhold (aktuelt) med landemerker. <br />
+          •	Overskrift (”aktuelt”) blir ikke lest opp når man navigerer fra forsidemeny og videre. 
+          Delen med tekst er markert som «dokument», så hver artikkel blir lest opp som «dokument» 
+          før den leser opp overskriften på artikkelen. <br />
+          •	Dato for artikkel blir lest opp som «angi engelsk» - tror skjermleser misforstås og tror dette skal leses 
+          på annet språk fordi plugin er på engelsk? <br />
+          •	«Les mer» sier ikke noe om hva man skal lese mer om, legg til Aria hidden «les mer… (om bruk av VR..)». 
+          Dette er spesielt problematisk om man navigerer med koblinger, for alle «les mer» knapper blir bare lest opp som kobling les mer. 
+          Kan ikke navigere til «les mer» som knapp, det er ikke registrert at dette er en knapp selv om den er stylet som det. <br />
+          •	«Kobling twitter» og «kobling facebook» må tydeliggjøres at dette er for å dele artikkel («kobling del på twitter» i stedet) <br />
+          •	Teksten i hver artikkel «aktuelt» er ikke registrert slik at man kan velge forrige og neste tegn/ord. <br />
+          •	Kan ikke hoppe mellom overskrifter (H) <br />
+          •	Kan ikke hoppe til neste menyboks (må gjennom alle lenker under «brukerstøtte» før man kommer til «prosjekter» osv) <br />
+          •	Når man navigerer med skjermleser fra logo til meny, dukker det opp «menylinje» som er et tomt(?) 
+          element mellom navigasjon-landemerke og «hjem» (første meny-element) <br />
+        </p>
       </div>
+
     <button type="button" class="collapsible" id="skjermleser">Brukerveiledning</button>
       <div class="content">
+        <p>
+          •	Kan hoppe til overskriften (første element på side) med H1 (1) <br />
+          •	Kan navigere opp til meny herfra^med landemerke (D), men ikke tilbake (hovedinnhold er ikke et landemerke). 
+          Kun søk-boks og footer er landemerker. <br />
+          •	Når man har valgt H1 (1) kan man ikke navigere til neste element, da navigerer man inn i toppmeny og må gjennom alle lenkene.. 
+          igjen. Dette tar vekk formålet med å kunne navigere til overskrift. <br />
+          •	^Samme med å navigere til neste element (I), hopper tilbake til meny.. <br />
+          •	Navigering med elementer (I) fra toppmny hopper over H1 «brukerveiledning» og rett til P «her kan du se en oversikt…» 
+          - denne overskriften burde være H2. Herfra kan jeg ikke navigere med overskrifter.. ikke engang H1. <br />
+          •	«Ny ansatt/databruker», «alle veiledere» osv er H2 og kan navigeres med dette (2) <br />
+          •	^Men alle artikler under «alle veiledere» er også H2.. vanskelig å navigere. Knapp «brukerveileder for 
+          ny databruker» er også H1, dette blir feil hierarki. <br />
+          •	Fra meny kan jeg ikke navigere til H1 <br />
+          •	Forslag til informasjonsarkitektur: <br />
+        </p>
+          <table>
+            <tr>
+              <td>H1</td>
+              <td>Hedmark IKT <br /> Brukerveiledning <br /> "Her kan du se oversikt..."</td>
+            </tr>
+            <tr>
+              <td>H2</td>
+              <td>Ny ansatt <br /> Velg kategori <br /> Alle veiledere</td>
+            </tr>
+            <tr>
+              <td>H3</td>
+              <td>Innhold under "alle veiledere" <br /> Brukerveileder for ny databruker</td>
+            </tr>
+          </table>
+          <br />
+        <p>
+          •	Navigasjon hopper veldig rart fra H2 «velg en kategori» til lenkene under… 
+          Virker ikke som at det er noe hierarki. Disse burde samles til en region (slik som forsidemenyen).
+          Koblingene burde også si noe om hva det er snakk om, for eks «veiledere for kategori print» i stedet for bare «print» <br />
+          •	«Brukerveiledning for ny databruker» knapp leses opp helt fint (overraskende nok), men den kan velges to ganger.. 
+          må skippe to ganger for å gå videre (Litt usikker på hvorfor.. fordi den registrerer det som både en knapp og som ren tekst 
+          med lenke?)(Det er tross alt «ikke lov» å legge overskrift og paragraf inne i en knapp på denne måten, ifølge koderegler. <br />
+          •	«Se veilederen her»: samme som med «les mer»; burde si noe om hvilken veileder det er snakk om. <br />
+          •	Standard navigasjon fra element til element (caps+piltast) hopper over H2 overskrifter <br />
+        </p>
       </div>
+
     <button type="button" class="collapsible" id="skjermleser">Konsulenttilgang</button>
       <div class="content">
+        <p>
+          •	Skjema er markert som landemerke, det er fint <br />
+          •	Når man velger overskrifter H1 (1) på siden konsulenttilgang blir overskriften bare lest opp som «varsel» 
+          om og om igjen i loop… Det virker også som at den tror dette er overskriftsnivå 6 (det som det leses opp som, 
+          men kan ikke navigere til den som H6) selv om det er markert som H1. Her sier også skjermleseren at det er engelsk, 
+          vil tro det er plugin som gjør noe rart med siden her. <br />
+          •	Kan navigere til redigeringsbokser (E) <br />
+          •	Hvert av feltene leser opp «gruppe, gruppe, gruppe, gruppe» etter å ha lest det som er i feltet…  
+          Tror dette kan være fordi det er så mange div’er inne i hverandre? <br />
+          •	Skjemafelt blir lest opp som at de er obligatoriske, og de blir lest opp som at noe mangler eller at et er bestått, 
+          det er bra – bortsett ifra at det ender med «gruppe» <br />
+          •	Kan ikke gå ut av skjemafelt med esc eller lignende for å hoppe videre med redigeringsboks (E)(F), 
+          usikker på hvordan man gjør dette med skjermleser så det kan være min feil… Men, virker som at det er vanskelig å 
+          navigere ut av feltene, «satt fast» da jeg åpnet ny fane og forsøkte å skrive inn en annen nettadresse <br />
+          •	Kan velge avkrysningsboks med vanlig navigering, men får ikke beskjed om at dette er noe valg.. 
+          med «hoppe til neste skjemafelt» (F) navigering hopper man rett over <br />
+          •	«Fjernstyringsmetode» hoppes over med navigering av skjemafelt (F), men kan velges med vanlig navigering <br />
+          •	Dato er ikke navigerbart <br />
+          •	Checkboxer er ikke kodet som checkboxer <br />
+          •	«send» knapp for å sende inn skjema blir bare lest opp som «elementet er deaktivert» når man forsøker å 
+          trykke det uten at alle felter er fylt inn <br />
+          •	Generelt, som tidligere nevnt, må skjema oppdateres totalt – så jeg bruker ikke mer tid på å gjennomgå det per nå <br />
+        </p>
       </div>
+
     <button type="button" class="collapsible" id="skjermleser">Sikkerhet</button>
       <div class="content">
+        <p>
+          •	Generelt overskriftshierarki her også, knapper under «temaer» burde for eks ikke være H1 <br />
+          •	Igjen er det ikke mulig for meg å navigere fra H1 eller H2 og videre til teksten, ved å navigere videre 
+          havner jeg tilbake i toppmenyen eller siste valgte lenke <br />
+          •	Å navigere til «brødteksten» er vanskelig, det virker som at overskriftene og paragrafene ikke ligger i samme hierarki 
+          (mulig fordi det er nested inne i hverandre). Generelt må koden ryddes opp i og struktureres/markeres riktig for optimal 
+          bruk av skjermleser. Kan navigere med «neste paragraf» og «forrige paragraf» (p), men ikke neste element-shortcut (caps+pil) <br />
+          •	Koblinger i tekst blir lest opp som koblinger, men burde tilføyes at disse åpnes i nytt vindu. Her bare skifter man over 
+          til nytt vindu ved klikk uten å få beskjed om det. Koblinger som bare er skrevet inn som koblinger 
+          (med https://www osv i lenken) burde skrives om med alternativ tekst slik at den heller sier at det er en lenke til 
+          «hvordan installere motimate på mobil» for eks <br />
+          •	«Collapsibles» fungerer fint fordi bruker får beskjed om at det er en kobling, som gjør at man forstår at man skal klikke 
+          på dem for å få den relevante informasjonen – men man får ingen tilbakemelding om at informasjonen åpnes i en «skuff» 
+          under koblingen, så man ender med å klikke på koblingen og dermed ikke vite hva som skjer. Her trenger man en tilbakemelding 
+          om at informasjonen åpnes under etter klikk. <br />
+          •	Her som de andre sidene; når man navigerer nedover siden hopper skjermleser ofte over overskrifter H1 og H2 
+          når man navigerer fra brødteksten – blir tatt fra paragraf til paragraf uten kontekst (overskrift) <br />
+          •	Video må markeres som video og markeres opp som region/landmerke som kan hoppes over, slik det er nå går man plutselig 
+          fra brødtekst(paragraf) og inn i videoen, som fordi den er koblet til youtube har engelsk tale på ikonene, 
+          og hvert ikon (watch later, share, etc) blir valgt før man får komme videre. Forvirrende og tungvint. <br />
+          •	«Verdifull data» knapp er ikke oppgitt som en kobling. Det fungerer greit at knappene har paragrafer inne i seg ifht 
+          hvordan det blir lest opp, men det er litt forvirrende (kanskje legge til tema: verdifull data fremfor kun verdifull data for eks). 
+          Det blir ingen naturlig pause når skjermleseren leser det opp, så slik som «passord» blir lest opp som «passord passord 
+          er den vanligste måten…» og «til deg som leder» blir lest opp som «til deg som leder som leder»  i stedet for en 
+          naturlig pause mellom overskrift og tekst. <br />
+          •	^Når man navigerer med paragraf (p) blir kun overskrifter og informasjon om at det er en knapp lest opp, når man navigerer 
+          med neste element (caps+pil) leser den opp kobling, tittel, innhold, og knapp (bortsett fra «verdifull data» som ikke 
+          blir registrert som kobling..) <br />
+          •	Flere av disse^knappene gjentas to ganger (første gang blir det lest opp som kobling… og andre gang blir det lest opp 
+          som …knapp, så det er nok pga at det har blitt lagt lenke og paragraf inne i en knapp (som igjen, ikke egentlig er lov i html) <br />
+          •	«Passord» knapp ender med noe rart noe, når skjermleser kommer til «godt nok» overlappes nok med et annet ord, 
+          men usikker på hva dette er? <br />
+          •	Når man laster inn siden får man beskjed om at «youtube er lastet inn» pga videoene som ligger på siden, det er litt forvirrende? <br />
+        </p>
       </div>  
   </div>
 
