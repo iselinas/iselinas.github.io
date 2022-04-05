@@ -42,4 +42,5 @@
 ![nybakgrunnfargekontrast](https://user-images.githubusercontent.com/56344634/156933419-0f1c117d-9bdc-42e7-ab05-0a61fbb77de8.png)
 ![kontastnylesmerknapp](https://user-images.githubusercontent.com/56344634/156933435-59958769-26f6-4726-a8a5-a9b39f82387e.png)
 ![kontastnylesmerknapptekst](https://user-images.githubusercontent.com/56344634/156933835-a969ee3d-0d4b-4352-9702-b900023a6b67.png)
+![Uten navn (700 × 500 px)](https://user-images.githubusercontent.com/56344634/161762116-ea84b8cb-42c8-41d2-898a-2cd0d05452ea.svg)
 
