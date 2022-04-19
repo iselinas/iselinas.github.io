@@ -42,4 +42,5 @@
 ![nybakgrunnfargekontrast](https://user-images.githubusercontent.com/56344634/156933419-0f1c117d-9bdc-42e7-ab05-0a61fbb77de8.png)
 ![kontastnylesmerknapp](https://user-images.githubusercontent.com/56344634/156933435-59958769-26f6-4726-a8a5-a9b39f82387e.png)
 ![kontastnylesmerknapptekst](https://user-images.githubusercontent.com/56344634/156933835-a969ee3d-0d4b-4352-9702-b900023a6b67.png)
-
+![kontrastknapper](https://user-images.githubusercontent.com/56344634/164071777-0c9085ad-d6f9-4cc2-95f0-5cebd2f75066.png)
+![kontastnylesmerknapp](https://user-images.githubusercontent.com/56344634/164071790-fdf60ce2-cecd-4975-94d6-c419c82726b8.png)
