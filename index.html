@@ -2069,24 +2069,31 @@
           <th>Mangel</th>
           <th>Lenke til side</th>
         </tr>
-        <tr>
-          <td>Foreslår at ARIA blir brukt mer, lenker har beskrivende titler som "les mer" men mer omfattende
-            accessibility beskrivelse (les mer (om...) hadde vært bedre.</td>
-          <td><a href="https://www.hedmark-ikt.no/">Forside</a></td>
-        </tr>
-        <tr>
-          <td>Svært usikker på hvor bra knapper med masse informasjon fungerer slik som "klikk her for å se
-            telefonnummer til vår..." (brukerstøtteknapp). Kan fort hende at dette ville vært bedre erstattet med
-            accessible tekst som oppsummerer knapp istedet. Mest sannsynlig burde dette endres på helt, med bakgrunn i 
-            koderegler. </td>
-          <td><a href="https://www.hedmark-ikt.no/kontaktinformasjon/">Kontakt brukerstøtte</a></td>
+          <tr>
+          <td>Flere knapper på nettsiden, slik som store knapper som inneholder flere elementer og tekst (sikkerhet, brukertøtte etc), er ikke
+            kodet som knapper og har ikke ARIA role eller label som beskriver innholdet - de vil derfor ikke være brukbare ved taleinput og møter ikke krav</td>
+          <td><a href="https://www.hedmark-ikt.no/kontaktinformasjon/">Kontakt oss</a></td>
         </tr>
       </table>
       <br/>
       <br/>
       <strong>Elementer som består kravet:</strong><br />
+        <table>
+        <tr>
+          <th>Riktig</th>
+          <th>Lenke til side</th>
+        </tr>
+          <tr>
+          <td>Elementer på nettsiden som bruker standard HTML attributter (button, href etc) møter for det meste dette kravet fordi teksten som 
+            skrives mellom disse taggene matcher teksten som vises i knappen eller lenken.</td>
+          <td><a href="https://www.hedmark-ikt.no/">Forside</a></td>
+        </tr>
+        <tr>
+          <td>Verdt å vurdere å legge til en mer omfattende accessibility beskrivelse (les mer (om...) til "les mer" knapper ved implementasjon av ARIA labels.</td>
+          <td><a href="https://www.hedmark-ikt.no/">Forside</a></td>
+        </tr>
+      </table>
       <br />
-      <p>Generelt må ARIA implementeres før dette kravet kan vurderes.</p>
     </div>
   </div>
 
