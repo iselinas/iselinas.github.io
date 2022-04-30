@@ -8,12 +8,11 @@
 </head>
 
 <body>
-  <h1>Rapport: WAD og WCAG 2.1</h1>
-  <h3>HIKT nettside</h3>
-  <h4>
-    <a href="https://www.uutilsynet.no/webdirektivet-wad/eus-webdirektiv-wad/265">Basert på EUs webdirektiv (WAD)</a><br />
+  <h1>RAPPORT: ANALYSERESULTAT</h1>
+  <h3>
+    <a id="a1" href="https://www.uutilsynet.no/webdirektivet-wad/eus-webdirektiv-wad/265">Basert på EUs webdirektiv (WAD)</a>
     <a href="https://www.uutilsynet.no/regelverk/kva-seier-forskrifta/153">Og forskriften for Universell Utforming av IKT</a>
-  </h4>
+  </h3>
 
   <button type="button" class="collapsible">
     1.1.1 Ikke-tekstlig innhold
@@ -47,7 +46,7 @@
       <table>
         <tr>
           <th>Mangel</th>
-          <th>Lenke til side</th>
+          <th class="lenke">Lenke til side</th>
         </tr>
         <tr>
           <td>Bilder i brukerveiledninger (kode for alt er skrevet inn, men alt er ikke fylt ut) Dette gjelder alle
@@ -80,7 +79,7 @@
       <table>
         <tr>
           <th>Riktig</th>
-          <th>Lenke til side</th>
+          <th class="lenke">Lenke til side</th>
         </tr>
         <tr>
           <td>Logo i toppmeny har både alternativ tekst for selve logoen og har teksten som h1</td>
@@ -146,7 +145,7 @@
       <table>
         <tr>
           <th>Mangel</th>
-          <th>Lenke til side</th>
+          <th class="lenke">Lenke til side</th>
         </tr>
         <tr>
           <td>Videoer under sikkerhet er ikke tekstet. Noen av videoene linker til YouTube, men YouTube sin teksting
@@ -275,7 +274,7 @@
       <table>
         <tr>
           <th>Mangel</th>
-          <th>Lenke til side</th>
+          <th class="lenke">Lenke til side</th>
         </tr>
         <tr>
           <td>Generelt brukes ikke ARIA på nettsiden, dette burde inkluderes i oppdatering av koden. Dette gjelder både 
@@ -327,7 +326,7 @@
       <table>
         <tr>
           <th>Riktig</th>
-          <th>Lenke til side</th>
+          <th class="lenke">Lenke til side</th>
         </tr>
         <tr>
           <td>Koden er for det meste skrevet i logisk rekkefølge, toppmeny/venstre til høyre/body/footer. Tab navigasjon
@@ -380,7 +379,7 @@
       <table>
         <tr>
           <th>Mangel</th>
-          <th>Lenke til side</th>
+          <th class="lenke">Lenke til side</th>
         </tr>
         <tr>
           <td>Består krav, men kode burde ryddes opp i da det er mye overlappende kode. Verdt å merke at med CSS avslått dukker toppmenyen opp igjen under footer
@@ -402,7 +401,7 @@
       <table>
         <tr>
           <th>Riktig</th>
-          <th>Lenke til side</th>
+          <th class="lenke">Lenke til side</th>
         </tr>
         <tr>
           <td>Logisk rekkefølge som følger DOM på innhold på øvrige sider</td>
@@ -460,7 +459,7 @@
       <table>
         <tr>
           <th>Mangel</th>
-          <th>Lenke til side</th>
+          <th class="lenke">Lenke til side</th>
         </tr>
         <tr>
           <td>Brukerveiledninger kan bli bedret både mtp alt tekst og bildebeskrivelser (1.1.1) og
@@ -478,7 +477,7 @@
       <table>
         <tr>
           <th>Riktig</th>
-          <th>Lenke til side</th>
+          <th class="lenke">Lenke til side</th>
         </tr>
         <tr>
           <td>Finner ingen informasjon på nettsiden som kun er kommunisert med sensoriske egenskaper sett bort fra overnevnte</td>
@@ -518,7 +517,7 @@
       <table>
         <tr>
           <th>Riktig</th>
-          <th>Lenke til side</th>
+          <th class="lenke">Lenke til side</th>
         </tr>
         <tr>
           <td>Toppmeny er responsiv, blir hamburgermeny i mindre visning</td>
@@ -590,7 +589,7 @@
       <table>
         <tr>
           <th>Mangel</th>
-          <th>Lenke til side</th>
+          <th class="lenke">Lenke til side</th>
         </tr>
         <tr>
           <td>Skjema-felt bruker ikke autocomplete, bruker ikke beskrivende name value. Aria labels er lagt inn i kode
@@ -653,7 +652,7 @@
         <table>
           <tr>
             <th>Riktig</th>
-            <th>Lenke til side</th>
+            <th class="lenke">Lenke til side</th>
           </tr>
           <tr>
             <td>Finner ingen informasjon på nettsiden eller i skjema som kun er kommunisert med farge.</td>
@@ -717,7 +716,7 @@
       <table>
         <tr>
           <th>Mangel</th>
-          <th>Lenke til side</th>
+          <th class="lenke">Lenke til side</th>
         </tr>
         <tr>
           <td>Standard tekst mot bakgrunn under 'Aktuelt' og lignende bokser består alle krav bortsett ifra 'Color diff'
@@ -763,7 +762,7 @@
       <table>
         <tr>
           <th>Riktig</th>
-          <th>Lenke til side</th>
+          <th class="lenke">Lenke til side</th>
         </tr>
         <tr>
           <td>Standard test mot bakgrunn under 'Aktuelt' består krav AA, AAA og colors</td>
@@ -859,7 +858,7 @@
       <table>
         <tr>
           <th>Riktig</th>
-          <th>Lenke til side</th>
+          <th class="lenke">Lenke til side</th>
         </tr>
         <tr>
           <td>Består automatisk G142 pga default i nettlesere, em units blir brukt</td>
@@ -916,7 +915,7 @@
       <table>
         <tr>
           <th>Feil</th>
-          <th>Lenke til side</th>
+          <th class="lenke">Lenke til side</th>
         </tr>
         <tr>
           <td>Brukerveiledninger har screenshots som inneholder tekst, noen sider består kravet da beskrivelsen er god
@@ -934,7 +933,7 @@
       <table>
         <tr>
           <th>Riktig</th>
-          <th>Lenke til side</th>
+          <th class="lenke">Lenke til side</th>
         </tr>
         <tr>
           <td>Letter spacing er brukt i CSS</td>
@@ -994,7 +993,7 @@
       <table>
         <tr>
           <th>Riktig</th>
-          <th>Lenke til side</th>
+          <th class="lenke">Lenke til side</th>
         </tr>
         <tr>
           <td>Nettside kan forstørres til 400% uten å miste informasjon eller funksjonalitet. Reflow antageligvis
@@ -1046,7 +1045,7 @@
       <table>
         <tr>
           <th>Mangel</th>
-          <th>Lenke til side</th>
+          <th class="lenke">Lenke til side</th>
         </tr>
         <tr>
           <td>Kontrast mellom knappe-meny på forsiden og bakgrunn er for lav. Dropshadow hjelper noe, men border kan gjerne forsterkes. 
@@ -1085,7 +1084,7 @@
       <table>
         <tr>
           <th>Riktig</th>
-          <th>Lenke til side</th>
+          <th class="lenke">Lenke til side</th>
         </tr>
           <td>Knapper har generelt god kontrast (les mer, menyvalg, etc.)</td>
           <td><a href="https://www.hedmark-ikt.no/">Forside</a></td>
@@ -1151,7 +1150,7 @@
       <table>
         <tr>
           <th>Mangel</th>
-          <th>Lenke til side</th>
+          <th class="lenke">Lenke til side</th>
         </tr>
         <tr>
           <td>Tekst i 'aktuelt' boks på forsiden fungerer med endret spacing, men linker går utenfor boks.</td>
@@ -1177,7 +1176,7 @@
       <table>
         <tr>
           <th>Riktig</th>
-          <th>Lenke til side</th>
+          <th class="lenke">Lenke til side</th>
         </tr>
         <tr>
           <td>Forsidemeny fungerer med endret spacing</td>
@@ -1257,7 +1256,7 @@
       <table>
         <tr>
           <th>Mangel</th>
-          <th>Lenke til side</th>
+          <th class="lenke">Lenke til side</th>
         </tr>
         <tr>
           <td>Kan ikke lukke dropdown ifra toppmeny med esc</td>
@@ -1284,7 +1283,7 @@
       <table>
         <tr>
           <th>Riktig</th>
-          <th>Lenke til side</th>
+          <th class="lenke">Lenke til side</th>
         </tr>
         <tr>
           <td>Tittel-attributt ser ikke ut til å være brukt noe sted (bilder for eks), så denne type hover er ikke
@@ -1340,7 +1339,7 @@
       <table>
         <tr>
           <th>Mangel</th>
-          <th>Lenke til side</th>
+          <th class="lenke">Lenke til side</th>
         </tr>
         <tr>
           <td>Bruker kan ikke se tydelig hvor på nettstedet de er, eller hva de navigerer til,
@@ -1376,7 +1375,7 @@
       <table>
         <tr>
           <th>Riktig</th>
-          <th>Lenke til side</th>
+          <th class="lenke">Lenke til side</th>
         </tr>
         <tr>
           <td>Øvrige linker fungerer med tastaturnavigasjon</td>
@@ -1426,7 +1425,7 @@
       <table>
         <tr>
           <th>Riktig</th>
-          <th>Lenke til side</th>
+          <th class="lenke">Lenke til side</th>
         </tr>
         <tr>
           <td>Har ikke oppdaget noen tastaturfelle på nettsiden</td>
@@ -1473,7 +1472,7 @@
       <table>
         <tr>
           <th>Riktig</th>
-          <th>Lenke til side</th>
+          <th class="lenke">Lenke til side</th>
         </tr>
         <tr>
           <td>Nettleserstandard</td>
@@ -1520,7 +1519,7 @@
       <table>
         <tr>
           <th>Mangel</th>
-          <th>Lenke til side</th>
+          <th class="lenke">Lenke til side</th>
         </tr>
         <tr>
           <td>Mangler måte for å hoppe direkte til side-innhold uten å måtte navigere gjennom alle meny-linker først.
@@ -1538,7 +1537,7 @@
       <table>
         <tr>
           <th>Riktig</th>
-          <th>Lenke til side</th>
+          <th class="lenke">Lenke til side</th>
         </tr>
         <tr>
           <td>Overskrift på innholdssider er markert som H1 og kan dermed navigeres til direkte, dette er positivt: 
@@ -1582,7 +1581,7 @@
       <table>
         <tr>
           <th>Riktig</th>
-          <th>Lenke til side</th>
+          <th class="lenke">Lenke til side</th>
         </tr>
         <tr>
           <td>Sidetitler finnes på hver side, er godt beskrivende for formålet, presenterer den aktuelle siden (eks:
@@ -1622,7 +1621,7 @@
         <table>
           <tr>
             <th>Mangel</th>
-            <th>Lenke til side</th>
+            <th class="lenke">Lenke til side</th>
           </tr>
           <tr>
             <td>Organisasjonskart på ansatte-side er ikke i logisk rekkefølge, her starter tab nederst og hopper frem og
@@ -1645,7 +1644,7 @@
       <table>
         <tr>
           <th>Riktig</th>
-          <th>Lenke til side</th>
+          <th class="lenke">Lenke til side</th>
         </tr>
         <tr>
           <td>Øvrige lenker er presentert i en logisk rekkefølge med tastaturnavigasjon</td>
@@ -1702,7 +1701,7 @@
       <table>
         <tr>
           <th>Mangel</th>
-          <th>Lenke til side</th>
+          <th class="lenke">Lenke til side</th>
         </tr>
         <tr>
           <td>Lenker har ikke tittel eller aria label for å beskrive meningen med lenken</td>
@@ -1738,7 +1737,7 @@
       <table>
         <tr>
           <th>Riktig</th>
-          <th>Lenke til side</th>
+          <th class="lenke">Lenke til side</th>
         </tr>
         <tr>
           <td>Meny-lenker har lenketekst som forteller hva de omhandler</td>
@@ -1785,7 +1784,7 @@
       <table>
         <tr>
           <th>Riktig</th>
-          <th>Lenke til side</th>
+          <th class="lenke">Lenke til side</th>
         </tr>
         <tr>
           <td>Kan navigere nettsiden både med meny og med søk-bar (*Søkbar trenger en oppdatering siden den ikke har
@@ -1833,7 +1832,7 @@
       <table>
         <tr>
           <th>Mangel</th>
-          <th>Lenke til side</th>
+          <th class="lenke">Lenke til side</th>
         </tr>
         <tr>
           <td>Ikke nødvendigvis feil, men "øvrige kunder" er ikke 'selvsigende' for hva siden inneholder. Kunne vært
@@ -1903,7 +1902,7 @@
       <table>
         <tr>
           <th>Mangel</th>
-          <th>Lenke til side</th>
+          <th class="lenke">Lenke til side</th>
         </tr>
         <tr>
           <td>Ingen fokusindikator ved tastaturfokus toppmeny (bortsett ifra elementer i dropdown, men dropdown åpnes
@@ -1948,7 +1947,7 @@
       <table>
         <tr>
           <th>Riktig</th>
-          <th>Lenke til side</th>
+          <th class="lenke">Lenke til side</th>
         </tr>
         <tr>
           <td>Fokusindikator på forside er tydelige, med unntak søk-boksen</td>
@@ -2020,7 +2019,7 @@
       <table>
         <tr>
           <th>Riktig</th>
-          <th>Lenke til side</th>
+          <th class="lenke">Lenke til side</th>
         </tr>
         <tr>
           <td>Finner ingen funksjonalitet på nettsiden som ikke kan gjennomføres med enkel pekerinput, nettleserstandard
@@ -2067,7 +2066,7 @@
       <table>
         <tr>
           <th>Mangel</th>
-          <th>Lenke til side</th>
+          <th class="lenke">Lenke til side</th>
         </tr>
           <tr>
           <td>Flere knapper på nettsiden, slik som store knapper som inneholder flere elementer og tekst (sikkerhet, brukertøtte etc), er ikke
@@ -2081,7 +2080,7 @@
         <table>
         <tr>
           <th>Riktig</th>
-          <th>Lenke til side</th>
+          <th class="lenke">Lenke til side</th>
         </tr>
           <tr>
           <td>Elementer på nettsiden som bruker standard HTML attributter (button, href etc) møter for det meste dette kravet fordi teksten som 
@@ -2124,7 +2123,7 @@
       <table>
         <tr>
           <th>Riktig</th>
-          <th>Lenke til side</th>
+          <th class="lenke">Lenke til side</th>
         </tr>
         <tr>
           <td>html lang=no er på plass på alle sider
@@ -2165,7 +2164,7 @@
       <table>
         <tr>
           <th>Mangel</th>
-          <th>Lenke til side</th>
+          <th class="lenke">Lenke til side</th>
         </tr>
         <tr>
           <td>Kan være greit å markere opp enkelte ord som står på engelsk, slik som f.eks. "buypass code" og "motimate"
@@ -2181,7 +2180,7 @@
       <table>
         <tr>
           <th>Riktig</th>
-          <th>Lenke til side</th>
+          <th class="lenke">Lenke til side</th>
         </tr>
         <tr>
           <td>Finner ingen del av nettsiden som er på et annet språk, godkjent
@@ -2225,7 +2224,7 @@
       <table>
         <tr>
           <th>Mangel</th>
-          <th>Lenke til side</th>
+          <th class="lenke">Lenke til side</th>
         </tr>
         <tr>
           <td>Det er ikke et krav fra WCAG, men å implementere H83 target attribute kan bedre bruken av nettsiden ved at
@@ -2239,7 +2238,7 @@
       <table>
         <tr>
           <th>Riktig</th>
-          <th>Lenke til side</th>
+          <th class="lenke">Lenke til side</th>
         </tr>
         <tr>
           <td>I enkelte av tekstene er det oppgitt at lenken åpnes i ny fane i teksten, men er usikker på hvor godt
@@ -2289,7 +2288,7 @@
       <table>
         <tr>
           <th>Riktig</th>
-          <th>Lenke til side</th>
+          <th class="lenke">Lenke til side</th>
         </tr>
         <tr>
           <td>Skjema og andre inputfelter setter ikke automatisk igang en handling, man må klikke en knapp eller enter
@@ -2331,7 +2330,7 @@
       <table>
         <tr>
           <th>Mangel</th>
-          <th>Lenke til side</th>
+          <th class="lenke">Lenke til side</th>
         </tr>
         <tr>
           <td>Knapper på forsiden er ikke i samme rekkefølge som de er i toppmenyen, ikke et stort problem men
@@ -2344,7 +2343,7 @@
       <table>
         <tr>
           <th>Riktig</th>
-          <th>Lenke til side</th>
+          <th class="lenke">Lenke til side</th>
         </tr>
         <tr>
           <td>Navigering er konsekvent, toppmeny er statisk og komponenter er i satt rekkefølge</td>
@@ -2384,7 +2383,7 @@
       <table>
         <tr>
           <th>Mangel</th>
-          <th>Lenke til side</th>
+          <th class="lenke">Lenke til side</th>
         </tr>
         <tr>
           <td>Labels blir ikke brukt, "les mer" knapper kan for eks ha label eller name som tilsier at de er en read
@@ -2426,7 +2425,7 @@
       <table>
         <tr>
           <th>Riktig</th>
-          <th>Lenke til side</th>
+          <th class="lenke">Lenke til side</th>
         </tr>
         <tr>
           <td>Identifikasjonen er for det meste konsekvent, men identifikasjonen i seg selv kan forbedres.
@@ -2488,7 +2487,7 @@
       <table>
         <tr>
           <th>Riktig</th>
-          <th>Lenke til side</th>
+          <th class="lenke">Lenke til side</th>
         </tr>
         <tr>
           <td>ARIA labels brukes ikke, men bruker får tilbakemelding om
@@ -2551,7 +2550,7 @@
       <table>
         <tr>
           <th>Riktig</th>
-          <th>Lenke til side</th>
+          <th class="lenke">Lenke til side</th>
         </tr>
         <tr>
           <td>Skjema må generelt utbedres, men per nå er ledetekster/instruksjoner OK. 
@@ -2618,7 +2617,7 @@
       <table>
         <tr>
           <th>Riktig</th>
-          <th>Lenke til side</th>
+          <th class="lenke">Lenke til side</th>
         </tr>
         <tr>
           <td>Samme som forrige punkt, skjema må generelt utbedres. Per nå er
@@ -2687,7 +2686,7 @@
       <table>
         <tr>
           <th>Riktig</th>
-          <th>Lenke til side</th>
+          <th class="lenke">Lenke til side</th>
         </tr>
         <tr>
           <td>Side sjekket med <a href="https://validator.w3.org/">W3 Markup Validation Service</a>.
@@ -2796,7 +2795,7 @@
       <table>
         <tr>
           <th>Riktig</th>
-          <th>Lenke til side</th>
+          <th class="lenke">Lenke til side</th>
         </tr>
         <tr>
           <td>Searchbar har role=search</td>
@@ -2826,8 +2825,8 @@
     </p>
     <br/>
 
-    <button type="button" class="collapsible" id="skjermleser">Forside</button>
-      <div class="content">
+    <button type="button" class="collapsible" id="skjermleser2">Forside</button>
+      <div class="content2">
         <p>
           •	Ingen hovedlandemerker (kan ikke navigere til hoveddelen av en side/hovedinformasjonen med skjermleser) <br />
           •	Må navigere gjennom toppmeny for å komme til hovedsiden <br />
@@ -2861,8 +2860,8 @@
         </p>
       </div>
 
-    <button type="button" class="collapsible" id="skjermleser">Brukerveiledning</button>
-      <div class="content">
+    <button type="button" class="collapsible" id="skjermleser2">Brukerveiledning</button>
+      <div class="content2">
         <p>
           •	Kan hoppe til overskriften (første element på side) med H1 (1) <br />
           •	Kan navigere opp til meny herfra^med landemerke (D), men ikke tilbake (hovedinnhold er ikke et landemerke). 
@@ -2904,8 +2903,8 @@
         </p>
       </div>
 
-    <button type="button" class="collapsible" id="skjermleser">Konsulenttilgang</button>
-      <div class="content">
+    <button type="button" class="collapsible" id="skjermleser2">Konsulenttilgang</button>
+      <div class="content2">
         <p>
           •	Skjema er markert som landemerke, det er fint <br />
           •	Når man velger overskrifter H1 (1) på siden konsulenttilgang blir overskriften bare lest opp som «varsel» 
@@ -2931,8 +2930,8 @@
         </p>
       </div>
 
-    <button type="button" class="collapsible" id="skjermleser">Sikkerhet</button>
-      <div class="content">
+    <button type="button" class="collapsible" id="skjermleser2">Sikkerhet</button>
+      <div class="content2">
         <p>
           •	Generelt overskriftshierarki her også, knapper under «temaer» burde for eks ikke være H1 <br />
           •	Igjen er det ikke mulig for meg å navigere fra H1 eller H2 og videre til teksten, ved å navigere videre 
@@ -2969,8 +2968,8 @@
         </p>
       </div>  
 
-      <button type="button" class="collapsible" id="skjermleser">Prosjekter</button>
-      <div class="content">
+      <button type="button" class="collapsible" id="skjermleser2">Prosjekter</button>
+      <div class="content2">
         <p>
           •	Må samle hvert prosjekt ti ett element på prosjekt-forside. I tab leser den tittel både i bilde og i overskrift, 
           så hvert prosjekt/lenke har to lenker. I skjermlesermodus blir også et "dokument" element valgt i tillegg til disse 
@@ -2998,8 +2997,8 @@
         </p>
       </div>  
 
-      <button type="button" class="collapsible" id="skjermleser">Ansatte og organisering</button>
-      <div class="content">
+      <button type="button" class="collapsible" id="skjermleser2">Ansatte og organisering</button>
+      <div class="content2">
         <p>
           •	Leser kun opp koblingene (daglig leder, løsninger og arkitektur etc) og ikke navnene som står bak <br />
           •	Som tidligere nevnt er ikke navigasjonen av organisasjonskartet logisk, hopper tilfeldig mellom de 
