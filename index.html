@@ -284,11 +284,7 @@
         </tr>
         <tr>
           <td>Headings er markert som H1 etc, men det er ikke videre hierarki i headings. For mange headings er markert som H1 og H2 
-            fremfor å ta i bruk hele hierarki ned til H6. ARIA level for headings kan være et alternativ.</td>
-          <td><a href="https://www.hedmark-ikt.no">Forside</a></td>
-        </tr>
-        <tr>
-          <td>Header og menyer er ikke markert opp med ARIA. Landmarks, regions og labels.</td>
+            fremfor å ta i bruk hele hierarki ned til H6. ARIA level for headings kan være et alternativ, men er ikke anbefalt.</td>
           <td><a href="https://www.hedmark-ikt.no">Forside</a></td>
         </tr>
         <tr>
@@ -297,16 +293,12 @@
         </tr>
         <tr>
           <td>Heading hierarchy: Ensure heading level matches the headings visual importance/level. “Valg av
-            prosjektpartner” som er på bunnen av siden burde ikke være så høyt oppe i hierarki. </td>
+            prosjektpartner” som er på bunnen av siden burde ikke være så høyt oppe i overskriftshierarki. </td>
           <td><a href="https://www.hedmark-ikt.no/prosjekter/m365/">Prosjekter > M356</a></td>
         </tr>
         <tr>
           <td>Samme gjelder på hvert avsnitt(om prosjektet, aktuelt etc), de kan ikke alle være H1 uten noe videre
             hierarki</td>
-          <td><a href="https://www.hedmark-ikt.no/prosjekter/m365/">Prosjekter > M356</a></td>
-        </tr>
-        <tr>
-          <td>Listemeny på prosjektsider har kun role="tab", lite tilbakemelding på at dette er bokser som åpner og lukkes</td>
           <td><a href="https://www.hedmark-ikt.no/prosjekter/m365/">Prosjekter > M356</a></td>
         </tr>
         <tr>
@@ -333,12 +325,21 @@
           <td><a href="https://www.hedmark-ikt.no/">Hjem-side</a></td>
         </tr>
         <tr>
+          <td>Header og menyer er semantisk korrekt markert opp, bruk av ARIA kan bedre menynavigasjon og burde implementeres.</td>
+          <td><a href="https://www.hedmark-ikt.no">Forside</a></td>
+        </tr>
+        <tr>
           <td>Listeelement "forsidemeny-container" er kodet som liste og har id forsidemeny</td>
           <td><a href="https://www.hedmark-ikt.no/">Forside</a></td>
         </tr>
         <tr>
           <td>Skjema konsulenttilgang har role=form</td>
           <td><a href="https://www.hedmark-ikt.no/konsulenttilgang/">Konsulenttilgang</a></td>
+        </tr>
+        <tr>
+          <td>Listemeny på prosjektsider har role="tab", dette er korrekt semantikk, ARIA burde implementeres for bedre 
+            tilbakemelding på at dette er bokser som åpner og lukkes med informasjon under</td>
+          <td><a href="https://www.hedmark-ikt.no/prosjekter/m365/">Prosjekter > M356</a></td>
         </tr>
       </table>
       </p>
