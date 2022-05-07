@@ -48,7 +48,7 @@
           <th class="lenke">Lenke til side</th>
         </tr>
         <tr>
-          <td>Bilder i brukerveiledninger (kode for alt er skrevet inn, men alt er ikke fylt ut) Dette gjelder alle
+          <td>Bilder i brukerveiledninger ('alt' attributt er skrevet inn, men 'alt' er ikke fylt ut) Dette gjelder alle
             brukerveiledninger, eksempel i lenke</td>
           <td><a href="https://www.hedmark-ikt.no/faq/ny-e-postprofil-med-moderne-autentisering-pa-ipader/">E-post
               profil med moderne autentisering på iPader</a></td>
@@ -59,17 +59,17 @@
         </tr>
         <tr>
           <td>Generelle illustrasjonsbilder trenger ikke beskrivelse da de kun er dekorative, men burde være merket som
-            dekorativt bilde. Et alternativ for dette er alt=null eller role=presentation</td>
+            dekorativt bilde. Et alternativ for dette er 'alt=" "', 'alt=null' eller 'role=presentation'</td>
           <td><a href="https://www.hedmark-ikt.no/kontaktinformasjon/">Eksempel dekorativt bilde</a></td>
         </tr>
         <tr>
           <td>I samme artikkel/nyhetsbrev som under "elementer som består kravet" er det lenger ned på siden ikke en
-            alternativ beskrivelse til skjermbilde og kun referert som "slik ser varselet ut."" Må være konsekvent på
+            alternativ beskrivelse til skjermbilde og kun referert som "slik ser varselet ut." Må være konsekvent på
             tilgjengelighetstiltak</td>
           <td><a href="https://www.hedmark-ikt.no/gamle-pc-er-blir-deaktivert/">Gamle PC-er blir deaktivert</a></td>
         </tr>
         <tr>
-          <td>Bilde av tabell uten alt-tekst, dette kan ikke leses av skjermlesere og lignende.</td>
+          <td>Bilde av tabell uten 'alt'-tekst, dette kan ikke leses av skjermlesere og lignende. Må kodes som tabell eller gjengis på annen måte.</td>
           <td><a href="https://www.hedmark-ikt.no/nyhetsbrev/oppgradering-av-acos/">Nyhetsbrev oppgradering av Acos</a></td>
         </tr>
       </table>
@@ -81,7 +81,7 @@
           <th class="lenke">Lenke til side</th>
         </tr>
         <tr>
-          <td>Logo i toppmeny har både alternativ tekst for selve logoen og har teksten som h1</td>
+          <td>Logo i toppmeny har alternativ tekst for selve logoen</td>
           <td><a href="https://www.hedmark-ikt.no/">Hjem-side</a></td>
         </tr>
         <tr>
@@ -284,7 +284,13 @@
         </tr>
         <tr>
           <td>Headings er markert som H1 etc, men det er ikke videre hierarki i headings. For mange headings er markert som H1 og H2 
-            fremfor å ta i bruk hele hierarki ned til H6. ARIA level for headings kan være et alternativ, men er ikke anbefalt.</td>
+            fremfor å ta i bruk hele hierarki ned til H6. Det skal helst være kun én H1 per side. 
+            ARIA level for headings kan være et alternativ, men er ikke anbefalt.</td>
+          <td><a href="https://www.hedmark-ikt.no">Forside</a></td>
+        </tr>
+        <tr>
+          <td>Tittel på siden ved logo i hovedmeny er markert med H1, dette er ikke korrekt og bryter med logisk navigering.
+          H1 skal ikke brukes i denne type elementer, bruk alternativt 'span' eller lignende.</td>
           <td><a href="https://www.hedmark-ikt.no">Forside</a></td>
         </tr>
         <tr>
@@ -297,17 +303,17 @@
           <td><a href="https://www.hedmark-ikt.no/prosjekter/m365/">Prosjekter > M356</a></td>
         </tr>
         <tr>
-          <td>Samme gjelder på hvert avsnitt(om prosjektet, aktuelt etc), de kan ikke alle være H1 uten noe videre
-            hierarki</td>
+          <td>Samme gjelder på hvert avsnitt(om prosjektet, aktuelt etc), de kan ikke alle være H1. Bruk hele
+            hierarki.</td>
           <td><a href="https://www.hedmark-ikt.no/prosjekter/m365/">Prosjekter > M356</a></td>
         </tr>
         <tr>
-          <td>Listeelement "forsidemeny-container": Hver knapp har ikke beskrivende ID (menu-item276 istedet for
+          <td>Forsidemeny, listeelement "forsidemeny-container": Hver knapp har ikke beskrivende ID (menu-item276 istedet for
             'driftsmeldinger')</td>
           <td><a href="https://www.hedmark-ikt.no">Forside</a></td>
         </tr>
         <tr>
-          <td>Listeelement "menu-toppmeny-container": Hver knapp har ikke beskrivende ID (menu-item-15 istedet for hjem)
+          <td>Hovedmeny, listeelement "menu-toppmeny-container": Hver knapp har ikke beskrivende ID (menu-item-15 istedet for hjem)
           </td>
           <td><a href="https://www.hedmark-ikt.no">Forside</a></td>
         </tr>
@@ -330,7 +336,7 @@
           <td><a href="https://www.hedmark-ikt.no/">Hjem-side</a></td>
         </tr>
         <tr>
-          <td>Header og menyer er semantisk korrekt markert opp, bruk av ARIA kan bedre menynavigasjon og burde implementeres.</td>
+          <td>Header og menyer er semantisk korrekt markert opp, riktig bruk av ID, titler, overskrifter og ARIA kan bedre menynavigasjon og burde implementeres.</td>
           <td><a href="https://www.hedmark-ikt.no">Forside</a></td>
         </tr>
         <tr>
@@ -338,7 +344,7 @@
           <td><a href="https://www.hedmark-ikt.no/">Forside</a></td>
         </tr>
         <tr>
-          <td>Skjema konsulenttilgang har role=form</td>
+          <td>Skjema konsulenttilgang har 'role=form'</td>
           <td><a href="https://www.hedmark-ikt.no/konsulenttilgang/">Konsulenttilgang</a></td>
         </tr>
         <tr>
@@ -393,6 +399,10 @@
         </tr>
         <tr>
           <td>Organisasjonskart følger ikke DOM order og har flere lenker knyttet til samme element/område</td>
+          <td><a href="https://www.hedmark-ikt.no/ansatte/">Ansatte</a></td>
+        </tr>
+        <tr>
+          <td>Tidslinje på prosjektside følger ikke logisk rekkefølge</td>
           <td><a href="https://www.hedmark-ikt.no/ansatte/">Ansatte</a></td>
         </tr>
         <tr>
@@ -467,7 +477,7 @@
           <th class="lenke">Lenke til side</th>
         </tr>
         <tr>
-          <td>Brukerveiledninger kan bli bedret både mtp alt tekst og bildebeskrivelser (1.1.1) og
+          <td>Brukerveiledninger kan bli bedret både mtp 'alt' tekst og bildebeskrivelser (1.1.1) og
             gjennomgås for beskrivelser som "til venstre"/"under"/"den grønne knappen" osv..</td>
           <td><a href="https://www.hedmark-ikt.no/selvhjelp">Brukerveiledning</a></td>
         </tr>
@@ -531,7 +541,7 @@
         <tr>
           <td>Etter oppdatering 17.02.22: toppmeny-elementer flytter på seg ('om oss' og 'for kunder' havner under
             resten) når man skalerer. Først ved 1125px endres meny til hamburgermeny. Kan være disorienterende. 
-            Spesielt mtp. §1.4.13 da øverste meny ender opp med å overlappe nederste del av meny i denne visningen. </td>
+            Spesielt mtp. §1.4.13 da øverste meny ender opp med å overlappe nederste del av meny i denne visningen. (Fikset) </td>
           <td><a href="https://www.hedmark-ikt.no/">Forside</a></td>
         </tr>
         <tr>
@@ -870,7 +880,7 @@
           <td><a href="https://www.hedmark-ikt.no/">Forside</a></td>
         </tr>
         <tr>
-          <td>Funksjonalitet og innhold blir ikke mistet på zoom</td>
+          <td>Funksjonalitet og innhold blir ikke mistet ved zoom</td>
           <td><a href="https://www.hedmark-ikt.no/">Forside</a></td>
         </tr>
       </table>
@@ -1275,7 +1285,7 @@
         </tr>
         <tr>
           <td>Etter oppdatering 17.02.22 overlapper menyen seg selv dersom man bruker nettsiden i vindusmodus (ned til
-            1125px)</td>
+            1125px)(Fikset)</td>
           <td><a href="https://www.hedmark-ikt.no/">Forside</a></td>
         </tr>
       </table>
@@ -1527,7 +1537,7 @@
           <td><a href="https://www.hedmark-ikt.no/">Forside</a></td>
         </tr>
         <tr>
-          <td>Manglende landmarks, regions, groups, main content etc.</td>
+          <td>Manglende landmarks, regions, groups etc.</td>
           <td><a href="https://www.hedmark-ikt.no/">Forside</a></td>
         </tr>
       </table>
@@ -1703,7 +1713,7 @@
           <th class="lenke">Lenke til side</th>
         </tr>
         <tr>
-          <td>Lenker der lenketekst ikke beskriver lenken har ikke tittel eller aria label for å beskrive meningen med lenken</td>
+          <td>Lenker der lenketekst ikke beskriver lenken har ikke tittel eller ARIA for å beskrive meningen med lenken</td>
           <td><a href="https://www.hedmark-ikt.no/">Forside</a></td>
         </tr>
         <tr>
@@ -1796,7 +1806,7 @@
           <th class="lenke">Lenke til side</th>
         </tr>
         <tr>
-          <td>Kan navigere nettsiden både med meny og med søk-bar (*Søkbar trenger en oppdatering siden den ikke har
+          <td>Kan navigere nettsiden både med meny og med søkefelt (*Søkefelt trenger en oppdatering siden den ikke har
             beskrivende tekst, etter oppdatering er det nå søk-knapp)</td>
           <td><a href="https://www.hedmark-ikt.no/">Forside</a></td>
         </tr>
@@ -1848,11 +1858,6 @@
             bedre
           </td>
           <td><a href="https://www.hedmark-ikt.no/ovrige-kunder/">Øvrige kunder</a></td>
-        </tr>
-        <tr>
-          <td>Prosjekt "sak-arkiv" kan lett misforstås som arkiv over tidligere prosjekter, men er usikker på hvordan
-            dette kan skrives bedre siden det er prosjektnavnet</td>
-          <td><a href="https://www.hedmark-ikt.no/prosjekter/sak-arkiv/">Sak arkiv</a></td>
         </tr>
         <tr>
           <td>"Required"/påkrevd må inkluderes i parantes bak labels for skjema når feltet er påkrevd (G131). Forslag
@@ -1937,7 +1942,7 @@
         </tr>
         <tr>
           <td>Fokusindikator er synlig på knapper "velg kategori" under selvhjelp, men svært lav kontrast som burde
-            bedres (svart mot mørk brun)</td>
+            bedres (svart mot mørk brun)(før oppdatering)</td>
           <td><a href="https://www.hedmark-ikt.no/selvhjelp/">Selvhjelp>Velg en kategori</a></td>
         </tr>
         <tr>
@@ -1945,8 +1950,7 @@
           <td><a href="https://www.hedmark-ikt.no/prosjekter/">Prosjekter</a></td>
         </tr>
         <tr>
-          <td>Savner indikator for hvilken side man er inne på (meny-knapp ha mørkere farge eller lignende :active). Spesielt
-            i mobilvisning er dette savnet.
+          <td>Savner indikator for hvilken side man er inne på (meny-knapp ha mørkere farge eller lignende :active). 
           </td>
           <td><a href="https://www.hedmark-ikt.no/">Forside</a></td>
         </tr>
@@ -1959,7 +1963,7 @@
           <th class="lenke">Lenke til side</th>
         </tr>
         <tr>
-          <td>Fokusindikator på forside er tydelige, med unntak søk-boksen</td>
+          <td>Fokusindikator på forside er tydelige, med unntak søkefelt</td>
           <td><a href="https://www.hedmark-ikt.no">Forside</a></td>
         </tr>
         <tr>
@@ -2252,7 +2256,7 @@
         <tr>
           <td>I enkelte av tekstene er det oppgitt at lenken åpnes i ny fane i teksten, men er usikker på hvor godt
             dette fungerer for skjermleser siden teksten kommer etter linken. Dette kan inkluderes slik:
-            href="help.html" target="_blank">Show Help (opens new window)
+            href="help.html" target="_blank">Show Help (opens new window)<
           </td>
           <td><a href="https://www.hedmark-ikt.no/sikkerhet/nettvett/">Nettvett</a></td>
         </tr>
@@ -2344,7 +2348,7 @@
         <tr>
           <td>Knapper på forsiden er ikke i samme rekkefølge som de er i toppmenyen, ikke et stort problem men
             kan være fordelaktig å endre så de har samme rekkefølge.
-    </td>
+          </td>
           <td><a href="https://www.hedmark-ikt.no/">Forside</a></td>
         </tr>
       </table><br />
@@ -2404,16 +2408,14 @@
           <td><a href="https://www.hedmark-ikt.no/kontaktinformasjon/">Kontaktinformasjon</a></td>
         </tr>
         <tr>
-          <td>Knapper med flere elementer i seg kan gjerne ha en label om at det er en knapp (pr nå er det kun
-            class=btn)(Brukerstøtteknapp har class btn-sikkerhet?)(alle disse type knappene heter btn-sikkerhet..)</td>
+          <td>Knapper med flere elementer i seg må kodes som knapp, enten med standard HTML eller 'role=button'</td>
           <td><a href="https://www.hedmark-ikt.no/kontaktinformasjon/">Kontaktinformasjon</a>
               <br/><a href="https://www.hedmark-ikt.no/selvhjelp/">Selvhjelp</a>
           </td>
         </tr>
         <tr>
-          <td>Mangel på labels blir tydelig når det er flere lenker under hverandre, for eks lenker til avdelinger under
-            'ansatte' - her vil label om hvor lenken fører hen være nyttig. Alle lenkene har samme oppsett, som gjør det
-            tydelig at de er samme type lenke, men identifikasjon utover det er uklar.</td>
+          <td>Mangel på labels blir tydelig når det er flere lenker under hverandre - her vil label om hvor lenken fører hen være nyttig. '
+            Alle lenkene har samme oppsett, som gjør det tydelig at de er samme type lenke, men identifikasjon utover det er uklar.</td>
           <td><a href="https://www.hedmark-ikt.no/ansatte/">Ansatte</a></td>
         </tr>
         <tr>
@@ -2442,7 +2444,7 @@
           <td><a href="https://www.hedmark-ikt.no">Forside</a></td>
         </tr>
         <tr>
-          <td>Søk-felt har samme name gjennom hele nettsiden, men kan gjerne bedres fra name='s'
+          <td>Søk-felt har samme name gjennom hele nettsiden, men må bedres fra name='s'
           </td>
           <td><a href="https://www.hedmark-ikt.no/selvhjelp/">Selvhjelp</a></td>
         </tr>
@@ -2499,9 +2501,12 @@
           <th class="lenke">Lenke til side</th>
         </tr>
         <tr>
-          <td>ARIA labels brukes ikke, men bruker får tilbakemelding om
-            feil i utfylling av skjema per nå.
+          <td>ARIA brukes ikke, men bruker får tilbakemelding om feil i utfylling av skjema per nå.
           </td>
+          <td><a href="https://www.hedmark-ikt.no/konsulenttilgang/">Konsulenttilgang skjema</a></td>
+        </tr>
+        <tr>
+          <td>Bruker må få beskjed om hvor feilen i skjema er og hvorfor det ikke kan sendes inn</td>
           <td><a href="https://www.hedmark-ikt.no/konsulenttilgang/">Konsulenttilgang skjema</a></td>
         </tr>
       </table>
@@ -2738,7 +2743,7 @@
         <strong>Elementer som ikke består kravet:</strong>
       <table>
         <tr>
-          <td>Aria må implementeres</td>
+          <td>ARIA må implementeres der standard HTML markup ikke kan fastsette navn og rolle</td>
           <td><a href="https://www.hedmark-ikt.no/">Forside</a></td>
         </tr>
         <tr>
@@ -2746,8 +2751,8 @@
           <td><a href="https://www.hedmark-ikt.no/">Forside</a></td>
         </tr>
         <tr>
-          <td>Enkelte knapper inneholder paragrafer med tekst inne i knappen, dette kan være forvirrende for
-            synshemmede/brukere av skjermleser. Disse knappene blir ikke lett identifisert av assistive technology heller.</td>
+          <td>Knapper med flere elementer og paragrafer inne i knappen må utbedres så de blir korrekt identifisert og
+            opplest.</td>
           <td><a href="https://www.hedmark-ikt.no/selvhjelp/">Brukerveileder-knapp</a></td>
         </tr>
         <br />
