@@ -276,9 +276,8 @@
           <th class="lenke">Lenke til side</th>
         </tr>
         <tr>
-          <td>Generelt brukes ikke ARIA på nettsiden, dette burde inkluderes i oppdatering av koden. Dette gjelder både 
-            regions, grouping, landmarks, role, labels etc. Enkelte steder (slik som skjema konsulenttilgang, antageligvis fordi
-            dette er "lånt kode") er aria-labelledby og aria-describedby inkludert i koden, men ikke riktig utfylt. 
+          <td>Generelt brukes ikke ARIA noe særlig nettsiden, dette burde inkluderes i oppdatering av koden. Dette gjelder både 
+            regions, grouping, landmarks, role, labels etc. Enkelte steder på siden, som i skjema, er ARIA brukt gjennom plugin. 
           </td>
           <td><a href="https://www.hedmark-ikt.no">Forside</a></td>
         </tr>
@@ -344,12 +343,11 @@
           <td><a href="https://www.hedmark-ikt.no/">Forside</a></td>
         </tr>
         <tr>
-          <td>Skjema konsulenttilgang har 'role=form'</td>
+          <td>Skjema har 'role=form'</td>
           <td><a href="https://www.hedmark-ikt.no/konsulenttilgang/">Konsulenttilgang</a></td>
         </tr>
         <tr>
-          <td>Listemeny på prosjektsider har role="tab", dette er korrekt semantikk, ARIA burde implementeres for bedre 
-            tilbakemelding på at dette er bokser som åpner og lukkes med informasjon under</td>
+          <td>Listemeny på prosjektsider har role="tablist", dette er korrekt semantikk, men bruker får ikke tilbakemelding om at teksten åpnes under</td>
           <td><a href="https://www.hedmark-ikt.no/prosjekter/m365/">Prosjekter > M356</a></td>
         </tr>
       </table>
