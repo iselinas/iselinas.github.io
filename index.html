@@ -262,7 +262,6 @@
       • ARIA24: Semantically identifying a font icon with role="img" <br />
       • Making information and relationships conveyed through presentation
       programmatically determinable <br />
-      • Headings, tables, cells and lists are correctly coded and identified
     </p>
     <p>
       <a href="https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#info-and-relationships">Techniques and failures for
@@ -296,26 +295,6 @@
           <td>Landmarks er ikke brukt for å markere hovedinnhold (role=main)</td>
           <td><a href="https://www.hedmark-ikt.no">Forside</a></td>
         </tr>
-        <tr>
-          <td>Heading hierarchy: Ensure heading level matches the headings visual importance/level. “Valg av
-            prosjektpartner” som er på bunnen av siden burde ikke være så høyt oppe i overskriftshierarki. </td>
-          <td><a href="https://www.hedmark-ikt.no/prosjekter/m365/">Prosjekter > M356</a></td>
-        </tr>
-        <tr>
-          <td>Samme gjelder på hvert avsnitt(om prosjektet, aktuelt etc), de kan ikke alle være H1. Bruk hele
-            hierarki.</td>
-          <td><a href="https://www.hedmark-ikt.no/prosjekter/m365/">Prosjekter > M356</a></td>
-        </tr>
-        <tr>
-          <td>Forsidemeny, listeelement "forsidemeny-container": Hver knapp har ikke beskrivende ID (menu-item276 istedet for
-            'driftsmeldinger')</td>
-          <td><a href="https://www.hedmark-ikt.no">Forside</a></td>
-        </tr>
-        <tr>
-          <td>Hovedmeny, listeelement "menu-toppmeny-container": Hver knapp har ikke beskrivende ID (menu-item-15 istedet for hjem)
-          </td>
-          <td><a href="https://www.hedmark-ikt.no">Forside</a></td>
-        </tr>
       </table>
       <br />
       <strong>Elementer som består kravet:</strong>
@@ -325,12 +304,7 @@
           <th class="lenke">Lenke til side</th>
         </tr>
         <tr>
-          <td>Koden er for det meste skrevet i logisk rekkefølge, toppmeny/venstre til høyre/body/footer. Tab navigasjon
-            er til tider ulogisk.</td>
-          <td><a href="https://www.hedmark-ikt.no/">Hjem-side</a></td>
-        </tr>
-        <tr>
-          <td>Header og menyer er semantisk korrekt markert opp, riktig bruk av ID, titler, overskrifter og ARIA kan bedre menynavigasjon og burde implementeres.</td>
+          <td>Header, footer og menyer er semantisk korrekt markert opp, riktig bruk av ID, titler, overskrifter og ARIA kan bedre menynavigasjon og burde implementeres.</td>
           <td><a href="https://www.hedmark-ikt.no">Forside</a></td>
         </tr>
         <tr>
@@ -338,7 +312,7 @@
           <td><a href="https://www.hedmark-ikt.no/">Forside</a></td>
         </tr>
         <tr>
-          <td>Skjema har 'role=form'</td>
+          <td>Skjema har 'role=form' og korrekt rolle for elementer</td>
           <td><a href="https://www.hedmark-ikt.no/konsulenttilgang/">Konsulenttilgang</a></td>
         </tr>
         <tr>
@@ -391,7 +365,7 @@
           <td><a href="https://www.hedmark-ikt.no">Forside</a></td>
         </tr>
         <tr>
-          <td>Organisasjonskart følger ikke DOM order og har flere lenker knyttet til samme element/område</td>
+          <td>DOM order er feil for organisasjonskart og har flere lenker knyttet til samme element/område</td>
           <td><a href="https://www.hedmark-ikt.no/ansatte/">Ansatte</a></td>
         </tr>
         <tr>
@@ -411,8 +385,8 @@
           <th>Riktig</th>
           <th class="lenke">Lenke til side</th>
         </tr>
-        <tr>
-          <td>Logisk rekkefølge som følger DOM på innhold på øvrige sider</td>
+         <tr>
+          <td>Koden er for det meste skrevet i logisk rekkefølge, toppmeny/venstre til høyre/body/footer. Visuell rekkefølge følger DOM.</td>
           <td><a href="https://www.hedmark-ikt.no">Forside</a></td>
         </tr>
       </table>
@@ -470,12 +444,12 @@
           <th class="lenke">Lenke til side</th>
         </tr>
         <tr>
-          <td>Brukerveiledninger kan bli bedret både mtp 'alt' tekst og bildebeskrivelser (1.1.1) og
+          <td>Brukerveiledninger kan bli bedret både med 'alt' tekst og bildebeskrivelser (1.1.1) og
             gjennomgås for beskrivelser som "til venstre"/"under"/"den grønne knappen" osv..</td>
           <td><a href="https://www.hedmark-ikt.no/selvhjelp">Brukerveiledning</a></td>
         </tr>
         <tr>
-          <td>Skjema har mangler knyttet til skjermleser og tastaturnavigasjon, tilbakemelding utover visuell er mangelfull</td>
+          <td>Skjemaintroduksjon "påkrevde felter er merket med *" er ikke tilstrekkelig tekstlig identifikasjon, dette løses ved å legge til (påkrevd) bak felter</td>
           <td><a href="https://www.hedmark-ikt.no/konsulenttilgang">Konsulenttilgang</a><br /><a
               href="https://www.hedmark-ikt.no/dig-lunsj/pamelding-til-dig-lunsj/">Påmelding dig. lunsj</a></td>
         </tr>
@@ -486,6 +460,10 @@
         <tr>
           <th>Riktig</th>
           <th class="lenke">Lenke til side</th>
+        </tr>
+        <tr>
+          <td>Skjemafeil markers med farge og tekst, bortsett fra datofelter</td>
+          <td><a href="https://www.hedmark-ikt.no/konsulenttilgang/">Konsulenttilgang</a></td>
         </tr>
         <tr>
           <td>Finner ingen informasjon på nettsiden som kun er kommunisert med sensoriske egenskaper sett bort fra overnevnte</td>
@@ -1161,8 +1139,7 @@
           <td><a href="https://www.hedmark-ikt.no/">Forside</a></td>
         </tr>
         <tr>
-          <td>Toppmeny overlapper med endret spacing, mulig dette løser seg hvis man gjør om til linker som jeg
-            tidligere har foreslått</td>
+          <td>Toppmeny overlapper med endret spacing, mulig dette løser seg hvis man gjør om til klikkbare lenker på hovedoverskrifter</td>
           <td><a href="https://www.hedmark-ikt.no/">Forside</a></td>
         </tr>
         <tr>
@@ -1341,12 +1318,9 @@
         </tr>
         <tr>
           <td>Bruker kan ikke se tydelig hvor på nettstedet de er, eller hva de navigerer til,
-            fordi toppmeny ikke åpnes med tastaturnavigasjon. (dropdown vises ikke). Generelt vil jeg 
-            anbefale å gjøre meny-overskriftene klikkbare for mer effektiv navigasjon både med tastatur 
-            og mus. Spesielt "prosjekter" tror jeg hadde hatt nytte av at meny-overskriften var klikkbar, 
-            da kunne man bare klikket og kommet til prosjektoverskriften. Når man allikevel må inn i dropdown 
-            vil nok de fleste synes det er unødvendig å gå via "alle prosjekter" når man allikevel har listen over 
-            prosjektene ved siden av denne knappen i dropdown.
+            fordi toppmeny ikke åpnes med tastaturnavigasjon. (dropdown vises ikke). Anbefales å gjøre meny-overskriftene klikkbare 
+            for mer effektiv navigasjon både med tastatur og mus. Spesielt "prosjekter" hadde hatt nytte av at meny-overskriften var klikkbar, 
+            da kunne man bare klikket og kommet til prosjektoverskriften. 
           </td>
           <td><a href="https://www.hedmark-ikt.no/">Forside</a></td>
         </tr>
@@ -1356,7 +1330,7 @@
           <td><a href="https://www.hedmark-ikt.no/">Forside</a></td>
         </tr>
         <tr>
-          <td>Kan ikke velge avkrysningsknapper med tastaturnavigasjon (skjema)</td>
+          <td>Kan ikke velge avkrysningsbokser med tastaturnavigasjon (skjema)</td>
           <td><a href="https://www.hedmark-ikt.no/konsulenttilgang/">Konsulenttilgang</a></td>
         </tr>
         <tr>
@@ -1384,12 +1358,11 @@
           <td><a href="https://www.hedmark-ikt.no/konsulenttilgang/">Konsulenttilgang</a></td>
         </tr>
         <tr>
-          <td>Kan navigere i 'skuffer' og 'vis mer' bokser (collapsables) med tastatur, men får ikke visuell
+          <td>Kan navigere i 'skuffer' i listemenyer og 'vis mer' bokser (collapsables) med tastatur, men får ikke visuell
             tilbakemelding</td>
           <td><a href="https://www.hedmark-ikt.no/sikkerhet/">Sikkerhet > Har du problemer med kurset?</a></td>
         </tr>
       </table>
-      <p>Mer om dette under "skjermleser"</p>
     </div>
   </div>
 
@@ -1526,7 +1499,7 @@
           <td><a href="https://www.hedmark-ikt.no/">Forside</a></td>
         </tr>
         <tr>
-          <td>Manglende landmarks, regions, groups etc.</td>
+          <td>Manglende landmarks og regions. Navigasjon, søk og footer er markert opp men ikke hovedinnhold.</td>
           <td><a href="https://www.hedmark-ikt.no/">Forside</a></td>
         </tr>
       </table>
@@ -1539,11 +1512,10 @@
         </tr>
         <tr>
           <td>Overskrift på innholdssider er markert som H1 og kan dermed navigeres til direkte, dette er positivt: 
-            anbefaler allikevel å bruke ARIA så brukere har alternativer da det er svært individuelt hvordan man 
-            foretrekker å navigere. H1-H6 hierarki er også manglende.</td>
+            anbefaler allikevel å bruke ARIA role=main så brukere har alternativer da det er svært individuelt hvordan man 
+            foretrekker å navigere. H1-H6 hierarki er også manglende som nevnt i kriterium 1.3.1.</td>
         </tr>
       </table>
-      <p>Mer om dette under 'skjermleser'</p>
     </div>
   </div>
 
@@ -1622,7 +1594,7 @@
             <th class="lenke">Lenke til side</th>
           </tr>
           <tr>
-            <td>Organisasjonskart på ansatte-side er ikke i logisk rekkefølge, her starter tab nederst og hopper frem og
+            <td>Organisasjonskart på ansatte-side og tidslinje på prosjekt-sider er ikke i logisk rekkefølge, her starter tab nederst og hopper frem og
               tilbake uten mening</td>
             <td><a href="https://www.hedmark-ikt.no/ansatte/">Ansatte og organisering</a></td>
           </tr>
@@ -1632,7 +1604,7 @@
             <td><a href="https://www.hedmark-ikt.no/ansatte/">Ansatte og organisering</a></td>
           </tr>
           <tr>
-            <td>Tab-navigasjon følger DOM order for det meste, men vil være mer effektiv dersom elementer er markert
+            <td>Tab-navigasjon følger DOM order, men DOM order er ikke alltid logisk og navigasjon vil være mer effektiv dersom elementer er markert
               opp riktig og overskriftshierarki etc. er korrekt.
             </td>
             <td><a href="https://www.hedmark-ikt.no/">Forside</a></td>
@@ -1715,19 +1687,23 @@
           <td><a href="https://www.hedmark-ikt.no/">Forside</a></td>
         </tr>
         <tr>
-          <td>Lenker til de ulike kommunenettstedene er kun beskrevet med for eks "Hamar" istedet for "Hamar kommunes
+          <td>"Fjernstyring" lenke på forsiden fører direkte til nedlasting av teamviewer, dette
+            blir ikke informert om hverken i lenketeksten eller visuelt. Mer kontekst vil være å foretrekke før en automatisk nedlasting.</td>
+          <td><a href="https://www.hedmark-ikt.no/">Forside</a></td>
+        </tr>
+        <tr>
+          <td>I artikler har datoen samme lenke som selve artikkelen, dette fører til at teksten (dato) ikke stemmer overens med
+            lenken (artikkel) - burde ha ekstra beskrivelse her.</td>
+          <td><a href="https://www.hedmark-ikt.no/">Forside</a></td>
+        </tr>
+        <tr>
+          <td>Lenke for å dele i sosiale medier på artikler burde informeres om at de er en dele-lenke.</td>
+          <td><a href="https://www.hedmark-ikt.no/">Forside</a></td>
+        </tr>
+        <tr>
+          <td>Forslag, ikke feil: Lenker til de ulike kommunenettstedene er kun beskrevet med for eks "Hamar", bedre løsning vil være å bruke "Hamar kommunes
             nettsted" eller lignende</td>
           <td><a href="https://www.hedmark-ikt.no/om-oss/">Om oss</a></td>
-        </tr>
-        <tr>
-          <td>Som tidligere nevnt fører "fjernstyring" lenke på forsiden direkte til nedlasting av teamviewer, dette
-            blir ikke informert om hverken i lenketeksten eller visuelt</td>
-          <td><a href="https://www.hedmark-ikt.no/">Forside</a></td>
-        </tr>
-        <tr>
-          <td>Lenke for publisert dato på artikler har lenke til artikkelen, aka stemmer ikke teksten (dato) overens med
-            lenken (artikkel) - må ha ekstra beskrivelse her.</td>
-          <td><a href="https://www.hedmark-ikt.no/">Forside</a></td>
         </tr>
       </table>
       <br /><br/>
@@ -1796,7 +1772,7 @@
         </tr>
         <tr>
           <td>Kan navigere nettsiden både med meny og med søkefelt (*Søkefelt trenger en oppdatering siden den ikke har
-            beskrivende tekst, etter oppdatering er det nå søk-knapp)</td>
+            beskrivende tekst, etter oppdatering er det nå søk-knapp. Tidligere var det ingen knapp for å sette igang søk)</td>
           <td><a href="https://www.hedmark-ikt.no/">Forside</a></td>
         </tr>
         <tr>
@@ -1844,7 +1820,7 @@
         </tr>
         <tr>
           <td>Ikke nødvendigvis feil, men "øvrige kunder" er ikke 'selvsigende' for hva siden inneholder. Kunne vært
-            bedre
+            bedre.
           </td>
           <td><a href="https://www.hedmark-ikt.no/ovrige-kunder/">Øvrige kunder</a></td>
         </tr>
@@ -1913,7 +1889,7 @@
           <td><a href="https://www.hedmark-ikt.no/">Forside</a></td>
         </tr>
         <tr>
-          <td>Ingen fokusindikator 'skuffer' under 'om prosjektet' på prosjektsider</td>
+          <td>Ingen fokusindikator 'skuffer' i lenkemeny 'om prosjektet' på prosjektsider</td>
           <td><a href="https://www.hedmark-ikt.no/prosjekter/m365/">Prosjekt: M365 > om prosjektet </a></td>
         </tr>
         <tr>
@@ -1926,7 +1902,7 @@
           <td><a href="https://www.hedmark-ikt.no/sikkerhet/">Sikkerhet > Har du problemer med kurset?</a></td>
         </tr>
         <tr>
-          <td>Ingen fokusindikator søkeboks forside</td>
+          <td>Ingen fokusindikator søkefelt forside</td>
           <td><a href="https://www.hedmark-ikt.no/">Forside</a></td>
         </tr>
         <tr>
@@ -1939,9 +1915,14 @@
           <td><a href="https://www.hedmark-ikt.no/prosjekter/">Prosjekter</a></td>
         </tr>
         <tr>
-          <td>Savner indikator for hvilken side man er inne på (meny-knapp ha mørkere farge eller lignende :active). 
+          <td>Savner indikator for hvilken side man er inne på (meny-knapp ha mørkere farge eller lignende i active). 
           </td>
           <td><a href="https://www.hedmark-ikt.no/">Forside</a></td>
+        </tr>
+        <tr>
+          <td>Fokusindikator i skjema er OK, man kan se hvilket felt man har valgt - men det er ikke så tydelig som det
+           burde være</td>
+          <td><a href="https://www.hedmark-ikt.no/konsulenttilgang/">Konsulenttilgang</a></td>
         </tr>
       </table>
       <br /><br />
@@ -1954,11 +1935,6 @@
         <tr>
           <td>Fokusindikator på forside er tydelige, med unntak søkefelt</td>
           <td><a href="https://www.hedmark-ikt.no">Forside</a></td>
-        </tr>
-        <tr>
-          <td>Fokusindikator i skjema er OK, man kan se hvilket felt man har valgt - men det er ikke så tydelig som det
-            kanskje kunne vært</td>
-          <td><a href="https://www.hedmark-ikt.no/konsulenttilgang/">Konsulenttilgang</a></td>
         </tr>
         <tr>
           <td>Fokusindikator tydelig på 'organisasjonskart' under ansatte, men samme problem som med tab navigasjon;
@@ -2077,7 +2053,7 @@
         </tr>
         </tr>
           <tr>
-          <td>Lenker, som 'les mer' og lignende, kan ha tilgjengelig navn som henger sammen med lenketekst ved å følge G208.</td>
+          <td>Lenker, som 'les mer' og lignende, burde ha tilgjengelig navn som henger sammen med lenketekst ved å følge G208.</td>
           <td><a href="https://www.hedmark-ikt.no/">Forside</a></td>
         </tr>
       </table>
@@ -2190,7 +2166,7 @@
           <th class="lenke">Lenke til side</th>
         </tr>
         <tr>
-          <td>Finner ingen del av nettsiden som er på et annet språk, godkjent
+          <td>Finner ingen del av nettsiden som er på et annet språk
           </td>
           <td><a href="https://www.hedmark-ikt.no">Forside</a></td>
         </tr>
@@ -2248,8 +2224,8 @@
           <th class="lenke">Lenke til side</th>
         </tr>
         <tr>
-          <td>I enkelte av tekstene er det oppgitt at lenken åpnes i ny fane i teksten, men er usikker på hvor godt
-            dette fungerer for skjermleser siden teksten kommer etter linken. Dette kan inkluderes slik:
+          <td>I enkelte av tekstene er det oppgitt at lenken åpnes i ny fane i teksten, men dette kunne vært gjort bedre for skjermleser 
+            siden teksten kommer etter linken. Dette kan inkluderes slik:
             href="help.html" target="_blank">Show Help (opens new window)<
           </td>
           <td><a href="https://www.hedmark-ikt.no/sikkerhet/nettvett/">Nettvett</a></td>
@@ -2399,6 +2375,20 @@
           <td><a href="https://www.hedmark-ikt.no/om-oss/">Om oss</a><br />
           <a href="https://www.hedmark-ikt.no/selvhjelp/">Brukerveiledning</a></td>
         </tr>
+         <tr>
+          <td>Forsidemeny, listeelement "forsidemeny-container": Hver knapp har ikke beskrivende ID (menu-item276 istedet for
+            'driftsmeldinger')</td>
+          <td><a href="https://www.hedmark-ikt.no">Forside</a></td>
+        </tr>
+        <tr>
+          <td>Hovedmeny, listeelement "menu-toppmeny-container": Hver knapp har ikke beskrivende ID (menu-item-15 istedet for hjem)
+          </td>
+          <td><a href="https://www.hedmark-ikt.no">Forside</a></td>
+        </tr>
+        <tr>
+          <td>"Les mer" knapper må identifiseres som knapper</td>
+          <td><a href="https://www.hedmark-ikt.no">Forside</a></td>
+        </tr>
       </table>
       <br /><br />
       <strong>Elementer som består kravet:</strong><br />
@@ -2414,6 +2404,11 @@
         </tr>
         <tr>
           <td>Søkefelt har samme name gjennom hele nettsiden, men må bedres fra name='s'
+          </td>
+          <td><a href="https://www.hedmark-ikt.no/selvhjelp/">Selvhjelp</a></td>
+        </tr>
+        <tr>
+          <td>Videre krav om labels kan bestås ved korrekt implementering av løsninger for kriterium 4.1.2
           </td>
           <td><a href="https://www.hedmark-ikt.no/selvhjelp/">Selvhjelp</a></td>
         </tr>
@@ -2468,7 +2463,7 @@
           <th class="lenke">Lenke til side</th>
         </tr>
         <tr>
-          <td>Det som kan utbedres er at bruker burde få tilbakemelding om hvor feilen i skjema er og hvorfor skjema ikke kan sendes inn ved feil på submission</td>
+          <td>Bruker burde få tilbakemelding om hvor feilen i skjema er og hvorfor skjema ikke kan sendes inn ved feil ved innsending</td>
           <td><a href="https://www.hedmark-ikt.no/konsulenttilgang/">Konsulenttilgang skjema</a></td>
         </tr>
       </table>
@@ -2537,7 +2532,7 @@
           <th class="lenke">Lenke til side</th>
         </tr>
         <tr>
-          <td>Labels er beskrivende, men det kan vurderes å legge til en tekstinstruksjon på begynnelsen av skjema for å 
+          <td>Labels er beskrivende, burde legge til en tekstinstruksjon på begynnelsen av skjema for å 
           informere bruker om hva skjema handler om og hvordan det brukes</td>
           <td><a href="https://www.hedmark-ikt.no/konsulenttilgang/">Konsulenttilgang skjema</a></td>
         </tr>
@@ -2681,11 +2676,8 @@
           <td><a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fwww.hedmark-ikt.no%2F">Kodefeil forside</a></td>
         </tr>
         <tr>
-          <td>!De andre sidene må sjekkes etter at problemene med forsiden er fikset, da mye av koden er gjennomgående
-            og
-            samme error/warnings vil dukke opp på resten av sidene. Eksempler på feil på andre sider er knappene med
-            flere
-            elementer i seg (btn-sikkerhet)</td>
+          <td>Mye av koden er gjennomgående og samme error/warnings vil dukke opp på resten av sidene hvis parsing sjekkes før feil og mangler rettes opp. 
+            Eksempler på feil på andre sider er knappene med flere elementer i seg (btn-sikkerhet)</td>
           <td><a href="https://www.hedmark-ikt.no/selvhjelp/">Selvhjelp</a></td>
         </tr>
         <br />
@@ -2698,7 +2690,7 @@
           <th class="lenke">Lenke til side</th>
         </tr>
         <tr>
-          <td>Side sjekket med <a href="https://validator.w3.org/">W3 Markup Validation Service</a>.
+          <td>Side sjekket med <a href="https://validator.w3.org/">W3 Markup Validation Service</a> men må sjekkes igjen etter at øvrige kriterier er møtt.
           </td>
           <td><a href="https://www.hedmark-ikt.no/">Forside</a></td>
         </tr>
@@ -2768,11 +2760,19 @@
         </tr>
         <tr>
           <td>Roller blir for det meste brukt korrekt, med unntak av enkelte div elementer som ikke har oppgitt noen videre rolle. 
-            ARIA label og labelledby blir brukt noen steder på nettsiden der det er nødvendig.</td>
+            ARIA label og labelledby blir brukt noen steder på nettsiden.</td>
           <td><a href="https://www.hedmark-ikt.no/">Forside</a></td>
         </tr>
          <tr>
           <td>Søkefelt har role=search</td>
+          <td><a href="https://www.hedmark-ikt.no/">Forside</a></td>
+        </tr>
+        <tr>
+          <td>Navigasjon er kodet som <nav> og har dermed rolle som navigation</td>
+          <td><a href="https://www.hedmark-ikt.no/">Forside</a></td>
+        </tr>
+        <tr>
+          <td>Enkelte knapper er kodet som button og har derfor riktig rolle</td>
           <td><a href="https://www.hedmark-ikt.no/">Forside</a></td>
         </tr>
       </table>
